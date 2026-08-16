@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="14" fill="#0B0C0E"/>
+  <rect x="2.5" y="2.5" width="59" height="59" rx="12" fill="none" stroke="#FFC633" stroke-width="3"/>
+  <text x="32" y="43" text-anchor="middle"
+        font-family="Space Grotesk, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="27" font-weight="700" fill="#FFC633" letter-spacing="0.5">FS</text>
+</svg>
