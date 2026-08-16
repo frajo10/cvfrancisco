@@ -49,13 +49,9 @@ En uno o dos minutos el sitio está online. Cada `git push` posterior lo actuali
 Todos los textos están en `assets/js/i18n.js`, agrupados por idioma (`pt`, `es`, `en`) y con la
 misma clave en los tres. Para cambiar una frase, edítala en los tres bloques y guarda.
 
-## Pendiente
-
-- Falta el enlace público del canal de YouTube **El Jardín de las Diosas**. Cuando lo tengas,
-  añádelo en `index.html` dentro de la tarjeta del proyecto, copiando el bloque `card-links`
-  que ya existe en las otras tarjetas.
-
 ## Créditos de imágenes
 
-Los visuales de las tarjetas de proyecto se generaron con Magnific. La fotografía de perfil y
-el CV son originales.
+- `site-proclade.jpg` y `site-cmf.jpg` son capturas reales de los sitios en producción.
+- `proj-tarot.jpg`, `proj-branding.jpg`, `proj-jardin.jpg` y `hero-bg.jpg` son mockups y
+  visuales generados con Magnific.
+- La fotografía de perfil y el CV son originales.
