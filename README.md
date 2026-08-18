@@ -22,27 +22,26 @@ py -m http.server 8123
 
 Y abrir http://localhost:8123
 
-## Publicar en GitHub Pages
+## Publicado
 
-**1. Crea un repositorio vacío en GitHub** (sin README, sin .gitignore).
+- Repositorio: https://github.com/frajo10/cvfrancisco
+- Sitio: https://frajo10.github.io/cvfrancisco/
 
-- Si lo llamas `TU-USUARIO.github.io`, el sitio quedará en `https://TU-USUARIO.github.io`
-- Si le pones cualquier otro nombre (por ejemplo `portafolio`), quedará en
-  `https://TU-USUARIO.github.io/portafolio/`
+### Actualizar el sitio
 
-Las rutas del sitio son relativas, así que funciona igual en los dos casos.
-
-**2. Conecta y sube** (desde la carpeta del proyecto):
+Cualquier cambio se publica solo con hacer push a `main`:
 
 ```bash
-git remote add origin https://github.com/TU-USUARIO/TU-REPO.git
-git push -u origin main
+git add -A
+git commit -m "descripcion del cambio"
+git push
 ```
 
-**3. Activa Pages**: en el repositorio, `Settings` → `Pages` → en *Source* elige
-**Deploy from a branch**, rama `main`, carpeta `/ (root)` → `Save`.
+GitHub Pages reconstruye el sitio en uno o dos minutos.
 
-En uno o dos minutos el sitio está online. Cada `git push` posterior lo actualiza.
+**Importante al editar textos o estilos:** sube el numero de version en las tres
+referencias del `index.html` (`style.css?v=3`, `i18n.js?v=3`, `main.js?v=3` pasan a `v=4`).
+Sin eso, quien ya haya visitado la web seguira viendo la version antigua en cache.
 
 ## Editar textos
 
