@@ -282,6 +282,13 @@ p{margin:0}
 .about-facts dd{margin:0;font-size:14.5px;color:var(--text);line-height:1.55}
 .about-facts > dl > div + div{border-top:1px solid var(--line);padding-top:22px}
 
+.avail{display:flex;flex-wrap:wrap;gap:7px;margin-top:3px}
+.avail li{
+  font-size:12.5px;line-height:1.3;color:var(--text);
+  background:var(--accent-soft);border:1px solid rgba(255,198,51,.22);
+  padding:6px 12px;border-radius:999px;
+}
+
 .lang-row{display:flex;align-items:center;gap:10px;margin-bottom:9px;font-size:14px}
 .lang-row:last-child{margin-bottom:0}
 .lang-row > span:first-child{flex:1;color:var(--muted)}
