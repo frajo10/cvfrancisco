@@ -6,7 +6,7 @@ window.I18N = {
   /* ------------------------------------------------ PT ---- */
   pt: {
     "meta.title": "Francisco Sarria — Designer Visual · WordPress · IA",
-    "meta.desc": "Designer visual no Porto. Websites em WordPress e Elementor, conteúdo digital e inteligência artificial aplicada à produção visual.",
+    "meta.desc": "Designer visual sénior no Porto, Portugal. Websites em WordPress e Elementor, conteúdo digital e automação criativa com inteligência artificial.",
     "a11y.skip": "Ir para o conteúdo",
 
     "nav.about": "Sobre mim",
@@ -22,9 +22,12 @@ window.I18N = {
 
     "hero.eyebrow": "Porto, Portugal · Disponível para projetos",
     "hero.title": "Transformo ideias em <em>websites</em> e <em>conteúdo digital</em> com resultados mensuráveis.",
-    "hero.lead": "Sou designer visual com mais de 8 anos de experiência. Desenvolvo sites em WordPress, Elementor e WooCommerce, e aplico inteligência artificial à produção visual, audiovisual e musical para entregar mais rápido sem perder qualidade.",
+    "hero.lead": "Designer visual sénior com +8 anos de experiência, especializado em design digital, desenvolvimento web com WordPress, Elementor e WooCommerce, e produção criativa assistida por IA. Combino critério visual, tecnologia e automação para criar soluções de alta qualidade com maior rapidez e eficiência.",
     "hero.role": "Visual & Creative Designer",
     "tag.ai": "Inteligência Artificial",
+    "tag.auto": "Automação",
+    "hero.kicker.role": "Visual & Creative Designer",
+    "hero.kicker.stack": "WordPress · Social Media · Inteligência Artificial",
 
     "metric.views": "Visualizações acumuladas no YouTube",
     "metric.followers": "Seguidores geridos no Instagram",
@@ -33,9 +36,9 @@ window.I18N = {
 
     "sec.about.kicker": "01 — Sobre mim",
     "sec.about.title": "Desenho com critério e comprovo com números.",
-    "about.p1": "Sou Francisco Sarria, designer visual colombiano radicado no Porto. Comecei em identidade de marca e impressos e hoje trabalho onde o design se cruza com o produto digital: sites em WordPress, conteúdo para redes sociais e automação criativa com inteligência artificial.",
+    "about.p1": "Sou Francisco Sarria, designer visual colombiano radicado no Porto, Portugal. Comecei em identidade de marca e impressos e hoje trabalho onde o design se cruza com o produto digital: sites em WordPress, conteúdo para redes sociais, e aplicações e ferramentas digitais que automatizam tarefas repetitivas e melhoram a eficiência do trabalho.",
     "about.p2": "Interessa-me o que se pode medir. Ao reorganizar a gestão de conteúdos de uma ONGD, o tempo de atualização baixou cerca de 50%. Ao lançar um canal de YouTube do zero, ultrapassou os 3,6 milhões de visualizações e hoje está monetizado. Trabalho sempre da mesma forma: percebo o objetivo, desenho para esse objetivo e revejo os resultados.",
-    "about.p3": "Movo-me com à-vontade entre a direção de arte e a execução técnica, por isso consigo levar um projeto do conceito à entrega sem intermediários.",
+    "about.p3": "Os projetos que mostro mais abaixo são uma seleção: tenho muitos outros trabalhos semelhantes e alguns continuam em curso. Movo-me com à-vontade entre a direção de arte e a execução técnica, por isso consigo levar um projeto do conceito à entrega sem intermediários.",
 
     "facts.location": "Localização",
     "facts.location.v": "Porto, Portugal",
@@ -61,6 +64,7 @@ window.I18N = {
     "exp.1.b2": "Desenvolvo a estratégia de conteúdo e comunidade de um cliente do setor do bem-estar, com uma conta de Instagram com mais de 30.000 seguidores.",
     "exp.1.b3": "Converto audiência em clientes reais combinando branding, SEO, conteúdo e gestão de comunidade no YouTube, Instagram e WhatsApp.",
     "exp.1.b4": "Automatizei processos criativos com ferramentas de IA para imagem, vídeo, música e edição, reduzindo significativamente os tempos de produção.",
+    "exp.1.b5": "Desenvolvo aplicações e ferramentas digitais à medida para automatizar tarefas repetitivas e ganhar eficiência no trabalho diário.",
 
     "exp.2.role": "Web Designer & WordPress Specialist",
     "exp.2.org": "ONGD Proclade Colven · Medellín, Colômbia",
@@ -114,13 +118,15 @@ window.I18N = {
     "t.print": "Impressos",
     "t.retouch": "Retoque fotográfico",
     "t.analytics": "Analítica de conteúdo",
+    "t.automation": "Automação de processos",
+    "t.tools": "Apps e ferramentas à medida",
 
     "sec.skills.kicker": "04 — Competências",
     "sec.skills.title": "Ferramentas que uso todos os dias.",
     "skills.web": "Desenvolvimento web",
     "skills.design": "Design e edição",
     "skills.marketing": "Marketing digital",
-    "skills.ai": "Inteligência artificial",
+    "skills.ai": "IA e automação",
 
     "sec.contact.kicker": "05 — Contacto",
     "sec.contact.title": "Diga-me o que precisa.",
@@ -140,7 +146,7 @@ window.I18N = {
   /* ------------------------------------------------ ES ---- */
   es: {
     "meta.title": "Francisco Sarria — Diseñador Visual · WordPress · IA",
-    "meta.desc": "Diseñador visual en Oporto. Webs en WordPress y Elementor, contenido digital e inteligencia artificial aplicada a la producción visual.",
+    "meta.desc": "Diseñador visual senior en Oporto, Portugal. Webs en WordPress y Elementor, contenido digital y automatización creativa con inteligencia artificial.",
     "a11y.skip": "Ir al contenido",
 
     "nav.about": "Sobre mí",
@@ -156,9 +162,12 @@ window.I18N = {
 
     "hero.eyebrow": "Oporto, Portugal · Disponible para proyectos",
     "hero.title": "Convierto ideas en <em>webs</em> y <em>contenido digital</em> con resultados medibles.",
-    "hero.lead": "Soy diseñador visual con más de 8 años de experiencia. Desarrollo sitios en WordPress, Elementor y WooCommerce, y aplico inteligencia artificial a la producción visual, audiovisual y musical para entregar más rápido sin bajar la calidad.",
+    "hero.lead": "Diseñador visual senior con +8 años de experiencia, especializado en diseño digital, desarrollo web con WordPress, Elementor y WooCommerce, y producción creativa asistida por IA. Combino criterio visual, tecnología y automatización para crear soluciones de alta calidad con mayor velocidad y eficiencia.",
     "hero.role": "Visual & Creative Designer",
     "tag.ai": "Inteligencia Artificial",
+    "tag.auto": "Automatización",
+    "hero.kicker.role": "Visual & Creative Designer",
+    "hero.kicker.stack": "WordPress · Social Media · Inteligencia Artificial",
 
     "metric.views": "Reproducciones acumuladas en YouTube",
     "metric.followers": "Seguidores gestionados en Instagram",
@@ -167,9 +176,9 @@ window.I18N = {
 
     "sec.about.kicker": "01 — Sobre mí",
     "sec.about.title": "Diseño con criterio y lo compruebo con números.",
-    "about.p1": "Soy Francisco Sarria, diseñador visual colombiano radicado en Oporto. Empecé en identidad de marca e impresos y hoy trabajo donde el diseño se cruza con el producto digital: sitios en WordPress, contenido para redes y automatización creativa con inteligencia artificial.",
+    "about.p1": "Soy Francisco Sarria, diseñador visual colombiano radicado en Oporto, Portugal. Empecé en identidad de marca e impresos y hoy trabajo donde el diseño se cruza con el producto digital: sitios en WordPress, contenido para redes, y aplicaciones y herramientas digitales que automatizan tareas repetitivas y mejoran la eficiencia del trabajo.",
     "about.p2": "Me interesa lo que se puede medir. Al reorganizar la gestión de contenidos de una ONGD, el tiempo de actualización bajó cerca de un 50%. Al lanzar un canal de YouTube desde cero, superó los 3,6 millones de reproducciones y hoy está monetizado. Trabajo siempre igual: entiendo el objetivo, diseño para ese objetivo y reviso los resultados.",
-    "about.p3": "Me muevo con soltura entre la dirección de arte y la ejecución técnica, así que puedo llevar un proyecto del concepto a la entrega sin intermediarios.",
+    "about.p3": "Los proyectos que muestro más abajo son una selección: tengo muchos otros trabajos parecidos y algunos siguen en curso. Me muevo con soltura entre la dirección de arte y la ejecución técnica, así que puedo llevar un proyecto del concepto a la entrega sin intermediarios.",
 
     "facts.location": "Ubicación",
     "facts.location.v": "Oporto, Portugal",
@@ -195,6 +204,7 @@ window.I18N = {
     "exp.1.b2": "Desarrollo la estrategia de contenido y comunidad de un cliente del sector bienestar, con una cuenta de Instagram de más de 30.000 seguidores.",
     "exp.1.b3": "Convierto audiencia en clientes reales combinando branding, SEO, contenido y gestión de comunidad en YouTube, Instagram y WhatsApp.",
     "exp.1.b4": "Automaticé procesos creativos con herramientas de IA para imagen, vídeo, música y edición, reduciendo de forma significativa los tiempos de producción.",
+    "exp.1.b5": "Desarrollo aplicaciones y herramientas digitales a medida para automatizar tareas repetitivas y ganar eficiencia en el trabajo diario.",
 
     "exp.2.role": "Web Designer & WordPress Specialist",
     "exp.2.org": "ONGD Proclade Colven · Medellín, Colombia",
@@ -248,13 +258,15 @@ window.I18N = {
     "t.print": "Impresos",
     "t.retouch": "Retoque fotográfico",
     "t.analytics": "Analítica de contenido",
+    "t.automation": "Automatización de procesos",
+    "t.tools": "Apps y herramientas a medida",
 
     "sec.skills.kicker": "04 — Habilidades",
     "sec.skills.title": "Herramientas que uso a diario.",
     "skills.web": "Desarrollo web",
     "skills.design": "Diseño y edición",
     "skills.marketing": "Marketing digital",
-    "skills.ai": "Inteligencia artificial",
+    "skills.ai": "IA y automatización",
 
     "sec.contact.kicker": "05 — Contacto",
     "sec.contact.title": "Cuéntame qué necesitas.",
@@ -274,7 +286,7 @@ window.I18N = {
   /* ------------------------------------------------ EN ---- */
   en: {
     "meta.title": "Francisco Sarria — Visual Designer · WordPress · AI",
-    "meta.desc": "Visual designer based in Porto. WordPress and Elementor websites, digital content, and AI applied to visual production.",
+    "meta.desc": "Senior visual designer based in Porto, Portugal. WordPress and Elementor websites, digital content, and creative automation with artificial intelligence.",
     "a11y.skip": "Skip to content",
 
     "nav.about": "About",
@@ -290,9 +302,12 @@ window.I18N = {
 
     "hero.eyebrow": "Porto, Portugal · Available for projects",
     "hero.title": "I turn ideas into <em>websites</em> and <em>digital content</em> with measurable results.",
-    "hero.lead": "I'm a visual designer with more than 8 years of experience. I build sites on WordPress, Elementor and WooCommerce, and apply artificial intelligence to visual, video and music production so I can deliver faster without cutting quality.",
+    "hero.lead": "Senior visual designer with 8+ years of experience, specialised in digital design, web development with WordPress, Elementor and WooCommerce, and AI-assisted creative production. I combine visual judgement, technology and automation to build high-quality solutions faster and more efficiently.",
     "hero.role": "Visual & Creative Designer",
     "tag.ai": "Artificial Intelligence",
+    "tag.auto": "Automation",
+    "hero.kicker.role": "Visual & Creative Designer",
+    "hero.kicker.stack": "WordPress · Social Media · Artificial Intelligence",
 
     "metric.views": "Total views generated on YouTube",
     "metric.followers": "Instagram followers managed",
@@ -301,9 +316,9 @@ window.I18N = {
 
     "sec.about.kicker": "01 — About me",
     "sec.about.title": "I design with intent and check it against the numbers.",
-    "about.p1": "I'm Francisco Sarria, a Colombian visual designer based in Porto. I started out in brand identity and print, and today I work where design meets digital product: WordPress sites, social content, and creative automation with artificial intelligence.",
+    "about.p1": "I'm Francisco Sarria, a Colombian visual designer based in Porto, Portugal. I started out in brand identity and print, and today I work where design meets digital product: WordPress sites, social content, and digital apps and tools that automate repetitive tasks and make the work more efficient.",
     "about.p2": "I care about what can be measured. Reorganising content management for an NGO cut update time by roughly 50%. Launching a YouTube channel from scratch took it past 3.6 million views, and it is now monetised. I always work the same way: understand the goal, design for that goal, then check the results.",
-    "about.p3": "I move comfortably between art direction and technical execution, so I can take a project from concept to delivery without middlemen.",
+    "about.p3": "The projects below are a selection: I have many other similar pieces of work, and some are still ongoing. I move comfortably between art direction and technical execution, so I can take a project from concept to delivery without middlemen.",
 
     "facts.location": "Location",
     "facts.location.v": "Porto, Portugal",
@@ -329,6 +344,7 @@ window.I18N = {
     "exp.1.b2": "I develop content and community strategy for a wellness-sector client with an Instagram account of more than 30,000 followers.",
     "exp.1.b3": "I turn audience into real clients by combining branding, SEO, content and community management across YouTube, Instagram and WhatsApp.",
     "exp.1.b4": "I automated creative processes with AI tools for image, video, music and editing, cutting production time significantly.",
+    "exp.1.b5": "I build custom digital apps and tools that automate repetitive tasks and add efficiency to day-to-day work.",
 
     "exp.2.role": "Web Designer & WordPress Specialist",
     "exp.2.org": "Proclade Colven NGO · Medellín, Colombia",
@@ -382,13 +398,15 @@ window.I18N = {
     "t.print": "Print",
     "t.retouch": "Photo retouching",
     "t.analytics": "Content analytics",
+    "t.automation": "Process automation",
+    "t.tools": "Custom apps and tools",
 
     "sec.skills.kicker": "04 — Skills",
     "sec.skills.title": "Tools I use every day.",
     "skills.web": "Web development",
     "skills.design": "Design and editing",
     "skills.marketing": "Digital marketing",
-    "skills.ai": "Artificial intelligence",
+    "skills.ai": "AI and automation",
 
     "sec.contact.kicker": "05 — Contact",
     "sec.contact.title": "Tell me what you need.",
