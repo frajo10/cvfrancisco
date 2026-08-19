@@ -438,6 +438,37 @@ p{margin:0}
 .contact-list a,.contact-list li > span:last-child{font-size:15px;color:var(--text);transition:color .25s var(--ease)}
 .contact-list a:hover{color:var(--accent)}
 
+/* ---------- LinkedIn y GitHub ---------- */
+.ico-brand{fill:currentColor;stroke:none}
+
+.socials{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(14px,2vw,20px);margin-top:18px}
+.socials a{
+  display:flex;align-items:center;gap:15px;
+  border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);
+  padding:18px 22px;
+  transition:border-color .3s var(--ease),transform .3s var(--ease),background .3s var(--ease);
+}
+.socials a:hover{border-color:rgba(255,198,51,.4);transform:translateY(-3px);background:var(--surface-2)}
+.soc-ico{
+  display:grid;place-items:center;width:42px;height:42px;flex:none;border-radius:11px;
+  background:var(--accent-soft);color:var(--accent);border:1px solid rgba(255,198,51,.22);
+}
+.soc-ico svg{width:20px;height:20px}
+.soc-txt{display:flex;flex-direction:column;gap:2px;min-width:0}
+.soc-txt strong{font-family:var(--font-display);font-size:15px;font-weight:600;color:var(--text)}
+.soc-txt em{font-style:normal;font-size:13px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.soc-arrow{width:16px;height:16px;margin-left:auto;flex:none;color:var(--muted-dim);transition:transform .3s var(--ease),color .3s var(--ease)}
+.socials a:hover .soc-arrow{transform:translate(2px,-2px);color:var(--accent)}
+
+.foot-social{display:flex;gap:10px}
+.foot-social a{
+  display:grid;place-items:center;width:36px;height:36px;border-radius:50%;
+  border:1px solid var(--line);color:var(--muted);
+  transition:color .25s var(--ease),border-color .25s var(--ease),transform .25s var(--ease);
+}
+.foot-social a svg{width:16px;height:16px}
+.foot-social a:hover{color:var(--accent);border-color:var(--accent);transform:translateY(-2px)}
+
 /* ---------- footer ---------- */
 .site-footer{border-top:1px solid var(--line);padding-block:30px;position:relative;z-index:2}
 .footer-inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;font-size:13.5px;color:var(--muted-dim)}
@@ -506,6 +537,7 @@ p{margin:0}
 
   .skills{grid-template-columns:1fr}
   .contact-list{grid-template-columns:1fr}
+  .socials{grid-template-columns:1fr}
 
   .footer-inner{flex-direction:column;align-items:flex-start;gap:8px}
 }
