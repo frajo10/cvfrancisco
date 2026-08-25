@@ -441,9 +441,10 @@ p{margin:0}
 /* ---------- LinkedIn y GitHub ---------- */
 .ico-brand{fill:currentColor;stroke:none}
 
-.socials{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(14px,2vw,20px);margin-top:18px}
+.socials{display:flex;flex-wrap:wrap;gap:clamp(14px,2vw,20px);margin-top:18px}
+.socials li{flex:1 1 300px;max-width:420px}
 .socials a{
-  display:flex;align-items:center;gap:15px;
+  display:flex;align-items:center;gap:15px;width:100%;
   border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);
   padding:18px 22px;
   transition:border-color .3s var(--ease),transform .3s var(--ease),background .3s var(--ease);
@@ -537,7 +538,7 @@ p{margin:0}
 
   .skills{grid-template-columns:1fr}
   .contact-list{grid-template-columns:1fr}
-  .socials{grid-template-columns:1fr}
+  .socials li{max-width:none}
 
   .footer-inner{flex-direction:column;align-items:flex-start;gap:8px}
 }
