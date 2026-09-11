@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-i18n="e.meta.title">Elum Tarot — Francisco Sarria</title>
+<meta name="description" data-i18n-attr="content:e.meta.desc" content="Caso de estudio: marca, contenido, comunidad y una landing de ventas con captura de leads para Elum Tarot.">
+<meta name="author" content="Francisco Sarria">
+<meta name="theme-color" content="#0B0C0E">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Elum Tarot — Francisco Sarria">
+<meta property="og:description" content="De cero a 32,4 K seguidores y una web de ventas propia. El ciclo completo: contenido, comunidad, captura de leads y venta.">
+<meta property="og:image" content="https://frajo10.github.io/cvfrancisco/assets/img/elum/elum-portada.webp">
+<meta property="og:url" content="https://frajo10.github.io/cvfrancisco/elum.html">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- las tres familias del manual de Elum: se cargan solo aqui, para el bloque de identidad -->
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Marcellus&family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css?v=48">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<a class="skip-link" href="#contenido" data-i18n="a11y.skip">Ir al contenido</a>
+<div class="progress" id="progress" aria-hidden="true"><span></span></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="brand" aria-label="Francisco Sarria">
+      <span class="brand-mark">FS</span>
+      <span class="brand-name">Francisco Sarria</span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="index.html#sobre-mi"    data-i18n="nav.about">Sobre mí</a>
+      <a href="index.html#experiencia" data-i18n="nav.experience">Experiencia</a>
+      <a href="portafolio.html" class="active" data-i18n="nav.work">Portafolio</a>
+      <a href="index.html#habilidades" data-i18n="nav.skills">Habilidades</a>
+      <a href="index.html#contacto"    data-i18n="nav.contact">Contacto</a>
+
+      <div class="nav-tools">
+        <div class="lang" role="group" aria-label="Idioma">
+          <button type="button" data-lang="pt">PT</button>
+          <button type="button" data-lang="es">ES</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+        <a href="index.html#contacto" class="btn btn-primary btn-sm nav-cta" data-i18n="cta.write">Escríbeme</a>
+      </div>
+    </nav>
+
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Menú">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Grupos del lightbox -->
+    <template data-lb-set="web">
+      <i data-src="assets/img/elum/elum-web-paso1-fecha.webp" data-alt="a.web.p1"></i>
+      <i data-src="assets/img/elum/elum-web-paso2-revelacion.webp" data-alt="a.web.p2"></i>
+      <i data-src="assets/img/elum/elum-web-paso3-email.webp" data-alt="a.web.p3"></i>
+      <i data-src="assets/img/elum/elum-web-paso4-confirmacion.webp" data-alt="a.web.p4"></i>
+      <i data-src="assets/img/elum/elum-web-asistente.webp" data-alt="a.web.asst"></i>
+    </template>
+    <template data-lb-set="mobil">
+      <i data-src="assets/img/elum/elum-mob-cabecera.webp" data-alt="a.mob.cabecera"></i>
+      <i data-src="assets/img/elum/elum-mob-servicios.webp" data-alt="a.mob.servicios"></i>
+      <i data-src="assets/img/elum/elum-mob-arcano.webp" data-alt="a.mob.arcano"></i>
+    </template>
+    <template data-lb-set="marca">
+      <i data-src="assets/img/elum/elum-manual.webp" data-alt="a.manual"></i>
+      <i data-src="assets/img/elum/elum-pieza-01.webp" data-alt="a.pieza1"></i>
+      <i data-src="assets/img/elum/elum-pieza-02.webp" data-alt="a.pieza2"></i>
+      <i data-src="assets/img/elum/elum-pieza-03.webp" data-alt="a.pieza3"></i>
+      <i data-src="assets/img/elum/elum-pieza-04.webp" data-alt="a.pieza4"></i>
+    </template>
+    <template data-lb-set="reels">
+      <i data-src="assets/img/elum/elum-reel-01.webp" data-alt="a.reel1"></i>
+      <i data-src="assets/img/elum/elum-reel-02.webp" data-alt="a.reel2"></i>
+      <i data-src="assets/img/elum/elum-reel-03.webp" data-alt="a.reel3"></i>
+    </template>
+    <template data-lb-set="evol">
+      <i data-src="assets/img/elum/elum-primeros-posts.webp" data-alt="a.posts"></i>
+    </template>
+    <template data-lb-set="arcanos3">
+      <i data-src="assets/img/elum/elum-arcano-rueda.webp" data-alt="a.arcano.rueda"></i>
+      <i data-src="assets/img/elum/elum-arcano-estrella.webp" data-alt="a.arcano.estrella"></i>
+      <i data-src="assets/img/elum/elum-arcano-luna.webp" data-alt="a.arcano.luna"></i>
+    </template>
+    <template data-lb-set="mazo">
+      <i data-src="assets/img/elum/elum-arcano-00.webp" data-alt="aa.00"></i>
+      <i data-src="assets/img/elum/elum-arcano-01.webp" data-alt="aa.01"></i>
+      <i data-src="assets/img/elum/elum-arcano-02.webp" data-alt="aa.02"></i>
+      <i data-src="assets/img/elum/elum-arcano-03.webp" data-alt="aa.03"></i>
+      <i data-src="assets/img/elum/elum-arcano-04.webp" data-alt="aa.04"></i>
+      <i data-src="assets/img/elum/elum-arcano-05.webp" data-alt="aa.05"></i>
+      <i data-src="assets/img/elum/elum-arcano-06.webp" data-alt="aa.06"></i>
+      <i data-src="assets/img/elum/elum-arcano-07.webp" data-alt="aa.07"></i>
+      <i data-src="assets/img/elum/elum-arcano-08.webp" data-alt="aa.08"></i>
+      <i data-src="assets/img/elum/elum-arcano-09.webp" data-alt="aa.09"></i>
+      <i data-src="assets/img/elum/elum-arcano-10.webp" data-alt="aa.10"></i>
+      <i data-src="assets/img/elum/elum-arcano-11.webp" data-alt="aa.11"></i>
+      <i data-src="assets/img/elum/elum-arcano-12.webp" data-alt="aa.12"></i>
+      <i data-src="assets/img/elum/elum-arcano-13.webp" data-alt="aa.13"></i>
+      <i data-src="assets/img/elum/elum-arcano-14.webp" data-alt="aa.14"></i>
+      <i data-src="assets/img/elum/elum-arcano-15.webp" data-alt="aa.15"></i>
+      <i data-src="assets/img/elum/elum-arcano-16.webp" data-alt="aa.16"></i>
+      <i data-src="assets/img/elum/elum-arcano-17.webp" data-alt="aa.17"></i>
+      <i data-src="assets/img/elum/elum-arcano-18.webp" data-alt="aa.18"></i>
+      <i data-src="assets/img/elum/elum-arcano-19.webp" data-alt="aa.19"></i>
+      <i data-src="assets/img/elum/elum-arcano-20.webp" data-alt="aa.20"></i>
+      <i data-src="assets/img/elum/elum-arcano-21.webp" data-alt="aa.21"></i>
+    </template>
+
+    <template data-lb-set="manual">
+      <i data-src="assets/img/elum/elum-id-01.webp" data-alt="ai.01"></i>
+      <i data-src="assets/img/elum/elum-id-02.webp" data-alt="ai.02"></i>
+      <i data-src="assets/img/elum/elum-id-03.webp" data-alt="ai.03"></i>
+      <i data-src="assets/img/elum/elum-id-04.webp" data-alt="ai.04"></i>
+      <i data-src="assets/img/elum/elum-id-05.webp" data-alt="ai.05"></i>
+      <i data-src="assets/img/elum/elum-id-06.webp" data-alt="ai.06"></i>
+      <i data-src="assets/img/elum/elum-id-07.webp" data-alt="ai.07"></i>
+      <i data-src="assets/img/elum/elum-id-08.webp" data-alt="ai.08"></i>
+      <i data-src="assets/img/elum/elum-id-09.webp" data-alt="ai.09"></i>
+      <i data-src="assets/img/elum/elum-id-10.webp" data-alt="ai.10"></i>
+      <i data-src="assets/img/elum/elum-id-11.webp" data-alt="ai.11"></i>
+      <i data-src="assets/img/elum/elum-id-12.webp" data-alt="ai.12"></i>
+      <i data-src="assets/img/elum/elum-id-13.webp" data-alt="ai.13"></i>
+      <i data-src="assets/img/elum/elum-id-14.webp" data-alt="ai.14"></i>
+    </template>
+
+<main id="contenido">
+
+  <!-- ============================================================
+       CABECERA DEL CASO
+       ============================================================ -->
+  <section class="page-head case-hero">
+    <div class="wrap">
+      <a href="portafolio.html" class="back-link reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+        <span data-i18n="work.back">Volver al portafolio</span>
+      </a>
+      <p class="kicker reveal"><span data-i18n="work.1.tag">Marca · Comunidad · Producto digital</span></p>
+      <h1 class="reveal" data-d="1">Elum Tarot</h1>
+      <p class="lead reveal" data-d="2" data-i18n="e.lead">
+        Creé el perfil desde cero en marzo de 2025. Hoy son 32,4 K seguidores, una comunidad activa
+        en WhatsApp y consultas casi a diario. Es uno de los proyectos más completos que he llevado:
+        diseñé la identidad, dirigí el contenido, construí la comunidad y desarrollé la web de
+        ventas — todo sobre el mismo sistema de diseño.
+      </p>
+
+      <dl class="case-meta reveal" data-d="3">
+        <div>
+          <dt data-i18n="e.meta.role">Mi papel</dt>
+          <dd data-i18n="e.meta.role.v">Dirección de arte, diseño de marca, estrategia de contenido y desarrollo web</dd>
+        </div>
+        <div>
+          <dt data-i18n="e.meta.period">Periodo</dt>
+          <dd data-i18n="e.meta.period.v">Marzo de 2025 — actualidad</dd>
+        </div>
+        <div>
+          <dt data-i18n="e.meta.scope">Alcance del encargo</dt>
+          <dd data-i18n="e.meta.scope.v">Marca y logo, sistema de diseño, contenido de Instagram, comunidad de WhatsApp y web de ventas</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <div class="case-kpis">
+    <div class="case-kpi reveal" data-d="0" data-tilt="5"><b data-i18n="e.n.324k">32,4 K</b><span data-i18n="e.kpi1">Seguidores, desde cero en 18 meses</span></div>
+    <div class="case-kpi reveal" data-d="1" data-tilt="5"><b data-i18n="e.n.404m">4,04 M</b><span data-i18n="e.kpi2">Visualizaciones en los últimos 90 días</span></div>
+    <div class="case-kpi reveal" data-d="2" data-tilt="5"><b data-i18n="e.n.787">78,7 %</b><span data-i18n="e.kpi3">Llegan a gente que no sigue el perfil</span></div>
+    <div class="case-kpi reveal" data-d="3" data-tilt="5"><b>3 / 10</b><span data-i18n="e.kpi4">De quienes escriben, terminan pagando</span></div>
+  </div>
+
+  <!-- ============================================================
+       01 · LA LANDING PAGE — abre el caso, es la pieza más fuerte
+       ============================================================ -->
+  <section class="case-sec case-sec--hero">
+    <div class="wrap">
+      <p class="kicker reveal"><span data-i18n="e.s1.k">01 — La landing page</span></p>
+      <h2 class="reveal" data-i18n="e.s1.h">Una web de ventas construida entera para la marca.</h2>
+
+      <div class="case-copy case-lead reveal" data-d="1">
+        <p data-i18n="e.s1.p1">
+          Diseñé y desarrollé la landing de Elum Tarot de principio a fin: interfaz, flujo, formularios
+          y un asistente que responde fuera de horario. Sigue el manual de identidad al milímetro
+          —azul noche, dorados y la misma familia tipográfica del contenido de Instagram— así que la
+          web no parece otra marca: parece la misma.
+        </p>
+        <p data-i18n="e.s1.p2">
+          El diseño y las funciones están terminados y aprobados por la clienta. La publicación
+          está pendiente de su decisión.
+        </p>
+      </div>
+
+      <div class="stack-lg">
+
+        <!-- Recorrido completo en escritorio -->
+        <figure class="fig reveal">
+          <div class="browser browser--scroll">
+            <div class="browser-bar">
+              <span class="tl"></span><span class="tl"></span><span class="tl"></span>
+              <span class="url">Elum Tarot — landing</span>
+            </div>
+            <div class="browser-scroll browser-scroll--tiras">
+              <img src="assets/img/elum/elum-web-desktop-1.webp" data-i18n-attr="alt:a.web.desktop" alt="" loading="lazy" width="2200" height="6884">
+              <img src="assets/img/elum/elum-web-desktop-2.webp" aria-hidden="true" alt="" loading="lazy" width="2200" height="6884">
+              <img src="assets/img/elum/elum-web-desktop-3.webp" aria-hidden="true" alt="" loading="lazy" width="2200" height="6886">
+            </div>
+          </div>
+          <figcaption data-i18n="e.s1.cap">Recorrido completo en escritorio. Puedes desplazarte dentro del marco.</figcaption>
+        </figure>
+
+        <!-- Flujo del arcano -->
+        <div class="reveal">
+          <h3 data-i18n="e.s1.h3a">«Tu Arcano del Año»: dar antes de pedir</h3>
+          <div class="case-copy case-lead">
+            <p data-i18n-html="e.s1.pa">
+              La entrada es una mini-lectura gratuita. Solo pido la fecha de nacimiento y, a cambio,
+              la persona recibe su arcano del año con una lectura breve. El email se pide
+              <strong>después</strong> de mostrar la carta, nunca antes: primero se demuestra, luego
+              se pide.
+            </p>
+          </div>
+
+          <div class="steps">
+            <figure class="step">
+              <button class="lb-open-btn" type="button" data-lb="web" data-lb-i="0">
+                <img src="assets/img/elum/elum-web-paso1-fecha.webp" data-i18n-attr="alt:a.web.p1" alt="Paso uno del flujo: el formulario pide la fecha de nacimiento" loading="lazy" width="1800" height="1223">
+              </button>
+              <figcaption><span class="step-n">01</span><span data-i18n="e.s1.st1">Solo la fecha. Todavía no se pide nada más.</span></figcaption>
+            </figure>
+            <figure class="step">
+              <button class="lb-open-btn" type="button" data-lb="web" data-lb-i="1">
+                <img src="assets/img/elum/elum-web-paso2-revelacion.webp" data-i18n-attr="alt:a.web.p2" alt="Paso dos: se revela el arcano correspondiente con una lectura breve" loading="lazy" width="1800" height="1417">
+              </button>
+              <figcaption><span class="step-n">02</span><span data-i18n="e.s1.st2">El arcano revelado, con su lectura breve.</span></figcaption>
+            </figure>
+            <figure class="step">
+              <button class="lb-open-btn" type="button" data-lb="web" data-lb-i="2">
+                <img src="assets/img/elum/elum-web-paso3-email.webp" data-i18n-attr="alt:a.web.p3" alt="Paso tres: se pide el email a cambio de la lectura completa" loading="lazy" width="1800" height="1992">
+              </button>
+              <figcaption><span class="step-n">03</span><span data-i18n="e.s1.st3">Ahora sí, el email — a cambio de la lectura completa.</span></figcaption>
+            </figure>
+            <figure class="step">
+              <button class="lb-open-btn" type="button" data-lb="web" data-lb-i="3">
+                <img src="assets/img/elum/elum-web-paso4-confirmacion.webp" data-i18n-attr="alt:a.web.p4" alt="Paso cuatro: confirmación con dos salidas, grupo de WhatsApp o seguir leyendo" loading="lazy" width="900" height="573">
+              </button>
+              <figcaption><span class="step-n">04</span><span data-i18n="e.s1.st4">Confirmación, con dos salidas: el grupo de WhatsApp o seguir leyendo.</span></figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <!-- Decisiones de producto -->
+        <div class="reveal">
+          <h3 data-i18n="e.s1.h3b">Por qué está montado así</h3>
+          <div class="decision">
+            <p data-i18n="e.s1.d1">
+              La captura de email abre un canal paralelo al WhatsApp que ya funcionaba, sin competir
+              con él. Al final del flujo cada persona elige: entra al grupo gratuito de WhatsApp o se
+              queda solo en correo. Es sumar un canal, no reemplazar el que ya daba resultado.
+            </p>
+            <p data-i18n="e.s1.d2">
+              El asistente resuelve las dudas de entrada —cómo son las lecturas, qué ritual encaja con
+              cada momento, cómo se reserva— para que quien llega de madrugada no se quede sin
+              respuesta. Lleva un aviso visible de que puede equivocarse y redirige a WhatsApp o correo
+              para confirmar cualquier cosa importante: filtra y orienta, pero la reserva y la relación
+              con la clienta siguen siendo humanas.
+            </p>
+          </div>
+        </div>
+
+        <!-- Asistente + móvil -->
+        <!-- Asistente -->
+        <figure class="fig fig--narrow reveal">
+          <button class="lb-open-btn" type="button" data-lb="web" data-lb-i="4">
+            <img src="assets/img/elum/elum-web-asistente.webp" data-i18n-attr="alt:a.web.asst" alt="Asistente conversacional de la web respondiendo una duda sobre cómo se recibe la lectura" loading="lazy" width="1176" height="1800">
+          </button>
+          <figcaption data-i18n="e.s1.capAsst">El asistente en uso, con su aviso al pie.</figcaption>
+        </figure>
+
+        <!-- Móvil: tres secciones, no el scroll completo -->
+        <div class="reveal">
+          <h3 data-i18n="e.s1.h3c">En móvil</h3>
+          <div class="case-copy case-lead">
+            <p data-i18n="e.s1.capMob">La mayoría del tráfico de Elum es móvil, así que ahí es donde se verificó el diseño — no solo en escritorio.</p>
+          </div>
+          <div class="phones">
+            <figure class="phone-fig">
+              <div class="phone">
+                <button class="lb-open-btn" type="button" data-lb="mobil" data-lb-i="0">
+                  <img src="assets/img/elum/elum-mob-cabecera.webp" data-i18n-attr="alt:a.mob.cabecera" alt="Pantalla de móvil con el logo, el título en dorado sobre fondo azul noche y dos botones de acción." loading="lazy" width="500" height="1100">
+                </button>
+              </div>
+              <figcaption data-i18n="e.mob.cap1">La cabecera, con las dos llamadas a la acción.</figcaption>
+            </figure>
+            <figure class="phone-fig">
+              <div class="phone">
+                <button class="lb-open-btn" type="button" data-lb="mobil" data-lb-i="1">
+                  <img src="assets/img/elum/elum-mob-servicios.webp" data-i18n-attr="alt:a.mob.servicios" alt="Dos tarjetas de servicio en móvil: Lectura media 20 € y Pregunta individual 5 €, con lo que incluyen." loading="lazy" width="500" height="1100">
+                </button>
+              </div>
+              <figcaption data-i18n="e.mob.cap2">Servicios y precios, una tarjeta por lectura.</figcaption>
+            </figure>
+            <figure class="phone-fig">
+              <div class="phone">
+                <button class="lb-open-btn" type="button" data-lb="mobil" data-lb-i="2">
+                  <img src="assets/img/elum/elum-mob-arcano.webp" data-i18n-attr="alt:a.mob.arcano" alt="La herramienta en móvil: paso 1 de 3, con selectores de día, mes y año y el botón para revelar el arcano." loading="lazy" width="500" height="1100">
+                </button>
+              </div>
+              <figcaption data-i18n="e.mob.cap3">«Tu Arcano del Año», en el primero de sus tres pasos.</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <p class="case-note reveal">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5m0 3h.01"/></svg>
+          <span data-i18n="e.s1.note">La pasarela de pago todavía no está integrada: se añadirá más adelante, junto con los
+          productos digitales que la clienta tiene en camino.</span>
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       02 · SISTEMA VISUAL
+       ============================================================ -->
+  <section class="case-sec">
+    <div class="wrap">
+      <p class="kicker reveal"><span data-i18n="e.s2.k">02 — Sistema visual</span></p>
+      <h2 class="reveal" data-i18n="e.s2.h">Una identidad que aguanta 361 publicaciones.</h2>
+
+      <div class="case-copy case-lead reveal" data-d="1">
+        <p data-i18n="e.s2.p">
+          Partí de un manual de identidad completo: paleta, tipografías, versiones de logo, área de
+          protección y dirección fotográfica. Desde ahí, cada pieza se construye sobre las mismas
+          reglas. Por eso el feed se lee como una sola voz aunque haya cientos de publicaciones
+          detrás.
+        </p>
+      </div>
+
+      <div class="stack-lg">
+        <div class="grid-2 reveal">
+          <figure class="fig">
+            <button class="lb-open-btn" type="button" data-lb="marca" data-lb-i="0">
+              <img src="assets/img/elum/elum-manual.webp" data-i18n-attr="alt:a.manual" alt="Resumen del manual de identidad de Elum Tarot: paleta, tipografía y versiones de logo" loading="lazy" width="1800" height="2404">
+            </button>
+            <figcaption data-i18n="e.s2.capManual">Resumen del manual de identidad.</figcaption>
+          </figure>
+          <figure class="fig">
+            <div class="browser browser--scroll browser--ig">
+              <div class="browser-bar">
+                <span class="tl"></span><span class="tl"></span><span class="tl"></span>
+                <span class="url">instagram.com/elum_tarot</span>
+              </div>
+              <div class="browser-scroll">
+                <img src="assets/img/elum/elum-feed.webp" data-i18n-attr="alt:a.feed" alt="" loading="lazy" width="1500" height="2971">
+              </div>
+            </div>
+            <figcaption data-i18n="e.s2.capFeed">El perfil hoy: 32,4 K seguidores y 361 publicaciones.</figcaption>
+          </figure>
+        </div>
+
+        <div class="reveal">
+          <h3 data-i18n="e.s2.h3a">Piezas de contenido</h3>
+          <div class="grid-4">
+            <figure class="fig"><button class="lb-open-btn" type="button" data-lb="marca" data-lb-i="1"><img src="assets/img/elum/elum-pieza-01.webp" data-i18n-attr="alt:a.pieza1" alt="Pieza de contenido en estilo collage con la carta El Diablo" loading="lazy" width="737" height="830"></button></figure>
+            <figure class="fig"><button class="lb-open-btn" type="button" data-lb="marca" data-lb-i="2"><img src="assets/img/elum/elum-pieza-02.webp" data-i18n-attr="alt:a.pieza2" alt="Pieza de contenido con la frase «Creo en el tarot»" loading="lazy" width="802" height="827"></button></figure>
+            <figure class="fig"><button class="lb-open-btn" type="button" data-lb="marca" data-lb-i="3"><img src="assets/img/elum/elum-pieza-03.webp" data-i18n-attr="alt:a.pieza3" alt="Pieza de contenido en estilo collage sobre magnetismo personal" loading="lazy" width="755" height="827"></button></figure>
+            <figure class="fig"><button class="lb-open-btn" type="button" data-lb="marca" data-lb-i="4"><img src="assets/img/elum/elum-pieza-04.webp" data-i18n-attr="alt:a.pieza4" alt="Pieza de contenido en estilo collage con la pregunta «¿Dónde estoy yo?»" loading="lazy" width="620" height="827"></button></figure>
+          </div>
+          <p class="fig-note" data-i18n="e.s2.note">Collage vintage, carta y frase: el formato que sostiene la línea editorial del feed.</p>
+        </div>
+
+        <div class="reveal">
+          <h3 data-i18n="e.s2.h3b">Vídeo</h3>
+          <div class="case-copy case-lead">
+            <p data-i18n="e.s2.pVideo">Grabo y edito los reels de la cuenta. Estos tres marcan los dos registros que conviven en el perfil.</p>
+          </div>
+          <div class="grid-3 grid-align-end reels">
+            <figure class="fig">
+              <button class="lb-open-btn" type="button" data-lb="reels" data-lb-i="0">
+                <img src="assets/img/elum/elum-reel-01.webp" data-i18n-attr="alt:a.reel1" alt="Fotograma del reel sobre agua de Florida y cáscara de pomelo" loading="lazy" width="260" height="460">
+              </button>
+              <figcaption data-i18n="e.s2.cap1">Agua de Florida — con la voz de la tarotista.</figcaption>
+            </figure>
+            <figure class="fig">
+              <button class="lb-open-btn" type="button" data-lb="reels" data-lb-i="1">
+                <img src="assets/img/elum/elum-reel-02.webp" data-i18n-attr="alt:a.reel2" alt="Fotograma del reel sobre la Vera Sibilla Italiana" loading="lazy" width="453" height="807">
+              </button>
+              <figcaption data-i18n="e.s2.cap2">Vera Sibilla Italiana — la baraja que abre su propia línea de contenido.</figcaption>
+            </figure>
+            <figure class="fig">
+              <button class="lb-open-btn" type="button" data-lb="reels" data-lb-i="2">
+                <img src="assets/img/elum/elum-reel-03.webp" data-i18n-attr="alt:a.reel3" alt="Fotograma del reel en formato meme que superó los dos millones y medio de reproducciones" loading="lazy" width="473" height="845">
+              </button>
+              <figcaption data-i18n="e.s2.cap3">El reel que llegó a 2,5 M de reproducciones.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EL SISTEMA DE IDENTIDAD ============ -->
+  <section class="case-sec section-alt" id="identidad">
+    <div class="wrap">
+      <h2 class="reveal" data-i18n="id.h">El sistema de identidad</h2>
+      <div class="case-copy case-lead reveal"><p data-i18n="id.lead"></p></div>
+
+      <div class="stack-lg">
+        <div class="pan pe reveal">
+          <div class="pe-head">
+            <p class="pe-eyebrow"><i></i><span data-i18n="id.eye"></span></p>
+            <h3 class="pe-title" data-i18n="id.pal.h"></h3>
+            <p class="pe-sub" data-i18n="id.pal.p"></p>
+          </div>
+          <div>
+            <p class="pe-eyebrow pe-eyebrow--sec"><i></i><span data-i18n="id.pal.g1"></span></p>
+            <ul class="paleta">
+              <li class="tono">
+                <span class="tono-m" style="background:#0B0E1A"></span>
+                <b data-i18n="id.c1"></b>
+                <code>#0B0E1A</code>
+                <span data-i18n="id.u1"></span>
+              </li>
+              <li class="tono">
+                <span class="tono-m" style="background:#C9A24E"></span>
+                <b data-i18n="id.c2"></b>
+                <code>#C9A24E</code>
+                <span data-i18n="id.u2"></span>
+              </li>
+              <li class="tono">
+                <span class="tono-m" style="background:#E8CE8E"></span>
+                <b data-i18n="id.c3"></b>
+                <code>#E8CE8E</code>
+                <span data-i18n="id.u3"></span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="pe-eyebrow pe-eyebrow--sec"><i></i><span data-i18n="id.pal.g2"></span></p>
+            <ul class="paleta">
+              <li class="tono">
+                <span class="tono-m" style="background:#8B93B8"></span>
+                <b data-i18n="id.c4"></b>
+                <code>#8B93B8</code>
+                <span data-i18n="id.u4"></span>
+              </li>
+              <li class="tono">
+                <span class="tono-m" style="background:#B98A9E"></span>
+                <b data-i18n="id.c5"></b>
+                <code>#B98A9E</code>
+                <span data-i18n="id.u5"></span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="pe-eyebrow pe-eyebrow--sec"><i></i><span data-i18n="id.pal.g3"></span></p>
+            <ul class="paleta">
+              <li class="tono">
+                <span class="tono-m" style="background:#1A1F2E"></span>
+                <b data-i18n="id.c6"></b>
+                <code>#1A1F2E</code>
+                <span data-i18n="id.u6"></span>
+              </li>
+              <li class="tono">
+                <span class="tono-m" style="background:#2D3447"></span>
+                <b data-i18n="id.c7"></b>
+                <code>#2D3447</code>
+                <span data-i18n="id.u7"></span>
+              </li>
+              <li class="tono">
+                <span class="tono-m" style="background:#F2EFE6"></span>
+                <b data-i18n="id.c8"></b>
+                <code>#F2EFE6</code>
+                <span data-i18n="id.u8"></span>
+              </li>
+              <li class="tono">
+                <span class="tono-m" style="background:#FBF8F2"></span>
+                <b data-i18n="id.c9"></b>
+                <code>#FBF8F2</code>
+                <span data-i18n="id.u9"></span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="pe-eyebrow pe-eyebrow--sec"><i></i><span data-i18n="id.mat.h"></span></p>
+            <div class="matriz">
+              <span class="matriz-p" style="flex:70;background:#151A2B"><em>70&nbsp;%</em></span>
+              <span class="matriz-p" style="flex:20;background:#C9A24E"><em>20&nbsp;%</em></span>
+              <span class="matriz-p" style="flex:10;background:#B98A9E"><em>10&nbsp;%</em></span>
+            </div>
+            <ul class="matriz-ley">
+              <li><i style="background:#151A2B"></i><span data-i18n="id.mat.1"></span></li>
+              <li><i style="background:#C9A24E"></i><span data-i18n="id.mat.2"></span></li>
+              <li><i style="background:#B98A9E"></i><span data-i18n="id.mat.3"></span></li>
+            </ul>
+            <p class="pe-nota" data-i18n="id.mat.p"></p>
+          </div>
+        </div>
+
+        <div class="pan pe reveal">
+          <div class="pe-head">
+            <p class="pe-eyebrow"><i></i><span data-i18n="id.eye"></span></p>
+            <h3 class="pe-title" data-i18n="id.tip.h"></h3>
+            <p class="pe-sub" data-i18n="id.tip.p"></p>
+          </div>
+          <div class="tipos">
+            <div class="tipo">
+              <span class="tipo-aa" style="font-family:Cinzel,Georgia,serif">Aa</span>
+              <b data-i18n="id.t1"></b>
+              <span class="tipo-rol" data-i18n="id.t1r"></span>
+              <p data-i18n="id.t1d"></p>
+            </div>
+            <div class="tipo">
+              <span class="tipo-aa" style="font-family:Marcellus,Georgia,serif">Aa</span>
+              <b data-i18n="id.t2"></b>
+              <span class="tipo-rol" data-i18n="id.t2r"></span>
+              <p data-i18n="id.t2d"></p>
+            </div>
+            <div class="tipo">
+              <span class="tipo-aa" style="font-family:"Cormorant Garamond",Georgia,serif">Aa</span>
+              <b data-i18n="id.t3"></b>
+              <span class="tipo-rol" data-i18n="id.t3r"></span>
+              <p data-i18n="id.t3d"></p>
+            </div>
+          </div>
+          <div>
+            <p class="pe-eyebrow pe-eyebrow--sec"><i></i><span data-i18n="id.esc.h"></span></p>
+            <div class="tabla-env">
+              <table class="escala">
+                <thead><tr>
+                  <th data-i18n="id.esc.uso"></th>
+                  <th data-i18n="id.esc.fam"></th>
+                  <th data-i18n="id.esc.desk"></th>
+                  <th data-i18n="id.esc.mob"></th>
+                  <th data-i18n="id.esc.int"></th>
+                  <th data-i18n="id.esc.tra"></th>
+                </tr></thead>
+                <tbody>
+                  <tr><td>H1</td><td>Cinzel Medium</td><td>72 px</td><td>40 px</td><td>110 %</td><td>+50</td></tr>
+                  <tr><td>H2</td><td>Cinzel Medium</td><td>48 px</td><td>28 px</td><td>120 %</td><td>+30</td></tr>
+                  <tr><td>H3</td><td>Marcellus Regular</td><td>28 px</td><td>20 px</td><td>130 %</td><td>+20</td></tr>
+                  <tr><td>P</td><td>Cormorant Garamond Regular</td><td>18 px</td><td>16 px</td><td>160 %</td><td>0</td></tr>
+                  <tr><td>Micro</td><td>Cormorant Medium</td><td>12 px</td><td>11 px</td><td>140 %</td><td>+30</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="pan pe reveal">
+          <div class="pe-head">
+            <p class="pe-eyebrow"><i></i><span data-i18n="id.eye"></span></p>
+            <h3 class="pe-title" data-i18n="id.reg.h"></h3>
+            <p class="pe-sub" data-i18n="id.claim"></p>
+          </div>
+          <div class="grid-2 reglas">
+            <div class="regla regla--si">
+              <p class="pe-eyebrow pe-eyebrow--sec"><i></i><span data-i18n="id.reg.si"></span></p>
+              <ul>
+                <li data-i18n="id.s1"></li>
+                <li data-i18n="id.s2"></li>
+                <li data-i18n="id.s3"></li>
+                <li data-i18n="id.s4"></li>
+              </ul>
+            </div>
+            <div class="regla regla--no">
+              <p class="pe-eyebrow pe-eyebrow--sec"><i></i><span data-i18n="id.reg.no"></span></p>
+              <ul>
+                <li data-i18n="id.n1"></li>
+                <li data-i18n="id.n2"></li>
+                <li data-i18n="id.n3"></li>
+                <li data-i18n="id.n4"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <h3 data-i18n="id.man.h"></h3>
+          <div class="case-copy case-lead"><p data-i18n="id.man.p"></p></div>
+          <div class="laminas">
+            <figure class="lamina" data-tilt="6">
+              <button class="carta-m" type="button" data-lb="manual" data-lb-i="0">
+                <img src="assets/img/elum/elum-id-01.webp" data-i18n-attr="alt:ai.01" alt="" loading="lazy" width="1600" height="893">
+              </button>
+              <figcaption><i>01</i><span data-i18n="id.l01"></span></figcaption>
+            </figure>
+            <figure class="lamina" data-tilt="6">
+              <button class="carta-m" type="button" data-lb="manual" data-lb-i="1">
+                <img src="assets/img/elum/elum-id-02.webp" data-i18n-attr="alt:ai.02" alt="" loading="lazy" width="1600" height="893">
+              </button>
+              <figcaption><i>02</i><span data-i18n="id.l02"></span></figcaption>
+            </figure>
+            <figure class="lamina" data-tilt="6">
+              <button class="carta-m" type="button" data-lb="manual" data-lb-i="2">
+                <img src="assets/img/elum/elum-id-03.webp" data-i18n-attr="alt:ai.03" alt="" loading="lazy" width="1600" height="893">
+              </button>
+              <figcaption><i>03</i><span data-i18n="id.l03"></span></figcaption>
+            </figure>
+            <figure class="lamina" data-tilt="6">
+              <button class="carta-m" type="button" data-lb="manual" data-lb-i="3">
+                <img src="assets/img/elum/elum-id-04.webp" data-i18n-attr="alt:ai.04" alt="" loading="lazy" width="1600" height="893">
+              </button>
+              <figcaption><i>04</i><span data-i18n="id.l04"></span></figcaption>
+            </figure>
+            <figure class="lamina" data-tilt="6">
+              <button class="carta-m" type="button" data-lb="manual" data-lb-i="4">
+                <img src="assets/img/elum/elum-id-05.webp" data-i18n-attr="alt:ai.05" alt="" loading="lazy" width="1600" height="893">
+              </button>
+              <figcaption><i>05</i><span data-i18n="id.l05"></span></figcaption>
+            </figure>
+            <figure class="lamina" data-tilt="6">
+              <button class="carta-m" type="button" data-lb="manual" data-lb-i="5">
+                <img src="assets/img/elum/elum-id-06.webp" data-i18n-attr="alt:ai.06" alt="" loading="lazy" width="1600" height="893">
+              </button>
+              <figcaption><i>06</i><span data-i18n="id.l06"></span></figcaption>
+            </figure>
+            <figure class="lamina" data-tilt="6">
+              <button class="carta-m" type="button" data-lb="manual" data-lb-i="6">
+                <img src="assets/img/elum/elum-id-07.webp" data-i18n-attr="alt:ai.07" alt="" loading="lazy" width="1600" height="893">
+              </button>
+              <figcaption><i>07</i><span data-i18n="id.l07"></span></figcaption>
+            </figure>
+            <figure class="lamina" data-tilt="6">
+              <button class="carta-m" type="button" data-lb="manual" data-lb-i="7">
+                <img src="assets/img/elum/elum-id-08.webp" data-i18n-attr="alt:ai.08" alt="" loading="lazy" width="1600" height="893">
+              </button>
+              <figcaption><i>08</i><span data-i18n="id.l08"></span></figcaption>
+            </figure>
+            <figure class="lamina" data-tilt="6">
+              <button class="carta-m" type="button" data-lb="manual" data-lb-i="8">
+                <img src="assets/img/elum/elum-id-09.webp" data-i18n-attr="alt:ai.09" alt="" loading="lazy" width="1600" height="893">
+              </button>
+              <figcaption><i>09</i><span data-i18n="id.l09"></span></figcaption>
+            </figure>
+            <figure class="lamina" data-tilt="6">
+              <button class="carta-m" type="button" data-lb="manual" data-lb-i="9">
+                <img src="assets/img/elum/elum-id-10.webp" data-i18n-attr="alt:ai.10" alt="" loading="lazy" width="1600" height="893">
+              </button>
+              <figcaption><i>10</i><span data-i18n="id.l10"></span></figcaption>
+            </figure>
+            <figure class="lamina" data-tilt="6">
+              <button class="carta-m" type="button" data-lb="manual" data-lb-i="10">
+                <img src="assets/img/elum/elum-id-11.webp" data-i18n-attr="alt:ai.11" alt="" loading="lazy" width="1600" height="893">
+              </button>
+              <figcaption><i>11</i><span data-i18n="id.l11"></span></figcaption>
+            </figure>
+            <figure class="lamina" data-tilt="6">
+              <button class="carta-m" type="button" data-lb="manual" data-lb-i="11">
+                <img src="assets/img/elum/elum-id-12.webp" data-i18n-attr="alt:ai.12" alt="" loading="lazy" width="1600" height="893">
+              </button>
+              <figcaption><i>12</i><span data-i18n="id.l12"></span></figcaption>
+            </figure>
+            <figure class="lamina" data-tilt="6">
+              <button class="carta-m" type="button" data-lb="manual" data-lb-i="12">
+                <img src="assets/img/elum/elum-id-13.webp" data-i18n-attr="alt:ai.13" alt="" loading="lazy" width="1600" height="893">
+              </button>
+              <figcaption><i>13</i><span data-i18n="id.l13"></span></figcaption>
+            </figure>
+            <figure class="lamina" data-tilt="6">
+              <button class="carta-m" type="button" data-lb="manual" data-lb-i="13">
+                <img src="assets/img/elum/elum-id-14.webp" data-i18n-attr="alt:ai.14" alt="" loading="lazy" width="1600" height="893">
+              </button>
+              <figcaption><i>14</i><span data-i18n="id.l14"></span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       03 · EVOLUCIÓN
+       ============================================================ -->
+  <section class="case-sec section-alt">
+    <div class="wrap">
+      <p class="kicker reveal"><span data-i18n="e.s3.k">03 — Evolución</span></p>
+      <h2 class="reveal" data-i18n="e.s3.h">Del primer post a los trescientos sesenta y uno.</h2>
+
+      <div class="grid-2 reveal" data-d="1">
+        <div class="case-copy">
+          <p data-i18n-html="e.s3.p1">
+            El perfil arrancó el <strong>3 de marzo de 2025</strong>. A la derecha, las primeras
+            publicaciones que salieron.
+          </p>
+          <p data-i18n="e.s3.p2">
+            Dieciocho meses después son 361 publicaciones y 32,4 K seguidores. Ese ritmo no sale de un
+            golpe de suerte: sale de publicar con criterio, mirar los datos y corregir el rumbo.
+          </p>
+        </div>
+        <figure class="fig">
+          <button class="lb-open-btn" type="button" data-lb="evol" data-lb-i="0">
+            <img src="assets/img/elum/elum-primeros-posts.webp" data-i18n-attr="alt:a.posts" alt="Las primeras publicaciones del perfil de Elum Tarot" loading="lazy" width="1212" height="534">
+          </button>
+          <figcaption data-i18n="e.s3.cap">Las primeras publicaciones, marzo de 2025.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       04 · LOS NÚMEROS
+       ============================================================ -->
+  <section class="case-sec">
+    <div class="wrap">
+      <p class="kicker reveal"><span data-i18n="e.s4.k">04 — Los números</span></p>
+      <h2 class="reveal" data-i18n="e.s4.h">Qué dicen noventa días de datos.</h2>
+
+      <div class="case-copy case-lead reveal" data-d="1">
+        <p data-i18n="e.s4.p1">
+          Todas las cifras salen del panel profesional de Instagram, últimos 90 días
+          (agosto de 2026).
+        </p>
+      </div>
+
+      <div class="stack-lg">
+        <div class="pan pe reveal">
+          <div class="pe-head">
+            <p class="pe-eyebrow"><i></i><span data-i18n="pe.marca"></span></p>
+            <h3 class="pe-title" data-i18n="pe.n.title"></h3>
+            <p class="pe-sub" data-i18n="pe.n.sub"></p>
+          </div>
+          <div class="pe-big">
+            <div class="pe-big-i">
+              <b data-contar data-i18n="pe.n.v1"></b>
+              <span class="pe-big-l" data-i18n="pe.n.b1"></span>
+              <span class="pe-big-s" data-i18n="pe.n.b1s"></span>
+            </div>
+            <div class="pe-big-i">
+              <b data-contar data-i18n="pe.n.v2"></b>
+              <span class="pe-big-l" data-i18n="pe.n.b2"></span>
+              <span class="pe-big-s" data-i18n="pe.n.b2s"></span>
+            </div>
+            <div class="pe-big-i">
+              <b data-contar data-i18n="pe.n.v3"></b>
+              <span class="pe-big-l" data-i18n="pe.n.b3"></span>
+              <span class="pe-big-s" data-i18n="pe.n.b3s"></span>
+            </div>
+          </div>
+          <div>
+            <p class="pe-eyebrow pe-eyebrow--sec"><i></i><span data-i18n="pe.n.origen"></span></p>
+            <div class="pe-split" data-barra="78.7">
+              <span class="pe-split-a"><em data-i18n="pe.n.nosig"></em></span>
+              <span class="pe-split-b"><em data-i18n="pe.n.sig"></em></span>
+            </div>
+            <p class="pe-nota" data-i18n="pe.n.nota"></p>
+          </div>
+          <div class="pe-menores">
+            <div><b data-contar data-i18n="pe.n.m1v"></b><span data-i18n="pe.n.m1"></span></div>
+            <div><b data-contar data-i18n="pe.n.m2v"></b><span data-i18n="pe.n.m2"></span></div>
+            <div><b data-contar data-i18n="pe.n.m3v"></b><span data-i18n="pe.n.m3"></span></div>
+            <div><b data-contar data-i18n="pe.n.m4v"></b><span data-i18n="pe.n.m4"></span></div>
+          </div>
+          <p class="pe-foot"><span data-i18n="pe.fuente1"></span><span data-i18n="pe.marca"></span></p>
+        </div>
+
+        <div class="pan pe reveal">
+          <div class="pe-head">
+            <p class="pe-eyebrow"><i></i><span data-i18n="pe.marca"></span></p>
+            <h3 class="pe-title" data-i18n="pe.a.title"></h3>
+            <p class="pe-sub" data-i18n="pe.a.sub"></p>
+          </div>
+          <div class="grid-2 rangos">
+            <div class="pe-col">
+              <p class="pe-eyebrow pe-eyebrow--sec"><i></i><span data-i18n="pe.a.sexo"></span></p>
+              <div class="pe-split" data-barra="85.5">
+                <span class="pe-split-a"><em data-i18n="pe.a.muj.v"></em></span>
+                <span class="pe-split-b"><em data-i18n="pe.a.hom.v"></em></span>
+              </div>
+              <p class="pe-split-pies"><span data-i18n="pe.a.muj"></span><span data-i18n="pe.a.hom"></span></p>
+              <p class="pe-eyebrow pe-eyebrow--sec pe-sep"><i></i><span data-i18n="pe.a.edad"></span></p>
+              <ul class="pe-edades">
+                <li class="tenue">
+                  <span class="pe-edad-t">13-17</span>
+                  <span class="barra barra--tenue" data-barra="2.0" data-barra-d="60"></span>
+                  <span class="pe-edad-v" data-contar>0,7&nbsp;%</span>
+                </li>
+                <li class="tenue">
+                  <span class="pe-edad-t">18-24</span>
+                  <span class="barra barra--tenue" data-barra="23.2" data-barra-d="120"></span>
+                  <span class="pe-edad-v" data-contar>8,0&nbsp;%</span>
+                </li>
+                <li>
+                  <span class="pe-edad-t">25-34</span>
+                  <span class="barra" data-barra="100.0" data-barra-d="180"></span>
+                  <span class="pe-edad-v" data-contar>34,5&nbsp;%</span>
+                </li>
+                <li>
+                  <span class="pe-edad-t">35-44</span>
+                  <span class="barra" data-barra="97.4" data-barra-d="240"></span>
+                  <span class="pe-edad-v" data-contar>33,6&nbsp;%</span>
+                </li>
+                <li class="tenue">
+                  <span class="pe-edad-t">45-54</span>
+                  <span class="barra barra--tenue" data-barra="44.6" data-barra-d="300"></span>
+                  <span class="pe-edad-v" data-contar>15,4&nbsp;%</span>
+                </li>
+                <li class="tenue">
+                  <span class="pe-edad-t">55-64</span>
+                  <span class="barra barra--tenue" data-barra="16.2" data-barra-d="360"></span>
+                  <span class="pe-edad-v" data-contar>5,6&nbsp;%</span>
+                </li>
+                <li class="tenue">
+                  <span class="pe-edad-t">65+</span>
+                  <span class="barra barra--tenue" data-barra="6.1" data-barra-d="420"></span>
+                  <span class="pe-edad-v" data-contar>2,1&nbsp;%</span>
+                </li>
+              </ul>
+              <p class="pe-destacado" data-i18n="pe.a.edad.nota"></p>
+            </div>
+            <div class="pe-col">
+              <p class="pe-eyebrow pe-eyebrow--sec"><i></i><span data-i18n="pe.a.paises"></span></p>
+              <ul class="pe-paises">
+                <li>
+                  <span class="pe-pais-n" data-i18n="pe.a.p0"></span>
+                  <b data-contar>28,6&nbsp;%</b>
+                  <span class="barra" data-barra="100.0" data-barra-d="60"></span>
+                </li>
+                <li>
+                  <span class="pe-pais-n" data-i18n="pe.a.p1"></span>
+                  <b data-contar>19,9&nbsp;%</b>
+                  <span class="barra" data-barra="69.6" data-barra-d="130"></span>
+                </li>
+                <li>
+                  <span class="pe-pais-n" data-i18n="pe.a.p2"></span>
+                  <b data-contar>11,5&nbsp;%</b>
+                  <span class="barra" data-barra="40.2" data-barra-d="200"></span>
+                </li>
+                <li class="tenue">
+                  <span class="pe-pais-n" data-i18n="pe.a.p3"></span>
+                  <b data-contar>9,5&nbsp;%</b>
+                  <span class="barra barra--tenue" data-barra="33.2" data-barra-d="270"></span>
+                </li>
+                <li class="tenue">
+                  <span class="pe-pais-n" data-i18n="pe.a.p4"></span>
+                  <b data-contar>5,5&nbsp;%</b>
+                  <span class="barra barra--tenue" data-barra="19.2" data-barra-d="340"></span>
+                </li>
+              </ul>
+              <div class="pe-callout">
+                <b data-i18n="pe.a.callout.b"></b>
+                <p data-i18n="pe.a.callout.p"></p>
+              </div>
+            </div>
+          </div>
+          <p class="pe-foot"><span data-i18n="pe.fuente2"></span><span data-i18n="pe.marca"></span></p>
+        </div>
+
+        <div class="reveal">
+          <div class="case-copy case-lead">
+            <p data-i18n="e.s4.p2">
+              Cruzando el alcance con el seguimiento de consultas aparece lo que para mí es la
+              conclusión del caso, y la razón por la que no publico solo lo que más se ve.
+            </p>
+          </div>
+        <div class="pan pe reveal">
+          <div class="pe-head">
+            <p class="pe-eyebrow"><i></i><span data-i18n="pe.marca"></span></p>
+            <h3 class="pe-title" data-i18n="pe.m.title"></h3>
+            <p class="pe-sub" data-i18n="pe.m.sub"></p>
+          </div>
+          <div class="grid-2 motores">
+            <div class="motor">
+              <p class="pe-eyebrow pe-eyebrow--sec"><i></i><span data-i18n="pe.m.a.tag"></span></p>
+              <h4 data-i18n="pe.m.a.h"></h4>
+              <p class="motor-s" data-i18n="pe.m.a.s"></p>
+              <b class="motor-v" data-contar data-i18n="pe.m.a.v"></b>
+              <p class="motor-vs" data-i18n="pe.m.a.vs"></p>
+              <ul class="motor-r">
+                <li><b data-i18n="pe.m.a.r1"></b><span data-i18n="pe.m.a.r1t"></span></li>
+                <li class="tenue"><b data-i18n="pe.m.a.r2"></b><span data-i18n="pe.m.a.r2t"></span></li>
+              </ul>
+            </div>
+            <div class="motor motor--on">
+              <p class="pe-eyebrow pe-eyebrow--sec"><i></i><span data-i18n="pe.m.b.tag"></span></p>
+              <h4 data-i18n="pe.m.b.h"></h4>
+              <p class="motor-s" data-i18n="pe.m.b.s"></p>
+              <b class="motor-v" data-contar data-i18n="pe.m.b.v"></b>
+              <p class="motor-vs" data-i18n="pe.m.b.vs"></p>
+              <ul class="motor-r">
+                <li><b data-i18n="pe.m.b.r1"></b><span data-i18n="pe.m.b.r1t"></span></li>
+                <li><b data-i18n="pe.m.b.r2"></b><span data-i18n="pe.m.b.r2t"></span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="pe-leccion">
+            <b data-i18n="pe.m.lec"></b>
+            <p data-i18n="pe.m.lec.p"></p>
+          </div>
+          <p class="pe-foot"><span data-i18n="pe.fuente4"></span><span data-i18n="pe.marca"></span></p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       05 · EL EMBUDO
+       ============================================================ -->
+  <section class="case-sec section-alt">
+    <div class="wrap">
+      <p class="kicker reveal"><span data-i18n="e.s5.k">05 — El embudo</span></p>
+      <h2 class="reveal" data-i18n="e.s5.h">De una publicación a una consulta pagada.</h2>
+
+      <div class="stack-lg">
+        <div class="pan pe reveal">
+          <div class="pe-head">
+            <p class="pe-eyebrow"><i></i><span data-i18n="pe.marca"></span></p>
+            <h3 class="pe-title" data-i18n="pe.e.title"></h3>
+            <p class="pe-sub" data-i18n="pe.e.sub"></p>
+          </div>
+          <ol class="embudo">
+            <li class="etapa">
+              <span class="etapa-n">01</span>
+              <h4 data-i18n="pe.e.1"></h4>
+              <b class="etapa-v" data-contar data-i18n="pe.e.1v"></b>
+              <span class="etapa-u" data-i18n="pe.e.1u"></span>
+              <span class="etapa-nota" data-i18n="pe.e.1n"></span>
+            </li>
+            <li class="etapa">
+              <span class="etapa-n">02</span>
+              <h4 data-i18n="pe.e.2"></h4>
+              <b class="etapa-v" data-contar data-i18n="pe.e.2v"></b>
+              <span class="etapa-u" data-i18n="pe.e.2u"></span>
+              <span class="etapa-nota" data-i18n="pe.e.2n"></span>
+            </li>
+            <li class="etapa">
+              <span class="etapa-n">03</span>
+              <h4 data-i18n="pe.e.3"></h4>
+              <b class="etapa-v" data-contar data-i18n="pe.e.3v"></b>
+              <span class="etapa-u" data-i18n="pe.e.3u"></span>
+              <span class="etapa-nota" data-i18n="pe.e.3n"></span>
+            </li>
+            <li class="etapa">
+              <span class="etapa-n">04</span>
+              <h4 data-i18n="pe.e.4"></h4>
+              <b class="etapa-v etapa-v--txt" data-i18n="pe.e.4v"></b>
+              <span class="etapa-u" data-i18n="pe.e.4u"></span>
+              <span class="etapa-nota" data-i18n="pe.e.4n"></span>
+            </li>
+            <li class="etapa etapa--fin">
+              <span class="etapa-n">05</span>
+              <h4 data-i18n="pe.e.5"></h4>
+              <b class="etapa-v etapa-v--txt" data-i18n="pe.e.5v"></b>
+                      <span class="etapa-nota" data-i18n="pe.e.5n"></span>
+            </li>
+          </ol>
+          <div>
+            <p class="pe-eyebrow pe-eyebrow--sec"><i></i><span data-i18n="pe.e.conv"></span></p>
+            <div class="conversion">
+              <div class="conv-puntos" aria-hidden="true">
+                <i class="on"></i>
+                <i class="on"></i>
+                <i class="on"></i>
+                <i class=""></i>
+                <i class=""></i>
+                <i class=""></i>
+                <i class=""></i>
+                <i class=""></i>
+                <i class=""></i>
+                <i class=""></i>
+              </div>
+              <div class="conv-txt">
+                <b data-i18n="pe.e.conv.b"></b>
+                <p data-i18n="pe.e.conv.p"></p>
+              </div>
+            </div>
+          </div>
+          <p class="pe-foot"><span data-i18n="pe.fuente3"></span><span data-i18n="pe.marca"></span></p>
+        </div>
+
+        <div class="case-copy reveal">
+          <p data-i18n="e.s5.p1">
+            El contenido educativo —diferencias entre cartas, significados, numerología del tarot— no
+            es lo que más interacción genera, pero es lo que convierte: es el que más se guarda y el
+            que empuja a la gente a escribir por WhatsApp o por privado. El contenido tipo meme cumple
+            otra función: genera el alcance y la interacción masiva que hacen crecer la cuenta, pero la
+            decisión de consultar nace casi siempre del contenido que enseña algo.
+          </p>
+          <p data-i18n="e.s5.p2">
+            La entrada es directa: el link de la bio lleva al WhatsApp. No hay pasos intermedios ni
+            automatizaciones — quien escribe ya llegó con intención.
+          </p>
+          <p data-i18n="e.s5.p3">
+            La conversión es rápida. Cuando alguien escribe pidiendo una consulta, casi nunca hay un
+            tiempo de duda: si lo pide, es porque ya lo decidió. Hay otro perfil de persona que escribe
+            solo para pedir información y no siempre convierte, pero de quienes preguntan
+            específicamente por una lectura, la mayoría paga.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       06 · EL MAZO
+       ============================================================ -->
+  <section class="case-sec">
+    <div class="wrap">
+      <p class="kicker reveal"><span data-i18n="e.s6.k">06 — El mazo</span></p>
+      <h2 class="reveal" data-i18n="e.s6.h">Veintidós cartas, un solo sistema.</h2>
+
+      <div class="case-copy case-lead reveal" data-d="1">
+        <p data-i18n="e.s6.p">
+          Diseñé los 22 arcanos mayores para el contenido didáctico de Instagram y para la sección de
+          aprendizaje de la web. Grabado dorado sobre azul noche, con el mismo tratamiento de textura y
+          tipografía en las 22. Un set largo demuestra dirección de arte mejor que una pieza suelta
+          bien resuelta.
+        </p>
+      </div>
+
+      <div class="stack-lg">
+        <div class="pan pe reveal">
+          <div class="pe-head">
+            <p class="pe-eyebrow"><i></i><span data-i18n="pe.marca"></span></p>
+            <h3 class="pe-title" data-i18n="pe.z.title"></h3>
+            <p class="pe-sub" data-i18n="pe.z.sub"></p>
+          </div>
+          <div class="mazo">
+            <figure class="carta" data-tilt="9">
+              <button class="carta-m" type="button" data-lb="mazo" data-lb-i="0">
+                <img src="assets/img/elum/elum-arcano-00.webp" data-i18n-attr="alt:aa.00" alt="" loading="lazy" width="420" height="735">
+              </button>
+              <figcaption><b data-i18n="pe.z.a00"></b><em>0</em></figcaption>
+            </figure>
+            <figure class="carta" data-tilt="9">
+              <button class="carta-m" type="button" data-lb="mazo" data-lb-i="1">
+                <img src="assets/img/elum/elum-arcano-01.webp" data-i18n-attr="alt:aa.01" alt="" loading="lazy" width="420" height="735">
+              </button>
+              <figcaption><b data-i18n="pe.z.a01"></b><em>I</em></figcaption>
+            </figure>
+            <figure class="carta" data-tilt="9">
+              <button class="carta-m" type="button" data-lb="mazo" data-lb-i="2">
+                <img src="assets/img/elum/elum-arcano-02.webp" data-i18n-attr="alt:aa.02" alt="" loading="lazy" width="420" height="735">
+              </button>
+              <figcaption><b data-i18n="pe.z.a02"></b><em>II</em></figcaption>
+            </figure>
+            <figure class="carta" data-tilt="9">
+              <button class="carta-m" type="button" data-lb="mazo" data-lb-i="3">
+                <img src="assets/img/elum/elum-arcano-03.webp" data-i18n-attr="alt:aa.03" alt="" loading="lazy" width="420" height="735">
+              </button>
+              <figcaption><b data-i18n="pe.z.a03"></b><em>III</em></figcaption>
+            </figure>
+            <figure class="carta" data-tilt="9">
+              <button class="carta-m" type="button" data-lb="mazo" data-lb-i="4">
+                <img src="assets/img/elum/elum-arcano-04.webp" data-i18n-attr="alt:aa.04" alt="" loading="lazy" width="420" height="735">
+              </button>
+              <figcaption><b data-i18n="pe.z.a04"></b><em>IV</em></figcaption>
+            </figure>
+            <figure class="carta" data-tilt="9">
+              <button class="carta-m" type="button" data-lb="mazo" data-lb-i="5">
+                <img src="assets/img/elum/elum-arcano-05.webp" data-i18n-attr="alt:aa.05" alt="" loading="lazy" width="420" height="735">
+              </button>
+              <figcaption><b data-i18n="pe.z.a05"></b><em>V</em></figcaption>
+            </figure>
+            <figure class="carta" data-tilt="9">
+              <button class="carta-m" type="button" data-lb="mazo" data-lb-i="6">
+                <img src="assets/img/elum/elum-arcano-06.webp" data-i18n-attr="alt:aa.06" alt="" loading="lazy" width="420" height="735">
+              </button>
+              <figcaption><b data-i18n="pe.z.a06"></b><em>VI</em></figcaption>
+            </figure>
+            <figure class="carta" data-tilt="9">
+              <button class="carta-m" type="button" data-lb="mazo" data-lb-i="7">
+                <img src="assets/img/elum/elum-arcano-07.webp" data-i18n-attr="alt:aa.07" alt="" loading="lazy" width="420" height="735">
+              </button>
+              <figcaption><b data-i18n="pe.z.a07"></b><em>VII</em></figcaption>
+            </figure>
+            <figure class="carta" data-tilt="9">
+              <button class="carta-m" type="button" data-lb="mazo" data-lb-i="8">
+                <img src="assets/img/elum/elum-arcano-08.webp" data-i18n-attr="alt:aa.08" alt="" loading="lazy" width="420" height="735">
+              </button>
+              <figcaption><b data-i18n="pe.z.a08"></b><em>VIII</em></figcaption>
+            </figure>
+            <figure class="carta" data-tilt="9">
+              <button class="carta-m" type="button" data-lb="mazo" data-lb-i="9">
+                <img src="assets/img/elum/elum-arcano-09.webp" data-i18n-attr="alt:aa.09" alt="" loading="lazy" width="420" height="735">
+              </button>
+              <figcaption><b data-i18n="pe.z.a09"></b><em>IX</em></figcaption>
+            </figure>
+            <figure class="carta" data-tilt="9">
+              <button class="carta-m" type="button" data-lb="mazo" data-lb-i="10">
+                <img src="assets/img/elum/elum-arcano-10.webp" data-i18n-attr="alt:aa.10" alt="" loading="lazy" width="420" height="735">
+              </button>
+              <figcaption><b data-i18n="pe.z.a10"></b><em>X</em></figcaption>
+            </figure>
+            <figure class="carta" data-tilt="9">
+              <button class="carta-m" type="button" data-lb="mazo" data-lb-i="11">
+                <img src="assets/img/elum/elum-arcano-11.webp" data-i18n-attr="alt:aa.11" alt="" loading="lazy" width="420" height="735">
+              </button>
+              <figcaption><b data-i18n="pe.z.a11"></b><em>XI</em></figcaption>
+            </figure>
+            <figure class="carta" data-tilt="9">
+              <button class="carta-m" type="button" data-lb="mazo" data-lb-i="12">
+                <img src="assets/img/elum/elum-arcano-12.webp" data-i18n-attr="alt:aa.12" alt="" loading="lazy" width="420" height="735">
+              </button>
+              <figcaption><b data-i18n="pe.z.a12"></b><em>XII</em></figcaption>
+            </figure>
+            <figure class="carta" data-tilt="9">
+              <button class="carta-m" type="button" data-lb="mazo" data-lb-i="13">
+                <img src="assets/img/elum/elum-arcano-13.webp" data-i18n-attr="alt:aa.13" alt="" loading="lazy" width="420" height="735">
+              </button>
+              <figcaption><b data-i18n="pe.z.a13"></b><em>XIII</em></figcaption>
+            </figure>
+            <figure class="carta" data-tilt="9">
+              <button class="carta-m" type="button" data-lb="mazo" data-lb-i="14">
+                <img src="assets/img/elum/elum-arcano-14.webp" data-i18n-attr="alt:aa.14" alt="" loading="lazy" width="420" height="735">
+              </button>
+              <figcaption><b data-i18n="pe.z.a14"></b><em>XIV</em></figcaption>
+            </figure>
+            <figure class="carta" data-tilt="9">
+              <button class="carta-m" type="button" data-lb="mazo" data-lb-i="15">
+                <img src="assets/img/elum/elum-arcano-15.webp" data-i18n-attr="alt:aa.15" alt="" loading="lazy" width="420" height="735">
+              </button>
+              <figcaption><b data-i18n="pe.z.a15"></b><em>XV</em></figcaption>
+            </figure>
+            <figure class="carta" data-tilt="9">
+              <button class="carta-m" type="button" data-lb="mazo" data-lb-i="16">
+                <img src="assets/img/elum/elum-arcano-16.webp" data-i18n-attr="alt:aa.16" alt="" loading="lazy" width="420" height="735">
+              </button>
+              <figcaption><b data-i18n="pe.z.a16"></b><em>XVI</em></figcaption>
+            </figure>
+            <figure class="carta" data-tilt="9">
+              <button class="carta-m" type="button" data-lb="mazo" data-lb-i="17">
+                <img src="assets/img/elum/elum-arcano-17.webp" data-i18n-attr="alt:aa.17" alt="" loading="lazy" width="420" height="735">
+              </button>
+              <figcaption><b data-i18n="pe.z.a17"></b><em>XVII</em></figcaption>
+            </figure>
+            <figure class="carta" data-tilt="9">
+              <button class="carta-m" type="button" data-lb="mazo" data-lb-i="18">
+                <img src="assets/img/elum/elum-arcano-18.webp" data-i18n-attr="alt:aa.18" alt="" loading="lazy" width="420" height="735">
+              </button>
+              <figcaption><b data-i18n="pe.z.a18"></b><em>XVIII</em></figcaption>
+            </figure>
+            <figure class="carta" data-tilt="9">
+              <button class="carta-m" type="button" data-lb="mazo" data-lb-i="19">
+                <img src="assets/img/elum/elum-arcano-19.webp" data-i18n-attr="alt:aa.19" alt="" loading="lazy" width="420" height="735">
+              </button>
+              <figcaption><b data-i18n="pe.z.a19"></b><em>XIX</em></figcaption>
+            </figure>
+            <figure class="carta" data-tilt="9">
+              <button class="carta-m" type="button" data-lb="mazo" data-lb-i="20">
+                <img src="assets/img/elum/elum-arcano-20.webp" data-i18n-attr="alt:aa.20" alt="" loading="lazy" width="420" height="735">
+              </button>
+              <figcaption><b data-i18n="pe.z.a20"></b><em>XX</em></figcaption>
+            </figure>
+            <figure class="carta" data-tilt="9">
+              <button class="carta-m" type="button" data-lb="mazo" data-lb-i="21">
+                <img src="assets/img/elum/elum-arcano-21.webp" data-i18n-attr="alt:aa.21" alt="" loading="lazy" width="420" height="735">
+              </button>
+              <figcaption><b data-i18n="pe.z.a21"></b><em>XXI</em></figcaption>
+            </figure>
+          </div>
+          <div class="pe-tres">
+            <div><b data-i18n="pe.z.c1"></b><p data-i18n="pe.z.c1p"></p></div>
+            <div><b data-i18n="pe.z.c2"></b><p data-i18n="pe.z.c2p"></p></div>
+            <div><b data-i18n="pe.z.c3"></b><p data-i18n="pe.z.c3p"></p></div>
+          </div>
+          <p class="pe-foot"><span data-i18n="pe.fuente5"></span><span data-i18n="pe.marca"></span></p>
+        </div>
+
+        <div class="reveal">
+          <div class="grid-3">
+            <figure class="fig">
+              <button class="lb-open-btn" type="button" data-lb="arcanos3" data-lb-i="0">
+                <img src="assets/img/elum/elum-arcano-rueda.webp" data-i18n-attr="alt:a.arcano.rueda" alt="Carta de La Rueda de la Fortuna en grabado dorado sobre azul noche" loading="lazy" width="760" height="1330">
+              </button>
+              <figcaption data-i18n="e.s6.cap1">X — La Rueda de la Fortuna</figcaption>
+            </figure>
+            <figure class="fig">
+              <button class="lb-open-btn" type="button" data-lb="arcanos3" data-lb-i="1">
+                <img src="assets/img/elum/elum-arcano-estrella.webp" data-i18n-attr="alt:a.arcano.estrella" alt="Carta de La Estrella en grabado dorado sobre azul noche" loading="lazy" width="760" height="1331">
+              </button>
+              <figcaption data-i18n="e.s6.cap2">XVII — La Estrella</figcaption>
+            </figure>
+            <figure class="fig">
+              <button class="lb-open-btn" type="button" data-lb="arcanos3" data-lb-i="2">
+                <img src="assets/img/elum/elum-arcano-luna.webp" data-i18n-attr="alt:a.arcano.luna" alt="Carta de La Luna en grabado dorado sobre azul noche" loading="lazy" width="760" height="1330">
+              </button>
+              <figcaption data-i18n="e.s6.cap3">XVIII — La Luna</figcaption>
+            </figure>
+          </div>
+          <p class="fig-note" data-i18n="e.s6.note">
+            Las mismas cartas aparecen en el contenido didáctico del feed y en la sección
+            «Tarot para principiantes» de la web: es lo que cose las dos mitades del caso.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CIERRE
+       ============================================================ -->
+  <section class="case-sec section-alt">
+    <div class="wrap">
+      <div class="case-close reveal">
+        <h2 data-i18n="e.close.h">El ciclo, cerrado.</h2>
+        <div class="case-copy">
+          <p data-i18n="e.close.p1">
+            Contenido que llega a gente que todavía no sigue la cuenta, un perfil que convierte esa
+            atención en visitas, un enlace que abre una conversación real, y ahora una web propia que
+            capta correos y responde sola cuando nadie está delante.
+          </p>
+          <p data-i18n="e.close.p2">
+            Es uno de los proyectos más completos que he llevado: el recorrido entero, y no solo una
+            parte de él.
+          </p>
+        </div>
+        <div class="case-actions">
+          <a href="portafolio.html" class="btn btn-ghost">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+            <span data-i18n="work.back">Volver al portafolio</span>
+          </a>
+          <a href="index.html#contacto" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5h18v11H8l-5 3.5z"/></svg>
+            <span data-i18n="cta.write">Escríbeme</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>© <span id="year">2026</span> Francisco Sarria</p>
+    <p data-i18n="footer.note">Diseñado y desarrollado por mí.</p>
+
+    <ul class="foot-social">
+        <li><a href="https://www.linkedin.com/in/francisco-sarria-528048232/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg class="ico-brand" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.86-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a></li>
+    </ul>
+    <a href="#contenido" class="to-top" data-i18n="footer.top">Volver arriba ↑</a>
+  </div>
+</footer>
+
+<script src="assets/js/i18n.js?v=48"></script>
+<script src="assets/js/main.js?v=48"></script>
+<script src="assets/js/motion.js?v=48" defer></script>
+<script src="assets/js/asistente.js?v=48" defer></script>
+</body>
+</html>

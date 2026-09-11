@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-i18n="k.meta.title">Kiara Soul Music &amp; Dorian Ferrer — Francisco Sarria</title>
+<meta name="description" data-i18n-attr="content:k.meta.desc" content="Caso de estudio: dos canales de música levantados desde cero con producción audiovisual asistida por IA.">
+<meta name="author" content="Francisco Sarria">
+<meta name="theme-color" content="#0B0C0E">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Kiara Soul Music &amp; Dorian Ferrer — Francisco Sarria">
+<meta property="og:description" content="Dos canales de música levantados desde cero: personajes, voz, vídeos y miniaturas.">
+<meta property="og:image" content="https://frajo10.github.io/cvfrancisco/assets/img/kiara/kiara-clip-poster.webp">
+<meta property="og:url" content="https://frajo10.github.io/cvfrancisco/kiara-dorian.html">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css?v=48">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<a class="skip-link" href="#contenido" data-i18n="a11y.skip">Ir al contenido</a>
+<div class="progress" id="progress" aria-hidden="true"><span></span></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="brand" aria-label="Francisco Sarria">
+      <span class="brand-mark">FS</span>
+      <span class="brand-name">Francisco Sarria</span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="index.html#sobre-mi"    data-i18n="nav.about">Sobre mí</a>
+      <a href="index.html#experiencia" data-i18n="nav.experience">Experiencia</a>
+      <a href="portafolio.html" class="active" data-i18n="nav.work">Portafolio</a>
+      <a href="index.html#habilidades" data-i18n="nav.skills">Habilidades</a>
+      <a href="index.html#contacto"    data-i18n="nav.contact">Contacto</a>
+
+      <div class="nav-tools">
+        <div class="lang" role="group" aria-label="Idioma">
+          <button type="button" data-lang="pt">PT</button>
+          <button type="button" data-lang="es">ES</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+        <a href="index.html#contacto" class="btn btn-primary btn-sm nav-cta" data-i18n="cta.write">Escríbeme</a>
+      </div>
+    </nav>
+
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Menú">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Grupos del lightbox -->
+    <template data-lb-set="k-sheet">
+      <i data-src="assets/img/kiara/kiara-char-01.webp" data-alt="ak.kc1"></i>
+      <i data-src="assets/img/kiara/kiara-char-02.webp" data-alt="ak.kc2"></i>
+      <i data-src="assets/img/kiara/kiara-char-03.webp" data-alt="ak.kc3"></i>
+      <i data-src="assets/img/kiara/kiara-char-04.webp" data-alt="ak.kc4"></i>
+      <i data-src="assets/img/kiara/kiara-char-05.webp" data-alt="ak.kc5"></i>
+      <i data-src="assets/img/kiara/kiara-char-06.webp" data-alt="ak.kc6"></i>
+      <i data-src="assets/img/kiara/kiara-char-07.webp" data-alt="ak.kc7"></i>
+      <i data-src="assets/img/kiara/kiara-char-08.webp" data-alt="ak.kc8"></i>
+    </template>
+    <template data-lb-set="k-pipe">
+      <i data-src="assets/img/kiara/kiara-char-01.webp" data-alt="ak.kc1"></i>
+      <i data-src="assets/img/kiara/kiara-in-vestuario.webp" data-alt="ak.kvest"></i>
+      <i data-src="assets/img/kiara/kiara-plano-16x9.webp" data-alt="ak.k16"></i>
+      <i data-src="assets/img/kiara/kiara-plano-9x16.webp" data-alt="ak.k916"></i>
+    </template>
+    <template data-lb-set="d-sheet">
+      <i data-src="assets/img/kiara/dorian-char-01.webp" data-alt="ak.dc1"></i>
+      <i data-src="assets/img/kiara/dorian-char-02.webp" data-alt="ak.dc2"></i>
+      <i data-src="assets/img/kiara/dorian-char-03.webp" data-alt="ak.dc3"></i>
+      <i data-src="assets/img/kiara/dorian-char-04.webp" data-alt="ak.dc4"></i>
+      <i data-src="assets/img/kiara/dorian-char-05.webp" data-alt="ak.dc5"></i>
+      <i data-src="assets/img/kiara/dorian-char-06.webp" data-alt="ak.dc6"></i>
+    </template>
+    <template data-lb-set="d-pipe">
+      <i data-src="assets/img/kiara/dorian-char-01.webp" data-alt="ak.dc1"></i>
+      <i data-src="assets/img/kiara/dorian-in-vestuario.webp" data-alt="ak.dvest"></i>
+      <i data-src="assets/img/kiara/dorian-plano-16x9.webp" data-alt="ak.d16"></i>
+      <i data-src="assets/img/kiara/dorian-plano-9x16.webp" data-alt="ak.d916"></i>
+    </template>
+    <template data-lb-set="voz">
+      <i data-src="assets/img/kiara/kiara-char-01.webp" data-alt="ak.kc1"></i>
+      <i data-src="assets/img/kiara/dorian-char-01.webp" data-alt="ak.dc1"></i>
+    </template>
+    <template data-lb-set="frames">
+      <i data-src="assets/img/kiara/kiara-frame-01.webp" data-alt="ak.f01"></i>
+      <i data-src="assets/img/kiara/kiara-frame-02.webp" data-alt="ak.f02"></i>
+      <i data-src="assets/img/kiara/kiara-frame-03.webp" data-alt="ak.f03"></i>
+      <i data-src="assets/img/kiara/kiara-frame-04.webp" data-alt="ak.f04"></i>
+      <i data-src="assets/img/kiara/kiara-frame-05.webp" data-alt="ak.f05"></i>
+      <i data-src="assets/img/kiara/kiara-frame-06.webp" data-alt="ak.f06"></i>
+      <i data-src="assets/img/kiara/kiara-frame-07.webp" data-alt="ak.f07"></i>
+      <i data-src="assets/img/kiara/kiara-frame-08.webp" data-alt="ak.f08"></i>
+      <i data-src="assets/img/kiara/kiara-frame-09.webp" data-alt="ak.f09"></i>
+      <i data-src="assets/img/kiara/kiara-frame-10.webp" data-alt="ak.f10"></i>
+      <i data-src="assets/img/kiara/kiara-frame-11.webp" data-alt="ak.f11"></i>
+      <i data-src="assets/img/kiara/kiara-frame-12.webp" data-alt="ak.f12"></i>
+      <i data-src="assets/img/kiara/dorian-frame-01.webp" data-alt="ak.df01"></i>
+      <i data-src="assets/img/kiara/dorian-frame-02.webp" data-alt="ak.df02"></i>
+      <i data-src="assets/img/kiara/dorian-frame-03.webp" data-alt="ak.df03"></i>
+      <i data-src="assets/img/kiara/dorian-frame-04.webp" data-alt="ak.df04"></i>
+    </template>
+    <template data-lb-set="thumbs">
+      <i data-src="assets/img/kiara/kiara-thumb-01.webp" data-alt="ak.th.k01"></i>
+      <i data-src="assets/img/kiara/kiara-thumb-02.webp" data-alt="ak.th.k02"></i>
+      <i data-src="assets/img/kiara/kiara-thumb-03.webp" data-alt="ak.th.k03"></i>
+      <i data-src="assets/img/kiara/kiara-thumb-04.webp" data-alt="ak.th.k04"></i>
+      <i data-src="assets/img/kiara/kiara-thumb-05.webp" data-alt="ak.th.k05"></i>
+    </template>
+    <template data-lb-set="thumbs-d">
+      <i data-src="assets/img/kiara/dorian-thumb-01.webp" data-alt="ak.th.d01"></i>
+      <i data-src="assets/img/kiara/dorian-thumb-02.webp" data-alt="ak.th.d02"></i>
+      <i data-src="assets/img/kiara/dorian-thumb-03.webp" data-alt="ak.th.d03"></i>
+    </template>
+
+<main id="contenido">
+
+  <!-- ============ CABECERA DEL CASO ============ -->
+  <section class="page-head case-hero">
+    <div class="wrap">
+      <a href="portafolio.html" class="back-link reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+        <span data-i18n="work.back">Volver al portafolio</span>
+      </a>
+      <p class="kicker reveal"><span data-i18n="k.cat">Producción audiovisual con IA</span></p>
+      <h1 class="reveal" data-d="1">Kiara Soul Music &amp; Dorian Ferrer</h1>
+      <p class="lead reveal" data-d="2" data-i18n="k.lead"></p>
+
+      <dl class="case-meta case-meta--4 reveal" data-d="3">
+        <div>
+          <dt data-i18n="k.years.l">Años</dt>
+          <dd data-i18n="k.years.v">2025 — presente</dd>
+        </div>
+        <div>
+          <dt data-i18n="k.role.l">Mi papel</dt>
+          <dd data-i18n="k.role.v"></dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <div class="case-kpis">
+    <div class="case-kpi reveal" data-d="0" data-tilt="5"><b data-i18n="k.n.30">30</b><span data-i18n="k.kpi1"></span></div>
+    <div class="case-kpi reveal" data-d="1" data-tilt="5"><b data-i18n="k.n.3h">≈ 3</b><span data-i18n="k.kpi2"></span></div>
+    <div class="case-kpi reveal" data-d="2" data-tilt="5"><b data-i18n="k.n.2">2</b><span data-i18n="k.kpi3"></span></div>
+    <div class="case-kpi reveal" data-d="3" data-tilt="5"><b data-i18n="k.n.1">1</b><span data-i18n="k.kpi4"></span></div>
+  </div>
+
+  <!-- ============ VÍDEO ============ -->
+  <section class="case-sec case-sec--hero">
+    <div class="wrap">
+      <figure class="fig reveal">
+        <div class="video-wrap">
+          <video class="case-video"
+                 src="assets/video/kiara-clip.mp4"
+                 poster="assets/img/kiara/kiara-clip-poster.webp"
+                 controls preload="none" playsinline
+                 width="1280" height="720"></video>
+          <button class="video-play" type="button" data-i18n-attr="aria-label:k.video.play">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7.5v9l7.5-4.5z"/></svg>
+          </button>
+        </div>
+        <figcaption data-i18n="k.video.cap"></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ CONTEXTO ============ -->
+  <section class="case-sec">
+    <div class="wrap">
+      <h2 class="reveal" data-i18n="k.ctx.h">Contexto</h2>
+      <div class="case-copy reveal" data-d="1">
+        <p data-i18n="k.ctx.p1"></p>
+        <p data-i18n="k.ctx.p2"></p>
+        <p data-i18n="k.ctx.p3"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONSISTENCIA DE PERSONAJE ============ -->
+  <section class="case-sec section-alt">
+    <div class="wrap">
+      <h2 class="reveal" data-i18n="k.s1.h">Consistencia de personaje</h2>
+      <p class="lead reveal" data-i18n="k.s1.intro"></p>
+
+      <div class="stack-lg">
+        <h3 class="reveal" data-i18n="k.s1.kiara">Kiara</h3>
+
+        <div class="pan reveal">
+        <div class="pan-head">
+          <div>
+            <p class="pan-eyebrow" data-i18n="p.sheet.eye"></p>
+            <h3 class="pan-title">Kiara</h3>
+            <p class="pan-desc" data-i18n="p.ks.desc"></p>
+          </div>
+          <ul class="pan-meta">
+            <li><b data-i18n="p.ks.m1b"></b><span data-i18n="p.ks.m1s"></span></li>
+            <li><b data-i18n="p.ks.m2b"></b><span data-i18n="p.ks.m2s"></span></li>
+            <li><b data-i18n="p.ks.m3b"></b><span data-i18n="p.ks.m3s"></span></li>
+          </ul>
+        </div>
+        <div class="pan-tiles pan-tiles--4">
+          <figure class="tile" data-tilt="7">
+            <button class="tile-media" type="button" data-lb="k-sheet" data-lb-i="0">
+              <img src="assets/img/kiara/kiara-char-01.webp" data-i18n-attr="alt:ak.kc1" alt="" loading="lazy" width="800" height="1080">
+            </button>
+            <figcaption class="tile-cap"><b><i>01</i><span data-i18n="p.ks.t1"></span></b><span data-i18n="p.ks.s1"></span></figcaption>
+          </figure>
+          <figure class="tile" data-tilt="7">
+            <button class="tile-media" type="button" data-lb="k-sheet" data-lb-i="1">
+              <img src="assets/img/kiara/kiara-char-02.webp" data-i18n-attr="alt:ak.kc2" alt="" loading="lazy" width="535" height="713">
+            </button>
+            <figcaption class="tile-cap"><b><i>02</i><span data-i18n="p.ks.t2"></span></b><span data-i18n="p.ks.s2"></span></figcaption>
+          </figure>
+          <figure class="tile" data-tilt="7">
+            <button class="tile-media" type="button" data-lb="k-sheet" data-lb-i="2">
+              <img src="assets/img/kiara/kiara-char-03.webp" data-i18n-attr="alt:ak.kc3" alt="" loading="lazy" width="535" height="713">
+            </button>
+            <figcaption class="tile-cap"><b><i>03</i><span data-i18n="p.ks.t3"></span></b><span data-i18n="p.ks.s3"></span></figcaption>
+          </figure>
+          <figure class="tile" data-tilt="7">
+            <button class="tile-media" type="button" data-lb="k-sheet" data-lb-i="3">
+              <img src="assets/img/kiara/kiara-char-04.webp" data-i18n-attr="alt:ak.kc4" alt="" loading="lazy" width="535" height="713">
+            </button>
+            <figcaption class="tile-cap"><b><i>04</i><span data-i18n="p.ks.t4"></span></b><span data-i18n="p.ks.s4"></span></figcaption>
+          </figure>
+          <figure class="tile" data-tilt="7">
+            <button class="tile-media" type="button" data-lb="k-sheet" data-lb-i="4">
+              <img src="assets/img/kiara/kiara-char-05.webp" data-i18n-attr="alt:ak.kc5" alt="" loading="lazy" width="535" height="713">
+            </button>
+            <figcaption class="tile-cap"><b><i>05</i><span data-i18n="p.ks.t5"></span></b><span data-i18n="p.ks.s5"></span></figcaption>
+          </figure>
+          <figure class="tile" data-tilt="7">
+            <button class="tile-media" type="button" data-lb="k-sheet" data-lb-i="5">
+              <img src="assets/img/kiara/kiara-char-06.webp" data-i18n-attr="alt:ak.kc6" alt="" loading="lazy" width="535" height="713">
+            </button>
+            <figcaption class="tile-cap"><b><i>06</i><span data-i18n="p.ks.t6"></span></b><span data-i18n="p.ks.s6"></span></figcaption>
+          </figure>
+          <figure class="tile" data-tilt="7">
+            <button class="tile-media" type="button" data-lb="k-sheet" data-lb-i="6">
+              <img src="assets/img/kiara/kiara-char-07.webp" data-i18n-attr="alt:ak.kc7" alt="" loading="lazy" width="535" height="713">
+            </button>
+            <figcaption class="tile-cap"><b><i>07</i><span data-i18n="p.ks.t7"></span></b><span data-i18n="p.ks.s7"></span></figcaption>
+          </figure>
+          <figure class="tile" data-tilt="7">
+            <button class="tile-media" type="button" data-lb="k-sheet" data-lb-i="7">
+              <img src="assets/img/kiara/kiara-char-08.webp" data-i18n-attr="alt:ak.kc8" alt="" loading="lazy" width="535" height="713">
+            </button>
+            <figcaption class="tile-cap"><b><i>08</i><span data-i18n="p.ks.t8"></span></b><span data-i18n="p.ks.s8"></span></figcaption>
+          </figure>
+        </div>
+        <div class="pan-foot">
+          <p data-i18n="p.ks.foot"></p>
+          <p class="pan-credits"><span data-i18n="p.cr.vis"></span><span data-i18n="p.cr.ksm"></span></p>
+        </div>
+        </div>
+
+        <div class="pan reveal">
+        <div class="pan-head">
+          <div>
+            <p class="pan-eyebrow" data-i18n="p.pipe.eye"></p>
+            <h3 class="pan-title">Kiara</h3>
+            <p class="pan-desc" data-i18n="p.kp.desc"></p>
+          </div>
+          <ul class="pan-meta">
+            <li><b data-i18n="p.kp.m1b"></b><span data-i18n="p.kp.m1s"></span></li>
+            <li><b data-i18n="p.kp.m2b"></b><span data-i18n="p.kp.m2s"></span></li>
+            <li><b data-i18n="p.kp.m3b"></b><span data-i18n="p.kp.m3s"></span></li>
+          </ul>
+        </div>
+        <div>
+          <p class="pan-label" data-i18n="p.in"></p>
+          <div class="pan-tiles pan-tiles--3 pan-tiles--in">
+            <figure class="tile" data-tilt="7">
+              <button class="tile-media" type="button" data-lb="k-pipe" data-lb-i="0">
+                <img src="assets/img/kiara/kiara-char-01.webp" data-i18n-attr="alt:ak.kc1" alt="" loading="lazy" width="800" height="1080">
+              </button>
+              <figcaption class="tile-cap"><b><i>01</i><span data-i18n="p.kp.t1"></span></b><span data-i18n="p.kp.s1"></span></figcaption>
+            </figure>
+            <figure class="tile" data-tilt="7">
+              <button class="tile-media" type="button" data-lb="k-pipe" data-lb-i="1">
+                <img src="assets/img/kiara/kiara-in-vestuario.webp" data-i18n-attr="alt:ak.kvest" alt="" loading="lazy" width="724" height="906">
+              </button>
+              <figcaption class="tile-cap"><b><i>02</i><span data-i18n="p.kp.t2"></span></b><span data-i18n="p.kp.s2"></span></figcaption>
+            </figure>
+            <figure class="tile" data-tilt="7">
+            <div class="pan-prompt">
+              <h4 data-i18n="p.prompt.h"></h4>
+              <dl>
+                <dt>CHARACTER LOCK</dt>
+                <dd>Latina, 30s, Old Hollywood
+jet-black waves below chest
+never cut, never tied</dd>
+                <dt>MAKEUP LOCK</dt>
+                <dd>black eyeliner, soft smoky
+deep ruby or wine lip</dd>
+                <dt>PHOTOREALISM</dt>
+                <dd>visible pores, real texture
+no CGI, no beauty filter</dd>
+                <dt>CAMERA LOCK</dt>
+                <dd>Arri Alexa 65 · Sony FE
+cinematic grading, 8K</dd>
+                <dt>EMOTIONAL LOCK</dt>
+                <dd>subtle always, never overact
+eyes speak before lips</dd>
+                <dt>SHOT LOCK</dt>
+                <dd>only angle, lens, framing,
+pose and expression change</dd>
+              </dl>
+            </div>
+              <figcaption class="tile-cap"><b><i>03</i><span data-i18n="p.kp.t3"></span></b><span data-i18n="p.kp.s3"></span></figcaption>
+            </figure>
+          </div>
+        </div>
+        <p class="pan-rule"><span data-i18n="p.kp.rule"></span></p>
+        <div>
+          <p class="pan-label" data-i18n="p.out"></p>
+          <div class="pan-tiles pan-tiles--out">
+            <figure class="tile tile--wide">
+              <button class="tile-media" type="button" data-lb="k-pipe" data-lb-i="2">
+                <img src="assets/img/kiara/kiara-plano-16x9.webp" data-i18n-attr="alt:ak.k16" alt="" loading="lazy" width="1628" height="916">
+              </button>
+              <figcaption class="tile-cap"><b><i>04</i><span data-i18n="p.kp.t4"></span></b><span data-i18n="p.kp.s4"></span></figcaption>
+            </figure>
+            <figure class="tile tile--tall">
+              <button class="tile-media" type="button" data-lb="k-pipe" data-lb-i="3">
+                <img src="assets/img/kiara/kiara-plano-9x16.webp" data-i18n-attr="alt:ak.k916" alt="" loading="lazy" width="515" height="916">
+              </button>
+              <figcaption class="tile-cap"><b><i>05</i><span data-i18n="p.kp.t5"></span></b><span data-i18n="p.kp.s5"></span></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="pan-foot">
+          <p data-i18n="p.kp.foot"></p>
+          <p class="pan-credits"><span data-i18n="p.cr.vis"></span><span data-i18n="p.cr.ksm"></span></p>
+        </div>
+        </div>
+
+        <h3 class="reveal" data-i18n="k.s1.dorian">Dorian Ferrer</h3>
+
+        <div class="pan reveal">
+        <div class="pan-head">
+          <div>
+            <p class="pan-eyebrow" data-i18n="p.sheet.eye"></p>
+            <h3 class="pan-title">Dorian Ferrer</h3>
+            <p class="pan-desc" data-i18n="p.ds.desc"></p>
+          </div>
+          <ul class="pan-meta">
+            <li><b data-i18n="p.ds.m1b"></b><span data-i18n="p.ds.m1s"></span></li>
+            <li><b data-i18n="p.ds.m2b"></b><span data-i18n="p.ds.m2s"></span></li>
+            <li><b data-i18n="p.ds.m3b"></b><span data-i18n="p.ds.m3s"></span></li>
+          </ul>
+        </div>
+        <div class="pan-tiles pan-tiles--3">
+          <figure class="tile" data-tilt="7">
+            <button class="tile-media" type="button" data-lb="d-sheet" data-lb-i="0">
+              <img src="assets/img/kiara/dorian-char-01.webp" data-i18n-attr="alt:ak.dc1" alt="" loading="lazy" width="721" height="961">
+            </button>
+            <figcaption class="tile-cap"><b><i>01</i><span data-i18n="p.ds.t1"></span></b><span data-i18n="p.ds.s1"></span></figcaption>
+          </figure>
+          <figure class="tile" data-tilt="7">
+            <button class="tile-media" type="button" data-lb="d-sheet" data-lb-i="1">
+              <img src="assets/img/kiara/dorian-char-02.webp" data-i18n-attr="alt:ak.dc2" alt="" loading="lazy" width="721" height="961">
+            </button>
+            <figcaption class="tile-cap"><b><i>02</i><span data-i18n="p.ds.t2"></span></b><span data-i18n="p.ds.s2"></span></figcaption>
+          </figure>
+          <figure class="tile" data-tilt="7">
+            <button class="tile-media" type="button" data-lb="d-sheet" data-lb-i="2">
+              <img src="assets/img/kiara/dorian-char-03.webp" data-i18n-attr="alt:ak.dc3" alt="" loading="lazy" width="721" height="961">
+            </button>
+            <figcaption class="tile-cap"><b><i>03</i><span data-i18n="p.ds.t3"></span></b><span data-i18n="p.ds.s3"></span></figcaption>
+          </figure>
+          <figure class="tile" data-tilt="7">
+            <button class="tile-media" type="button" data-lb="d-sheet" data-lb-i="3">
+              <img src="assets/img/kiara/dorian-char-04.webp" data-i18n-attr="alt:ak.dc4" alt="" loading="lazy" width="721" height="961">
+            </button>
+            <figcaption class="tile-cap"><b><i>04</i><span data-i18n="p.ds.t4"></span></b><span data-i18n="p.ds.s4"></span></figcaption>
+          </figure>
+          <figure class="tile" data-tilt="7">
+            <button class="tile-media" type="button" data-lb="d-sheet" data-lb-i="4">
+              <img src="assets/img/kiara/dorian-char-05.webp" data-i18n-attr="alt:ak.dc5" alt="" loading="lazy" width="721" height="961">
+            </button>
+            <figcaption class="tile-cap"><b><i>05</i><span data-i18n="p.ds.t5"></span></b><span data-i18n="p.ds.s5"></span></figcaption>
+          </figure>
+          <figure class="tile" data-tilt="7">
+            <button class="tile-media" type="button" data-lb="d-sheet" data-lb-i="5">
+              <img src="assets/img/kiara/dorian-char-06.webp" data-i18n-attr="alt:ak.dc6" alt="" loading="lazy" width="721" height="961">
+            </button>
+            <figcaption class="tile-cap"><b><i>06</i><span data-i18n="p.ds.t6"></span></b><span data-i18n="p.ds.s6"></span></figcaption>
+          </figure>
+        </div>
+        <div class="pan-foot">
+          <p class="pan-credits"><span data-i18n="p.cr.vis"></span><span data-i18n="p.cr.df"></span></p>
+        </div>
+        </div>
+
+        <div class="pan reveal">
+        <div class="pan-head">
+          <div>
+            <p class="pan-eyebrow" data-i18n="p.pipe.eye"></p>
+            <h3 class="pan-title">Dorian Ferrer</h3>
+            <p class="pan-desc" data-i18n="p.dp.desc"></p>
+          </div>
+          <ul class="pan-meta">
+            <li><b data-i18n="p.dp.m1b"></b><span data-i18n="p.dp.m1s"></span></li>
+            <li><b data-i18n="p.dp.m2b"></b><span data-i18n="p.dp.m2s"></span></li>
+            <li><b data-i18n="p.dp.m3b"></b><span data-i18n="p.dp.m3s"></span></li>
+          </ul>
+        </div>
+        <div>
+          <p class="pan-label" data-i18n="p.in"></p>
+          <div class="pan-tiles pan-tiles--3 pan-tiles--in">
+            <figure class="tile" data-tilt="7">
+              <button class="tile-media" type="button" data-lb="d-pipe" data-lb-i="0">
+                <img src="assets/img/kiara/dorian-char-01.webp" data-i18n-attr="alt:ak.dc1" alt="" loading="lazy" width="721" height="961">
+              </button>
+              <figcaption class="tile-cap"><b><i>01</i><span data-i18n="p.dp.t1"></span></b><span data-i18n="p.dp.s1"></span></figcaption>
+            </figure>
+            <figure class="tile" data-tilt="7">
+              <button class="tile-media" type="button" data-lb="d-pipe" data-lb-i="1">
+                <img src="assets/img/kiara/dorian-in-vestuario.webp" data-i18n-attr="alt:ak.dvest" alt="" loading="lazy" width="735" height="898">
+              </button>
+              <figcaption class="tile-cap"><b><i>02</i><span data-i18n="p.dp.t2"></span></b><span data-i18n="p.dp.s2"></span></figcaption>
+            </figure>
+            <figure class="tile" data-tilt="7">
+            <div class="pan-prompt">
+              <h4 data-i18n="p.prompt.h"></h4>
+              <dl>
+                <dt data-i18n="p.dp.k1"></dt>
+                <dd>Afro-Latino singer, ~40
+defined jawline, groomed beard
+deep expressive brown eyes
+low fade haircut, waves</dd>
+                <dt data-i18n="p.dp.k2"></dt>
+                <dd>authentic emotion, never
+theatrical — eyes carry it</dd>
+                <dt data-i18n="p.dp.k3"></dt>
+                <dd>timeless masculine elegance
+linen, wool, silk, fine cotton
+thin gold chain, classic watch</dd>
+                <dt data-i18n="p.dp.k4"></dt>
+                <dd>piano bars, jazz lounges
+warm amber practical lights</dd>
+                <dt data-i18n="p.dp.k5"></dt>
+                <dd>Sony A7R V · 50mm f/1.2
+subject 35–45% of frame</dd>
+                <dt data-i18n="p.dp.k6"></dt>
+                <dd>plastic skin, CGI, neon,
+nightclub, streetwear,
+oversized jewelry</dd>
+              </dl>
+            </div>
+              <figcaption class="tile-cap"><b><i>03</i><span data-i18n="p.dp.t3"></span></b><span data-i18n="p.dp.s3"></span></figcaption>
+            </figure>
+          </div>
+        </div>
+        <p class="pan-rule"><span data-i18n="p.dp.rule"></span></p>
+        <div>
+          <p class="pan-label" data-i18n="p.out"></p>
+          <div class="pan-tiles pan-tiles--out">
+            <figure class="tile tile--wide">
+              <button class="tile-media" type="button" data-lb="d-pipe" data-lb-i="2">
+                <img src="assets/img/kiara/dorian-plano-16x9.webp" data-i18n-attr="alt:ak.d16" alt="" loading="lazy" width="1625" height="919">
+              </button>
+              <figcaption class="tile-cap"><b><i>04</i><span data-i18n="p.dp.t4"></span></b><span data-i18n="p.dp.s4"></span></figcaption>
+            </figure>
+            <figure class="tile tile--tall">
+              <button class="tile-media" type="button" data-lb="d-pipe" data-lb-i="3">
+                <img src="assets/img/kiara/dorian-plano-9x16.webp" data-i18n-attr="alt:ak.d916" alt="" loading="lazy" width="519" height="919">
+              </button>
+              <figcaption class="tile-cap"><b><i>05</i><span data-i18n="p.dp.t5"></span></b><span data-i18n="p.dp.s5"></span></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="pan-foot">
+          <p data-i18n="p.dp.foot"></p>
+          <p class="pan-credits"><span data-i18n="p.cr.vis"></span><span data-i18n="p.cr.df"></span></p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LA VOZ COMO SISTEMA ============ -->
+  <section class="case-sec">
+    <div class="wrap">
+      <h2 class="reveal" data-i18n="k.s2.h">La voz como sistema</h2>
+
+      <div class="pan reveal">
+      <div class="pan-head">
+        <div>
+          <p class="pan-eyebrow" data-i18n="p.vz.eye"></p>
+          <h3 class="pan-title" data-i18n="p.vz.title"></h3>
+          <p class="pan-desc" data-i18n="p.vz.desc"></p>
+        </div>
+        <ul class="pan-meta">
+          <li><b data-i18n="p.vz.m1b"></b><span data-i18n="p.vz.m1s"></span></li>
+          <li><b data-i18n="p.vz.m2b"></b><span data-i18n="p.vz.m2s"></span></li>
+          <li><b data-i18n="p.vz.m3b"></b><span data-i18n="p.vz.m3s"></span></li>
+        </ul>
+      </div>
+        <div class="voice-grid">
+          <div class="voice-card">
+            <div class="voice-head">
+              <button class="tile-media" type="button" data-lb="voz" data-lb-i="0">
+                <img src="assets/img/kiara/kiara-char-01.webp" data-i18n-attr="alt:ak.kc1" alt="" loading="lazy" width="800" height="1080">
+              </button>
+              <div class="voice-id">
+                <h4>Kiara</h4>
+                <p data-i18n="p.vz.k.role"></p>
+                <p class="voice-src" data-i18n="p.vz.src"></p>
+              </div>
+            </div>
+            <dl>
+              <dt data-i18n="p.vz.reg"></dt>
+              <dd>female vocals
+contemporary Spanish jazz-soul
+bossa jazz feel, cinematic neo-jazz</dd>
+              <dt data-i18n="p.vz.tim"></dt>
+              <dd>soft airy tone
+youthful unforced timbre
+no belting</dd>
+              <dt data-i18n="p.vz.fra"></dt>
+              <dd>delicate vibrato, clean legato
+subtle jazz phrasing
+slightly behind-the-beat timing</dd>
+              <dt data-i18n="p.vz.ent"></dt>
+              <dd>intimate whispery delivery
+emotional restraint</dd>
+              <dt data-i18n="p.vz.ban"></dt>
+              <dd>vintage Rhodes, upright bass
+brushed drums, muted trumpet</dd>
+              <dt data-i18n="p.vz.atm"></dt>
+              <dd>warm analog vinyl crackle
+intimate late-night jazz club mood</dd>
+            </dl>
+          </div>
+          <div class="voice-card">
+            <div class="voice-head">
+              <button class="tile-media" type="button" data-lb="voz" data-lb-i="1">
+                <img src="assets/img/kiara/dorian-char-01.webp" data-i18n-attr="alt:ak.dc1" alt="" loading="lazy" width="721" height="961">
+              </button>
+              <div class="voice-id">
+                <h4>Dorian Ferrer</h4>
+                <p data-i18n="p.vz.d.role"></p>
+                <p class="voice-src" data-i18n="p.vz.src"></p>
+              </div>
+            </div>
+            <dl>
+              <dt data-i18n="p.vz.reg"></dt>
+              <dd>male Latin baritone
+low register</dd>
+              <dt data-i18n="p.vz.tim"></dt>
+              <dd>warm dark vocal tone
+smoky, naturally raspy texture</dd>
+              <dt data-i18n="p.vz.fra"></dt>
+              <dd>soulful phrasing, natural vibrato
+expressive dynamics</dd>
+              <dt data-i18n="p.vz.ent"></dt>
+              <dd>intimate yet commanding presence
+romantic intensity
+vulnerable without losing masculinity</dd>
+              <dt data-i18n="p.vz.cue"></dt>
+              <dd>rich chest resonance
+rich harmonics</dd>
+              <dt data-i18n="p.vz.atm"></dt>
+              <dd>organic studio vocals
+authentic human imperfections</dd>
+            </dl>
+          </div>
+        </div>
+        <p class="pan-rule"><span data-i18n="p.vz.rule"></span></p>
+      <div class="pan-foot">
+        <p data-i18n="p.vz.foot"></p>
+        <p class="pan-credits"><span data-i18n="p.cr.mus"></span><span data-i18n="p.cr.both"></span></p>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMO SE HACE UN VIDEO ============ -->
+  <section class="case-sec section-alt">
+    <div class="wrap">
+      <h2 class="reveal" data-i18n="k.s3.h">Cómo se hace un vídeo</h2>
+
+      <div class="pan reveal">
+      <div class="pan-head">
+        <div>
+          <p class="pan-eyebrow" data-i18n="p.wf.eye"></p>
+          <h3 class="pan-title" data-i18n="p.wf.title"></h3>
+          <p class="pan-desc" data-i18n="p.wf.desc"></p>
+        </div>
+        <ul class="pan-meta">
+          <li><b data-i18n="p.wf.m1b"></b><span data-i18n="p.wf.m1s"></span></li>
+          <li><b data-i18n="p.wf.m2b"></b><span data-i18n="p.wf.m2s"></span></li>
+          <li><b data-i18n="p.wf.m3b"></b><span data-i18n="p.wf.m3s"></span></li>
+        </ul>
+      </div>
+        <div class="wf-grid">
+          <div class="wf-col">
+            <h4><i>A</i><span data-i18n="p.wf.a"></span></h4>
+            <p data-i18n="p.wf.a.sub"></p>
+            <ol>
+              <li><i>01</i><b data-i18n="p.wf.a1"></b><span data-i18n="p.wf.a1s"></span></li>
+              <li><i>02</i><b data-i18n="p.wf.a2"></b><span data-i18n="p.wf.a2s"></span></li>
+              <li><i>03</i><b data-i18n="p.wf.a3"></b><span data-i18n="p.wf.a3s"></span></li>
+              <li><i>04</i><b data-i18n="p.wf.a4"></b><span data-i18n="p.wf.a4s"></span></li>
+              <li><i>05</i><b data-i18n="p.wf.a5"></b><span data-i18n="p.wf.a5s"></span></li>
+              <li><i>06</i><b data-i18n="p.wf.a6"></b><span data-i18n="p.wf.a6s"></span></li>
+              <li><i>07</i><b data-i18n="p.wf.a7"></b><span data-i18n="p.wf.a7s"></span></li>
+              <li><i>08</i><b data-i18n="p.wf.a8"></b><span data-i18n="p.wf.a8s"></span></li>
+            </ol>
+          </div>
+          <div class="wf-col">
+            <h4><i>B</i><span data-i18n="p.wf.b"></span></h4>
+            <p data-i18n="p.wf.b.sub"></p>
+            <ol>
+              <li><i>09</i><b data-i18n="p.wf.b9"></b><span data-i18n="p.wf.b9s"></span></li>
+              <li><i>10</i><b data-i18n="p.wf.b10"></b><span data-i18n="p.wf.b10s"></span></li>
+              <li><i>11</i><b data-i18n="p.wf.b11"></b><span data-i18n="p.wf.b11s"></span></li>
+              <li><i>12</i><b data-i18n="p.wf.b12"></b><span data-i18n="p.wf.b12s"></span></li>
+              <li><i>13</i><b data-i18n="p.wf.b13"></b><span data-i18n="p.wf.b13s"></span></li>
+              <li><i>14</i><b data-i18n="p.wf.b14"></b><span data-i18n="p.wf.b14s"></span></li>
+            </ol>
+          </div>
+          <div class="wf-col">
+            <h4><i>C</i><span data-i18n="p.wf.c"></span></h4>
+            <p data-i18n="p.wf.c.sub"></p>
+            <ol>
+              <li><i>15</i><b data-i18n="p.wf.c15"></b><span data-i18n="p.wf.c15s"></span></li>
+              <li><i>16</i><b data-i18n="p.wf.c16"></b><span data-i18n="p.wf.c16s"></span></li>
+              <li><i>17</i><b data-i18n="p.wf.c17"></b><span data-i18n="p.wf.c17s"></span></li>
+              <li><i>18</i><b data-i18n="p.wf.c18"></b><span data-i18n="p.wf.c18s"></span></li>
+              <li><i>19</i><b data-i18n="p.wf.c19"></b><span data-i18n="p.wf.c19s"></span></li>
+            </ol>
+          </div>
+        </div>
+        <div class="wf-stats">
+          <p class="wf-stat"><b data-i18n="p.wf.sa.b"></b><span data-i18n="p.wf.sa.s"></span></p>
+          <p class="wf-stat"><b data-i18n="p.wf.sb.b"></b><span data-i18n="p.wf.sb.s"></span></p>
+          <p class="wf-stat"><b data-i18n="p.wf.sc.b"></b><span data-i18n="p.wf.sc.s"></span></p>
+        </div>
+      <div class="pan-foot">
+        <p data-i18n="p.wf.foot"></p>
+        <p class="pan-credits"><span data-i18n="p.cr.vis"></span><span data-i18n="p.cr.both"></span></p>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DECISIONES ============ -->
+  <section class="case-sec">
+    <div class="wrap">
+      <h2 class="reveal" data-i18n="k.s4.h">Decisiones</h2>
+      <div class="stack-lg">
+        <div class="reveal">
+          <h3 data-i18n="k.d1.h"></h3>
+          <div class="case-copy">
+            <p data-i18n="k.d1.p1"></p>
+            <p data-i18n="k.d1.p2"></p>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <h3 data-i18n="k.d2.h"></h3>
+          <div class="case-copy">
+            <p data-i18n="k.d2.p"></p>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <h3 data-i18n="k.d3.h"></h3>
+          <div class="case-copy">
+            <p data-i18n="k.d3.p"></p>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <h3 data-i18n="k.d4.h"></h3>
+          <div class="case-copy">
+            <p data-i18n="k.d4.p1"></p>
+            <p data-i18n="k.d4.p2"></p>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <h3 data-i18n="k.d5.h"></h3>
+          <div class="case-copy">
+            <p data-i18n="k.d5.p"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESULTADO ============ -->
+  <section class="case-sec section-alt">
+    <div class="wrap">
+      <h2 class="reveal" data-i18n="k.s5.h">Resultado</h2>
+      <div class="case-copy reveal" data-d="1">
+        <p data-i18n="k.res.p1"></p>
+        <p data-i18n="k.res.p2"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOTOGRAMAS ============ -->
+  <section class="case-sec">
+    <div class="wrap">
+      <h2 class="reveal" data-i18n="k.s6.h">Fotogramas</h2>
+      <div class="frames-grid reveal">
+          <figure class="fig">
+            <button class="lb-open-btn" type="button" data-lb="frames" data-lb-i="0">
+              <img src="assets/img/kiara/kiara-frame-01.webp" data-i18n-attr="alt:ak.f01" alt="" loading="lazy" width="1800" height="1004">
+            </button>
+          </figure>
+          <figure class="fig">
+            <button class="lb-open-btn" type="button" data-lb="frames" data-lb-i="1">
+              <img src="assets/img/kiara/kiara-frame-02.webp" data-i18n-attr="alt:ak.f02" alt="" loading="lazy" width="1800" height="1013">
+            </button>
+          </figure>
+          <figure class="fig">
+            <button class="lb-open-btn" type="button" data-lb="frames" data-lb-i="2">
+              <img src="assets/img/kiara/kiara-frame-03.webp" data-i18n-attr="alt:ak.f03" alt="" loading="lazy" width="1800" height="1013">
+            </button>
+          </figure>
+          <figure class="fig">
+            <button class="lb-open-btn" type="button" data-lb="frames" data-lb-i="3">
+              <img src="assets/img/kiara/kiara-frame-04.webp" data-i18n-attr="alt:ak.f04" alt="" loading="lazy" width="1800" height="1004">
+            </button>
+          </figure>
+          <figure class="fig">
+            <button class="lb-open-btn" type="button" data-lb="frames" data-lb-i="4">
+              <img src="assets/img/kiara/kiara-frame-05.webp" data-i18n-attr="alt:ak.f05" alt="" loading="lazy" width="1800" height="1004">
+            </button>
+          </figure>
+          <figure class="fig">
+            <button class="lb-open-btn" type="button" data-lb="frames" data-lb-i="5">
+              <img src="assets/img/kiara/kiara-frame-06.webp" data-i18n-attr="alt:ak.f06" alt="" loading="lazy" width="1800" height="1004">
+            </button>
+          </figure>
+          <figure class="fig">
+            <button class="lb-open-btn" type="button" data-lb="frames" data-lb-i="6">
+              <img src="assets/img/kiara/kiara-frame-07.webp" data-i18n-attr="alt:ak.f07" alt="" loading="lazy" width="1800" height="1004">
+            </button>
+          </figure>
+          <figure class="fig">
+            <button class="lb-open-btn" type="button" data-lb="frames" data-lb-i="7">
+              <img src="assets/img/kiara/kiara-frame-08.webp" data-i18n-attr="alt:ak.f08" alt="" loading="lazy" width="1800" height="1004">
+            </button>
+          </figure>
+          <figure class="fig">
+            <button class="lb-open-btn" type="button" data-lb="frames" data-lb-i="8">
+              <img src="assets/img/kiara/kiara-frame-09.webp" data-i18n-attr="alt:ak.f09" alt="" loading="lazy" width="1800" height="1004">
+            </button>
+          </figure>
+          <figure class="fig">
+            <button class="lb-open-btn" type="button" data-lb="frames" data-lb-i="9">
+              <img src="assets/img/kiara/kiara-frame-10.webp" data-i18n-attr="alt:ak.f10" alt="" loading="lazy" width="1800" height="1004">
+            </button>
+          </figure>
+          <figure class="fig">
+            <button class="lb-open-btn" type="button" data-lb="frames" data-lb-i="10">
+              <img src="assets/img/kiara/kiara-frame-11.webp" data-i18n-attr="alt:ak.f11" alt="" loading="lazy" width="1800" height="1004">
+            </button>
+          </figure>
+          <figure class="fig">
+            <button class="lb-open-btn" type="button" data-lb="frames" data-lb-i="11">
+              <img src="assets/img/kiara/kiara-frame-12.webp" data-i18n-attr="alt:ak.f12" alt="" loading="lazy" width="1800" height="1004">
+            </button>
+          </figure>
+          <figure class="fig">
+            <button class="lb-open-btn" type="button" data-lb="frames" data-lb-i="12">
+              <img src="assets/img/kiara/dorian-frame-01.webp" data-i18n-attr="alt:ak.df01" alt="" loading="lazy" width="1800" height="1017">
+            </button>
+          </figure>
+          <figure class="fig">
+            <button class="lb-open-btn" type="button" data-lb="frames" data-lb-i="13">
+              <img src="assets/img/kiara/dorian-frame-02.webp" data-i18n-attr="alt:ak.df02" alt="" loading="lazy" width="1800" height="1017">
+            </button>
+          </figure>
+          <figure class="fig">
+            <button class="lb-open-btn" type="button" data-lb="frames" data-lb-i="14">
+              <img src="assets/img/kiara/dorian-frame-03.webp" data-i18n-attr="alt:ak.df03" alt="" loading="lazy" width="1800" height="1017">
+            </button>
+          </figure>
+          <figure class="fig">
+            <button class="lb-open-btn" type="button" data-lb="frames" data-lb-i="15">
+              <img src="assets/img/kiara/dorian-frame-04.webp" data-i18n-attr="alt:ak.df04" alt="" loading="lazy" width="1800" height="1017">
+            </button>
+          </figure>
+      </div>
+      <p class="zoom-hint">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg>
+        <span data-i18n="k.lb.hint">Toca para ampliar</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ MINIATURAS ============ -->
+  <section class="case-sec section-alt">
+    <div class="wrap">
+      <h2 class="reveal" data-i18n="k.s7.h">Miniaturas</h2>
+
+      <div class="pan reveal">
+      <div class="pan-head">
+        <div>
+          <p class="pan-eyebrow" data-i18n="p.mn.eye"></p>
+          <h3 class="pan-title" data-i18n="p.mn.title"></h3>
+          <p class="pan-desc" data-i18n="p.mn.desc"></p>
+        </div>
+        <ul class="pan-meta">
+          <li><b data-i18n="p.mn.m1b"></b><span data-i18n="p.mn.m1s"></span></li>
+          <li><b data-i18n="p.mn.m2b"></b><span data-i18n="p.mn.m2s"></span></li>
+          <li><b data-i18n="p.mn.m3b"></b><span data-i18n="p.mn.m3s"></span></li>
+        </ul>
+      </div>
+        <div>
+          <p class="pan-label" data-i18n="p.mn.st1"></p>
+          <div class="pan-tiles pan-tiles--2">
+            <figure class="tile tile--cover" data-tilt="7">
+              <button class="tile-media" type="button" data-lb="thumbs" data-lb-i="0">
+                <img src="assets/img/kiara/kiara-thumb-01.webp" data-i18n-attr="alt:ak.th.k01" alt="" loading="lazy" width="1280" height="720">
+              </button>
+              <figcaption class="tile-cap tile-cap--song"><b><i>01</i>Demasiada mujer</b></figcaption>
+            </figure>
+            <figure class="tile tile--cover" data-tilt="7">
+              <button class="tile-media" type="button" data-lb="thumbs" data-lb-i="1">
+                <img src="assets/img/kiara/kiara-thumb-02.webp" data-i18n-attr="alt:ak.th.k02" alt="" loading="lazy" width="1280" height="720">
+              </button>
+              <figcaption class="tile-cap tile-cap--song"><b><i>02</i>Si te vuelvo a ver</b></figcaption>
+            </figure>
+          </div>
+        </div>
+        <div>
+          <p class="pan-label" data-i18n="p.mn.st2"></p>
+          <div class="pan-tiles pan-tiles--3">
+            <figure class="tile tile--cover" data-tilt="7">
+              <button class="tile-media" type="button" data-lb="thumbs" data-lb-i="2">
+                <img src="assets/img/kiara/kiara-thumb-03.webp" data-i18n-attr="alt:ak.th.k03" alt="" loading="lazy" width="1280" height="720">
+              </button>
+              <figcaption class="tile-cap tile-cap--song"><b><i>03</i>Bajo el mismo cielo</b></figcaption>
+            </figure>
+            <figure class="tile tile--cover" data-tilt="7">
+              <button class="tile-media" type="button" data-lb="thumbs" data-lb-i="3">
+                <img src="assets/img/kiara/kiara-thumb-04.webp" data-i18n-attr="alt:ak.th.k04" alt="" loading="lazy" width="1280" height="720">
+              </button>
+              <figcaption class="tile-cap tile-cap--song"><b><i>04</i>La copa que bebí por ti</b></figcaption>
+            </figure>
+            <figure class="tile tile--cover" data-tilt="7">
+              <button class="tile-media" type="button" data-lb="thumbs" data-lb-i="4">
+                <img src="assets/img/kiara/kiara-thumb-05.webp" data-i18n-attr="alt:ak.th.k05" alt="" loading="lazy" width="1280" height="720">
+              </button>
+              <figcaption class="tile-cap tile-cap--song"><b><i>05</i>Ese hombre</b></figcaption>
+            </figure>
+          </div>
+        </div>
+      <div class="pan-foot">
+        <p data-i18n="p.mn.foot"></p>
+        <p class="pan-credits"><span data-i18n="p.cr.art"></span><span data-i18n="p.cr.ksm2"></span></p>
+      </div>
+      </div>
+
+      <div class="reveal" style="margin-top:clamp(34px,5vw,64px)">
+        <p class="pan-label" data-i18n="p.mn.dorian"></p>
+        <div class="pan-tiles pan-tiles--3">
+          <figure class="tile tile--cover" data-tilt="7">
+            <button class="tile-media" type="button" data-lb="thumbs-d" data-lb-i="0">
+              <img src="assets/img/kiara/dorian-thumb-01.webp" data-i18n-attr="alt:ak.th.d01" alt="" loading="lazy" width="1280" height="714">
+            </button>
+            <figcaption class="tile-cap tile-cap--song"><b><i>01</i>Ardiendo Entre Tus Brazos</b></figcaption>
+          </figure>
+          <figure class="tile tile--cover" data-tilt="7">
+            <button class="tile-media" type="button" data-lb="thumbs-d" data-lb-i="1">
+              <img src="assets/img/kiara/dorian-thumb-02.webp" data-i18n-attr="alt:ak.th.d02" alt="" loading="lazy" width="1280" height="720">
+            </button>
+            <figcaption class="tile-cap tile-cap--song"><b><i>02</i>Bajo Tu Mirada</b></figcaption>
+          </figure>
+          <figure class="tile tile--cover" data-tilt="7">
+            <button class="tile-media" type="button" data-lb="thumbs-d" data-lb-i="2">
+              <img src="assets/img/kiara/dorian-thumb-03.webp" data-i18n-attr="alt:ak.th.d03" alt="" loading="lazy" width="1280" height="720">
+            </button>
+            <figcaption class="tile-cap tile-cap--song"><b><i>03</i>Esa Mujer</b></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ENLACES ============ -->
+  <section class="case-sec">
+    <div class="wrap">
+      <h2 class="reveal" data-i18n="k.s8.h">Ver los vídeos</h2>
+
+      <div class="vids stack-lg">
+        <div class="reveal">
+          <h3 data-i18n="k.links.kiara">Kiara — vídeos largos</h3>
+          <div class="vid-list">
+            <a data-tilt="6" class="vid" href="https://www.youtube.com/watch?v=KrEK90F_axo" target="_blank" rel="noopener noreferrer">
+              <span class="vid-thumb">
+                <img src="assets/img/kiara/kiara-thumb-04.webp" data-i18n-attr="alt:ak.th.k04" alt="" loading="lazy" width="1280" height="720">
+                <span class="vid-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7.5v9l7.5-4.5z"/></svg></span>
+              </span>
+              <span class="vid-name">La Copa Que Bebí Por Ti<em>Kiara Soul Music</em></span>
+            </a>
+            <a data-tilt="6" class="vid" href="https://www.youtube.com/watch?v=WsI8ArriIig" target="_blank" rel="noopener noreferrer">
+              <span class="vid-thumb">
+                <img src="assets/img/kiara/kiara-thumb-05.webp" data-i18n-attr="alt:ak.th.k05" alt="" loading="lazy" width="1280" height="720">
+                <span class="vid-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7.5v9l7.5-4.5z"/></svg></span>
+              </span>
+              <span class="vid-name">Ese Hombre<em>Kiara Soul Music</em></span>
+            </a>
+            <a data-tilt="6" class="vid" href="https://www.youtube.com/watch?v=bMyFZxCF1Zc" target="_blank" rel="noopener noreferrer">
+              <span class="vid-thumb">
+                <img src="assets/img/kiara/kiara-thumb-01.webp" data-i18n-attr="alt:ak.th.k01" alt="" loading="lazy" width="1280" height="720">
+                <span class="vid-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7.5v9l7.5-4.5z"/></svg></span>
+              </span>
+              <span class="vid-name">Demasiada Mujer<em>Kiara Soul Music</em></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <h3 data-i18n="k.links.dorian">Dorian Ferrer — Shorts</h3>
+          <div class="vid-list">
+            <a data-tilt="6" class="vid vid--short" href="https://www.youtube.com/shorts/EgiHLnw25o8" target="_blank" rel="noopener noreferrer">
+              <span class="vid-thumb">
+                <img src="assets/img/kiara/dorian-short-01.webp" data-i18n-attr="alt:ak.sh.d01" alt="" loading="lazy" width="720" height="1280">
+                <span class="vid-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7.5v9l7.5-4.5z"/></svg></span>
+              </span>
+              <span class="vid-name">Ardiendo Entre Tus Brazos<em>Dorian Ferrer · Short</em></span>
+            </a>
+            <a data-tilt="6" class="vid vid--short" href="https://www.youtube.com/shorts/pbH-7inv0sk" target="_blank" rel="noopener noreferrer">
+              <span class="vid-thumb">
+                <img src="assets/img/kiara/dorian-short-02.webp" data-i18n-attr="alt:ak.sh.d02" alt="" loading="lazy" width="519" height="919">
+                <span class="vid-play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7.5v9l7.5-4.5z"/></svg></span>
+              </span>
+              <span class="vid-name">Bajo Tu Mirada<em>Dorian Ferrer · Short</em></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CIERRE ============ -->
+  <section class="case-sec section-alt">
+    <div class="wrap">
+      <div class="case-actions reveal">
+        <a href="portafolio.html" class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+          <span data-i18n="work.back">Volver al portafolio</span>
+        </a>
+        <a href="index.html#contacto" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5h18v11H8l-5 3.5z"/></svg>
+          <span data-i18n="cta.write">Escríbeme</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>© <span id="year">2026</span> Francisco Sarria</p>
+    <p data-i18n="footer.note">Diseñado y desarrollado por mí.</p>
+
+    <ul class="foot-social">
+        <li><a href="https://www.linkedin.com/in/francisco-sarria-528048232/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg class="ico-brand" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.86-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a></li>
+    </ul>
+    <a href="#contenido" class="to-top" data-i18n="footer.top">Volver arriba ↑</a>
+  </div>
+</footer>
+
+<script src="assets/js/i18n.js?v=48"></script>
+<script src="assets/js/main.js?v=48"></script>
+<script src="assets/js/motion.js?v=48" defer></script>
+<script src="assets/js/asistente.js?v=48" defer></script>
+</body>
+</html>

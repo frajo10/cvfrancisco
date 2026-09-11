@@ -169,21 +169,23 @@
   var nav = document.getElementById('nav');
 
   function closeMenu() {
-    if (!nav.classList.contains('open')) return;
+    if (!nav || !nav.classList.contains('open')) return;
     nav.classList.remove('open');
     burger.setAttribute('aria-expanded', 'false');
     document.body.classList.remove('menu-open');
   }
 
-  burger.addEventListener('click', function () {
-    var open = nav.classList.toggle('open');
-    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
-    document.body.classList.toggle('menu-open', open);
-  });
+  if (burger && nav) {
+    burger.addEventListener('click', function () {
+      var open = nav.classList.toggle('open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.classList.toggle('menu-open', open);
+    });
 
-  nav.querySelectorAll('a').forEach(function (a) {
-    a.addEventListener('click', closeMenu);
-  });
+    nav.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', closeMenu);
+    });
+  }
 
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') closeMenu();
@@ -201,8 +203,8 @@
     var y = window.scrollY || window.pageYOffset;
     var max = document.documentElement.scrollHeight - window.innerHeight;
 
-    progressBar.style.width = (max > 0 ? (y / max) * 100 : 0) + '%';
-    header.classList.toggle('is-stuck', y > 12);
+    if (progressBar) progressBar.style.width = (max > 0 ? (y / max) * 100 : 0) + '%';
+    if (header) header.classList.toggle('is-stuck', y > 12);
 
     // Arriba del todo estamos en el hero: ningún enlace debe quedar marcado.
     if (y < 240) {
@@ -225,12 +227,18 @@
   /* ---------------------------------------------------------
      6. Enlace activo en la navegación
      --------------------------------------------------------- */
-  var navLinks = Array.prototype.slice.call(nav.querySelectorAll('a[href^="#"]'));
-  var sections = navLinks
-    .map(function (a) { return document.querySelector(a.getAttribute('href')); })
-    .filter(Boolean);
+  var navLinks = nav
+    ? Array.prototype.slice.call(nav.querySelectorAll('a[href^="#"]'))
+    : [];
 
-  if ('IntersectionObserver' in window && sections.length) {
+  // Observamos todas las secciones con id, no solo las que tienen entrada en el
+  // menu: asi, al entrar en una seccion sin enlace propio, no se queda encendido
+  // el enlace anterior.
+  var sections = Array.prototype.slice.call(
+    document.querySelectorAll('main section[id]')
+  );
+
+  if ('IntersectionObserver' in window && sections.length && navLinks.length) {
     var sectionObserver = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (!entry.isIntersecting) return;
@@ -244,9 +252,169 @@
   }
 
   /* ---------------------------------------------------------
+     7. Lightbox — sin librerías
+     Los disparadores llevan data-lb="<grupo>"; los grupos se declaran
+     en la propia página con <template data-lb-set="<grupo>">.
+     --------------------------------------------------------- */
+  var lb = null, lbItems = [], lbIndex = 0, lbTrigger = null;
+
+  function lbBuild() {
+    lb = document.createElement('div');
+    lb.className = 'lb';
+    lb.id = 'lb';
+    lb.setAttribute('role', 'dialog');
+    lb.setAttribute('aria-modal', 'true');
+    lb.hidden = true;
+    lb.innerHTML =
+      '<button class="lb-btn-close" type="button" data-i18n-attr="aria-label:lb.close">' +
+        '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>' +
+      '<button class="lb-nav lb-prev" type="button" data-i18n-attr="aria-label:lb.prev">' +
+        '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>' +
+      '<button class="lb-nav lb-next" type="button" data-i18n-attr="aria-label:lb.next">' +
+        '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>' +
+      '<figure class="lb-fig"><img alt=""><figcaption></figcaption></figure>';
+    document.body.appendChild(lb);
+
+    lb.querySelector('.lb-btn-close').addEventListener('click', lbClose);
+    lb.querySelector('.lb-prev').addEventListener('click', function () { lbGo(-1); });
+    lb.querySelector('.lb-next').addEventListener('click', function () { lbGo(1); });
+    lb.addEventListener('click', function (e) { if (e.target === lb) lbClose(); });
+  }
+
+  function lbPaint() {
+    var it = lbItems[lbIndex];
+    var img = lb.querySelector('img');
+    var cap = lb.querySelector('figcaption');
+    var texto = (window.I18N[currentLang] || {})[it.alt] || '';
+    img.src = it.src;
+    img.alt = texto;
+    cap.textContent = lbItems.length > 1
+      ? texto + '  ·  ' + (lbIndex + 1) + ' ' + ((window.I18N[currentLang] || {})['lb.of'] || '/') + ' ' + lbItems.length
+      : texto;
+    var solo = lbItems.length < 2;
+    lb.querySelector('.lb-prev').hidden = solo;
+    lb.querySelector('.lb-next').hidden = solo;
+  }
+
+  function lbGo(paso) {
+    lbIndex = (lbIndex + paso + lbItems.length) % lbItems.length;
+    lbPaint();
+  }
+
+  function lbOpen(items, indice, disparador) {
+    if (!lb) lbBuild();
+    lbItems = items;
+    lbIndex = indice || 0;
+    lbTrigger = disparador || null;
+    lbPaint();
+    lb.hidden = false;
+    document.body.classList.add('lb-open');
+    lb.querySelector('.lb-btn-close').focus();
+  }
+
+  function lbClose() {
+    if (!lb || lb.hidden) return;
+    lb.hidden = true;
+    lb.querySelector('img').removeAttribute('src');
+    document.body.classList.remove('lb-open');
+    if (lbTrigger) { lbTrigger.focus(); lbTrigger = null; }
+  }
+
+  // Lee los grupos declarados en la página
+  var lbSets = {};
+  document.querySelectorAll('template[data-lb-set]').forEach(function (t) {
+    lbSets[t.getAttribute('data-lb-set')] = Array.prototype.map.call(
+      t.content.querySelectorAll('i'),
+      function (n) { return { src: n.getAttribute('data-src'), alt: n.getAttribute('data-alt') }; }
+    );
+  });
+
+  document.querySelectorAll('[data-lb]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var set = lbSets[btn.getAttribute('data-lb')];
+      if (!set || !set.length) return;
+      var i = parseInt(btn.getAttribute('data-lb-i') || '0', 10);
+      lbOpen(set, i, btn);
+    });
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (!lb || lb.hidden) return;
+    if (e.key === 'Escape') { e.preventDefault(); lbClose(); }
+    else if (e.key === 'ArrowLeft') { e.preventDefault(); lbGo(-1); }
+    else if (e.key === 'ArrowRight') { e.preventDefault(); lbGo(1); }
+    else if (e.key === 'Tab') {
+      // el foco no sale del diálogo mientras está abierto
+      var foco = Array.prototype.filter.call(
+        lb.querySelectorAll('button'), function (b) { return !b.hidden; });
+      var i = foco.indexOf(document.activeElement);
+      e.preventDefault();
+      foco[(i + (e.shiftKey ? -1 : 1) + foco.length) % foco.length].focus();
+    }
+  });
+
+  /* ---------------------------------------------------------
+     8. Boton de reproduccion sobre el video
+     El <video> conserva sus controles nativos; el boton solo
+     cubre el poster hasta que la reproduccion empieza.
+     --------------------------------------------------------- */
+  document.querySelectorAll('.video-wrap').forEach(function (caja) {
+    var v = caja.querySelector('video');
+    var btn = caja.querySelector('.video-play');
+    if (!v || !btn) return;
+    btn.addEventListener('click', function () {
+      var p = v.play();
+      if (p && p.catch) p.catch(function () { caja.classList.remove('is-playing'); });
+    });
+    v.addEventListener('play', function () { caja.classList.add('is-playing'); });
+    v.addEventListener('ended', function () { caja.classList.remove('is-playing'); });
+  });
+
+  /* ---------------------------------------------------------
+     9. Copiar al portapapeles
+     Un enlace mailto no hace nada si el sistema no tiene
+     aplicacion de correo. Copiar la direccion siempre funciona.
+     --------------------------------------------------------- */
+  document.querySelectorAll('[data-copiar]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var texto = b.getAttribute('data-copiar');
+
+      function avisar() {
+        b.classList.add('copiado');
+        var etiqueta = (window.I18N[currentLang] || {})['contact.copiado'];
+        if (etiqueta) b.setAttribute('aria-label', etiqueta);
+        setTimeout(function () {
+          b.classList.remove('copiado');
+          var vuelve = (window.I18N[currentLang] || {})['contact.copiar'];
+          if (vuelve) b.setAttribute('aria-label', vuelve);
+        }, 1800);
+      }
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(texto).then(avisar, aPelo);
+      } else {
+        aPelo();
+      }
+
+      function aPelo() {
+        var t = document.createElement('textarea');
+        t.value = texto;
+        t.setAttribute('readonly', '');
+        t.style.position = 'fixed';
+        t.style.opacity = '0';
+        document.body.appendChild(t);
+        t.select();
+        try { document.execCommand('copy'); avisar(); } catch (e) { /* nada que hacer */ }
+        document.body.removeChild(t);
+      }
+    });
+  });
+
+  /* ---------------------------------------------------------
      7. Detalles finales
      --------------------------------------------------------- */
-  document.getElementById('year').textContent = new Date().getFullYear();
+  var year = document.getElementById('year');
+  if (year) year.textContent = new Date().getFullYear();
 
   setLang(detectLang());
   onScroll();
