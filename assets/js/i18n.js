@@ -5,6 +5,7 @@ window.I18N = {
 
   /* ------------------------------------------------ PT ---- */
   pt: {
+    "chip.years": "anos de relação",
     "fc.s4.cap9": "O painel privado, no telemóvel.",
     "af.pan.movil": "Painel privado visto no telemóvel",
     "fc.url.hc": "Pedir o historial clínico",
@@ -81,7 +82,7 @@ window.I18N = {
     "fc.mat.eye": "Repartição orientativa",
     "fc.mat.rule": "O verde reserva-se: assim que se usa em texto pequeno perde contraste e deixa de se ler.",
     "fc.meta.desc": "Marca completa de raiz e um sistema web com painel privado para gerir pacientes, agenda e historiais clínicos.",
-    "fc.meta.title": "El Fisio Chavarría — Francisco Sarria",
+    "fc.meta.title": "El Fisio Chavarría — identidade e sistema web | Francisco Sarria",
     "fc.mono.1": "O F e o C",
     "fc.mono.1d": "Iniciais de Fisio Chavarría, em serifa, com presença de documento.",
     "fc.mono.2": "O arco",
@@ -223,7 +224,7 @@ window.I18N = {
     "pc.kpi4": "Dependência técnica para publicar",
     "pc.lead": "Dois sites construídos de raiz para duas comunidades religiosas com presença em vários países. A encomenda era um redesenho; acabou por ser um sistema de modelos que deixou a equipa a publicar por sua conta. Mais de três anos depois, a relação continua ativa.",
     "pc.meta.desc": "Dois sites institucionais em WordPress, com um sistema de modelos que deixou a equipa a publicar sem ajuda técnica.",
-    "pc.meta.title": "Proclade + CMF — Francisco Sarria",
+    "pc.meta.title": "Proclade + CMF — dois sites institucionais | Francisco Sarria",
     "pc.n1": "2",
     "pc.n2": "3",
     "pc.n3": "+3",
@@ -964,8 +965,8 @@ window.I18N = {
     "p.wf.sc.b": "5",
     "p.wf.sc.s": "Fios treinados a trabalhar em paralelo",
     "p.wf.title": "Como se faz um vídeo",
-    "meta.title": "Francisco Sarria — Designer Visual e Web · WordPress e IA",
-    "meta.desc": "Designer visual e web no Porto, Portugal. Desenho e construo sites com WordPress e com inteligência artificial, e dirijo conteúdo digital.",
+    "meta.title": "Francisco Sarria — Designer de produto digital e web no Porto",
+    "meta.desc": "Desenho e construo sites, sistemas de marca e ferramentas digitais à medida. UX/UI, WordPress e IA aplicada. Designer visual e web no Porto, Portugal.",
     "a11y.skip": "Ir para o conteúdo",
 
     "nav.about": "Sobre mim",
@@ -980,13 +981,13 @@ window.I18N = {
     "cta.email": "Enviar um email",
 
     "hero.eyebrow": "Porto, Portugal · Disponível para projetos",
-    "hero.title": "Transformo ideias em <em>websites</em> e <em>conteúdo digital</em> com resultados mensuráveis.",
-    "hero.lead": "Designer visual sénior com +8 anos de experiência, especializado em design digital, desenvolvimento web com WordPress, Elementor e WooCommerce, e produção criativa assistida por IA. Combino critério visual, tecnologia e automação para criar soluções de alta qualidade com maior rapidez e eficiência.",
+    "hero.title": "Desenho e construo <em>sites</em>, <em>sistemas de marca</em> e <em>ferramentas</em> que resolvem um problema concreto.",
+    "hero.lead": "Designer visual e web com mais de 8 anos de experiência. Levo um projeto desde o conceito e o sistema visual até à interface, à implementação e à documentação: identidade, UX/UI, desenvolvimento em WordPress e ferramentas à medida com IA aplicada.",
     "hero.role": "Visual & Web Designer",
     "tag.ai": "Inteligência Artificial",
     "tag.auto": "Automação",
     "hero.kicker.role": "Visual & Web Designer",
-    "hero.kicker.stack": "WordPress · Inteligência Artificial · Social Media",
+    "hero.kicker.stack": "Produto digital · UX/UI · IA aplicada",
 
     "metric.views": "Visualizações acumuladas no YouTube",
     "metric.followers": "Seguidores geridos no Instagram",
@@ -995,8 +996,8 @@ window.I18N = {
 
     "sec.about.kicker": "01 — Sobre mim",
     "sec.about.title": "Desenho com critério e comprovo com números.",
-    "about.p1": "Sou Francisco Sarria, designer visual colombiano radicado no Porto, Portugal. Comecei em identidade de marca e impressos e hoje trabalho onde o design se cruza com o produto digital: sites em WordPress, conteúdo para redes sociais, e aplicações e ferramentas digitais que automatizam tarefas repetitivas e melhoram a eficiência do trabalho.",
-    "about.p2": "Interessa-me o que se pode medir. Ao reorganizar a gestão de conteúdos de uma ONGD, o tempo de atualização baixou cerca de 50%. Ao lançar um canal de YouTube do zero, ultrapassou os 3,6 milhões de visualizações e hoje está monetizado. Trabalho sempre da mesma forma: percebo o objetivo, desenho para esse objetivo e revejo os resultados.",
+    "about.p1": "Sou Francisco Sarria, designer visual e web colombiano radicado no Porto, Portugal. Comecei em identidade de marca e impressos e hoje trabalho onde o design se cruza com o produto digital: desenho a marca, desenho a interface, construo-a e documento-a. Sites em WordPress, sistemas de conteúdo e ferramentas personalizadas que automatizam tarefas, geram propostas e ajudam a investigar oportunidades.",
+    "about.p2": "Interessa-me o que se pode comprovar. Ao reorganizar a gestão de conteúdos de uma ONGD, a equipa passou a publicar notícias e projetos sem ajuda técnica, e a relação continua ativa três anos depois. Ao lançar um canal de YouTube do zero, ultrapassou os 3,6 milhões de visualizações e está monetizado. Trabalho sempre igual: percebo o objetivo, desenho para esse objetivo e reviso os resultados.",
     "about.p3": "Os projetos que mostro mais abaixo são uma seleção: tenho muitos outros trabalhos semelhantes e alguns continuam em curso. Movo-me com à-vontade entre a direção de arte e a execução técnica, por isso consigo levar um projeto do conceito à entrega sem intermediários.",
 
     "facts.location": "Localização",
@@ -1026,12 +1027,12 @@ window.I18N = {
     "exp.1.b2": "Desenvolvo a estratégia de conteúdo e comunidade de um cliente do setor do bem-estar, com uma conta de Instagram com mais de 30.000 seguidores.",
     "exp.1.b3": "Converto audiência em clientes reais combinando branding, SEO, conteúdo e gestão de comunidade no YouTube, Instagram e WhatsApp.",
     "exp.1.b4": "Automatizei processos criativos com ferramentas de IA para imagem, vídeo, música e edição, reduzindo significativamente os tempos de produção.",
-    "exp.1.b5": "Desenvolvo aplicações e ferramentas digitais à medida para automatizar tarefas repetitivas e ganhar eficiência no trabalho diário.",
+    "exp.1.b5": "Desenvolvo ferramentas à medida: geradores de prompts e conteúdo para nichos de Instagram, Prospecta para encontrar sites com oportunidades de redesign e aplicações de research para Etsy e YouTube.",
 
-    "exp.2.role": "Web Designer & WordPress Specialist",
+    "exp.2.role": "Web & Digital Product Designer",
     "exp.2.org": "ONGD Proclade Colven · Medellín, Colômbia",
-    "exp.2.b1": "Desenvolvi os sites institucionais em WordPress com Elementor, melhorando a experiência do utilizador com layouts modernos e responsivos.",
-    "exp.2.b2": "Assegurei a manutenção e otimização contínua, reduzindo cerca de 50% o tempo de atualização e gestão de conteúdos.",
+    "exp.2.b1": "Desenhei e desenvolvi os dois sites institucionais, melhorando a experiência de utilizador com layouts modernos e responsivos, sobre WordPress e Elementor.",
+    "exp.2.b2": "Criei um sistema de modelos que deixou a equipa a publicar notícias e projetos sem ajuda técnica, e encarreguei-me da manutenção e otimização contínua.",
     "exp.2.b3": "Produzi conteúdo gráfico, fotografia e vídeo para campanhas digitais, ampliando o alcance online da organização.",
 
     "exp.3.role": "Creative Designer (Freelance)",
@@ -1090,8 +1091,8 @@ window.I18N = {
     "contact.city": "Localização",
 
     /* --- portafolio.html y paginas de caso --- */
-    "meta.work.title": "Portefólio — Francisco Sarria",
-    "meta.work.desc": "Casos de design visual, web e conteúdo digital de Francisco Sarria, designer no Porto.",
+    "meta.work.title": "Portefólio — Francisco Sarria, designer de produto digital e web",
+    "meta.work.desc": "Casos completos de identidade, produto digital, sites e conteúdo: Elum Tarot, El Fisio Chavarría, Kiara & Dorian, El Jardín de las Diosas e Proclade + CMF.",
     "work.kicker": "Portefólio",
     "work.title": "Casos selecionados.",
     "work.lead": "Cada caso conta um projeto completo: o problema, o que desenhei e o que mudou. Estou a publicá-los um a um.",
@@ -1312,6 +1313,7 @@ window.I18N = {
 
   /* ------------------------------------------------ ES ---- */
   es: {
+    "chip.years": "años de relación",
     "fc.s4.cap9": "El panel privado, en móvil.",
     "af.pan.movil": "Panel privado visto en el móvil",
     "fc.url.hc": "Pedir la historia clínica",
@@ -1388,7 +1390,7 @@ window.I18N = {
     "fc.mat.eye": "Reparto orientativo",
     "fc.mat.rule": "El verde se reserva: en cuanto se usa para texto pequeño pierde contraste y deja de leerse.",
     "fc.meta.desc": "Marca completa desde cero y un sistema web con panel privado para gestionar pacientes, agenda e historias clínicas.",
-    "fc.meta.title": "El Fisio Chavarría — Francisco Sarria",
+    "fc.meta.title": "El Fisio Chavarría — identidad y sistema web | Francisco Sarria",
     "fc.mono.1": "La F y la C",
     "fc.mono.1d": "Iniciales de Fisio Chavarría, en serif, con presencia de documento.",
     "fc.mono.2": "El arco",
@@ -1530,7 +1532,7 @@ window.I18N = {
     "pc.kpi4": "Dependencia técnica para publicar",
     "pc.lead": "Dos sitios construidos desde cero para dos comunidades religiosas con presencia en varios países. El encargo era un rediseño; acabó siendo un sistema de plantillas que dejó al equipo publicando por su cuenta. Más de tres años después, la relación sigue activa.",
     "pc.meta.desc": "Dos sitios institucionales en WordPress, con un sistema de plantillas que dejó al equipo publicando sin ayuda técnica.",
-    "pc.meta.title": "Proclade + CMF — Francisco Sarria",
+    "pc.meta.title": "Proclade + CMF — dos sitios institucionales | Francisco Sarria",
     "pc.n1": "2",
     "pc.n2": "3",
     "pc.n3": "+3",
@@ -2271,8 +2273,8 @@ window.I18N = {
     "p.wf.sc.b": "5",
     "p.wf.sc.s": "Hilos entrenados trabajando en paralelo",
     "p.wf.title": "Cómo se hace un vídeo",
-    "meta.title": "Francisco Sarria — Diseñador Visual y Web · WordPress e IA",
-    "meta.desc": "Diseñador visual y web en Oporto, Portugal. Diseño y construyo páginas web con WordPress y con inteligencia artificial, y dirijo contenido digital.",
+    "meta.title": "Francisco Sarria — Diseñador de producto digital y web en Oporto",
+    "meta.desc": "Diseño y construyo webs, sistemas de marca y herramientas digitales a medida. UX/UI, WordPress e IA aplicada. Diseñador visual y web en Oporto, Portugal.",
     "a11y.skip": "Ir al contenido",
 
     "nav.about": "Sobre mí",
@@ -2287,13 +2289,13 @@ window.I18N = {
     "cta.email": "Enviar un correo",
 
     "hero.eyebrow": "Oporto, Portugal · Disponible para proyectos",
-    "hero.title": "Convierto ideas en <em>webs</em> y <em>contenido digital</em> con resultados medibles.",
-    "hero.lead": "Diseñador visual senior con +8 años de experiencia, especializado en diseño digital, desarrollo web con WordPress, Elementor y WooCommerce, y producción creativa asistida por IA. Combino criterio visual, tecnología y automatización para crear soluciones de alta calidad con mayor velocidad y eficiencia.",
+    "hero.title": "Diseño y construyo <em>webs</em>, <em>sistemas de marca</em> y <em>herramientas</em> que resuelven un problema concreto.",
+    "hero.lead": "Diseñador visual y web con más de 8 años de experiencia. Llevo un proyecto desde el concepto y el sistema visual hasta la interfaz, la implementación y la documentación: identidad, UX/UI, desarrollo en WordPress y herramientas a medida con IA aplicada.",
     "hero.role": "Visual & Web Designer",
     "tag.ai": "Inteligencia Artificial",
     "tag.auto": "Automatización",
     "hero.kicker.role": "Visual & Web Designer",
-    "hero.kicker.stack": "WordPress · Inteligencia Artificial · Social Media",
+    "hero.kicker.stack": "Producto digital · UX/UI · IA aplicada",
 
     "metric.views": "Reproducciones acumuladas en YouTube",
     "metric.followers": "Seguidores gestionados en Instagram",
@@ -2302,8 +2304,8 @@ window.I18N = {
 
     "sec.about.kicker": "01 — Sobre mí",
     "sec.about.title": "Diseño con criterio y lo compruebo con números.",
-    "about.p1": "Soy Francisco Sarria, diseñador visual colombiano radicado en Oporto, Portugal. Empecé en identidad de marca e impresos y hoy trabajo donde el diseño se cruza con el producto digital: sitios en WordPress, contenido para redes y herramientas personalizadas que automatizan tareas, generan propuestas y ayudan a investigar oportunidades.",
-    "about.p2": "Me interesa lo que se puede medir. Al reorganizar la gestión de contenidos de una ONGD, el tiempo de actualización bajó cerca de un 50%. Al lanzar un canal de YouTube desde cero, superó los 3,6 millones de reproducciones y hoy está monetizado. Trabajo siempre igual: entiendo el objetivo, diseño para ese objetivo y reviso los resultados.",
+    "about.p1": "Soy Francisco Sarria, diseñador visual y web colombiano radicado en Oporto, Portugal. Empecé en identidad de marca e impresos y hoy trabajo donde el diseño se cruza con el producto digital: diseño la marca, diseño la interfaz, la construyo y la documento. Sitios en WordPress, sistemas de contenido y herramientas personalizadas que automatizan tareas, generan propuestas y ayudan a investigar oportunidades.",
+    "about.p2": "Me interesa lo que se puede comprobar. Al reorganizar la gestión de contenidos de una ONGD, el equipo pasó a publicar noticias y proyectos sin ayuda técnica, y la relación sigue activa tres años después. Al lanzar un canal de YouTube desde cero, superó los 3,6 millones de reproducciones y hoy está monetizado. Trabajo siempre igual: entiendo el objetivo, diseño para ese objetivo y reviso los resultados.",
     "about.p3": "Los proyectos que muestro más abajo son una selección: tengo muchos otros trabajos parecidos y algunos siguen en curso. Me muevo con soltura entre la dirección de arte y la ejecución técnica, así que puedo llevar un proyecto del concepto a la entrega sin intermediarios.",
 
     "facts.location": "Ubicación",
@@ -2335,10 +2337,10 @@ window.I18N = {
     "exp.1.b4": "Automaticé procesos creativos con herramientas de IA para imagen, vídeo, música y edición, reduciendo de forma significativa los tiempos de producción.",
     "exp.1.b5": "Desarrollo herramientas a medida: generadores de prompts y contenido para nichos de Instagram, Prospecta para localizar webs con oportunidades de rediseño, y aplicaciones de research para Etsy y YouTube.",
 
-    "exp.2.role": "Web Designer & WordPress Specialist",
+    "exp.2.role": "Web & Digital Product Designer",
     "exp.2.org": "ONGD Proclade Colven · Medellín, Colombia",
-    "exp.2.b1": "Desarrollé los sitios institucionales en WordPress con Elementor, mejorando la experiencia de usuario con layouts modernos y responsive.",
-    "exp.2.b2": "Me encargué del mantenimiento y la optimización continua, reduciendo cerca de un 50% el tiempo de actualización y gestión de contenidos.",
+    "exp.2.b1": "Diseñé y desarrollé los dos sitios institucionales, mejorando la experiencia de usuario con layouts modernos y responsive, sobre WordPress y Elementor.",
+    "exp.2.b2": "Creé un sistema de plantillas que dejó al equipo publicando noticias y proyectos sin ayuda técnica, y me encargué del mantenimiento y la optimización continua.",
     "exp.2.b3": "Produje contenido gráfico, fotografía y vídeo para campañas digitales, ampliando el alcance online de la organización.",
 
     "exp.3.role": "Creative Designer (Freelance)",
@@ -2397,8 +2399,8 @@ window.I18N = {
     "contact.city": "Ubicación",
 
     /* --- portafolio.html y paginas de caso --- */
-    "meta.work.title": "Portafolio — Francisco Sarria",
-    "meta.work.desc": "Casos de diseño visual, web y contenido digital de Francisco Sarria, diseñador en Oporto.",
+    "meta.work.title": "Portafolio — Francisco Sarria, diseñador de producto digital y web",
+    "meta.work.desc": "Casos completos de identidad, producto digital, webs y contenido: Elum Tarot, El Fisio Chavarría, Kiara & Dorian, El Jardín de las Diosas y Proclade + CMF.",
     "work.kicker": "Portafolio",
     "work.title": "Casos seleccionados.",
     "work.lead": "Cada caso cuenta un proyecto completo: el problema, lo que diseñé y lo que cambió. Los estoy publicando uno a uno.",
@@ -2619,6 +2621,7 @@ window.I18N = {
 
   /* ------------------------------------------------ EN ---- */
   en: {
+    "chip.years": "years of collaboration",
     "fc.s4.cap9": "The private panel, on mobile.",
     "af.pan.movil": "Private panel seen on a phone",
     "fc.url.hc": "Request your clinical record",
@@ -2695,7 +2698,7 @@ window.I18N = {
     "fc.mat.eye": "Indicative distribution",
     "fc.mat.rule": "The green is held back: the moment it carries small text it loses contrast and stops being readable.",
     "fc.meta.desc": "A complete brand built from nothing and a web system with a private panel to manage patients, diary and clinical records.",
-    "fc.meta.title": "El Fisio Chavarría — Francisco Sarria",
+    "fc.meta.title": "El Fisio Chavarría — identity and web system | Francisco Sarria",
     "fc.mono.1": "The F and the C",
     "fc.mono.1d": "Initials of Fisio Chavarría, in serif, with the presence of a document.",
     "fc.mono.2": "The arc",
@@ -2837,7 +2840,7 @@ window.I18N = {
     "pc.kpi4": "Technical dependency to publish",
     "pc.lead": "Two sites built from scratch for two religious communities present in several countries. The brief was a redesign; it ended up being a template system that left the team publishing on their own. More than three years on, the relationship is still active.",
     "pc.meta.desc": "Two institutional WordPress sites, with a template system that left the team publishing without technical help.",
-    "pc.meta.title": "Proclade + CMF — Francisco Sarria",
+    "pc.meta.title": "Proclade + CMF — two institutional websites | Francisco Sarria",
     "pc.n1": "2",
     "pc.n2": "3",
     "pc.n3": "+3",
@@ -3578,8 +3581,8 @@ window.I18N = {
     "p.wf.sc.b": "5",
     "p.wf.sc.s": "Trained threads working in parallel",
     "p.wf.title": "How a video gets made",
-    "meta.title": "Francisco Sarria — Visual & Web Designer · WordPress & AI",
-    "meta.desc": "Visual and web designer in Porto, Portugal. I design and build websites with WordPress and with artificial intelligence, and direct digital content.",
+    "meta.title": "Francisco Sarria — Digital Product & Web Designer in Porto",
+    "meta.desc": "I design and build websites, brand systems and custom digital tools. UX/UI, WordPress and applied AI. Visual and web designer in Porto, Portugal.",
     "a11y.skip": "Skip to content",
 
     "nav.about": "About",
@@ -3594,13 +3597,13 @@ window.I18N = {
     "cta.email": "Send an email",
 
     "hero.eyebrow": "Porto, Portugal · Available for projects",
-    "hero.title": "I turn ideas into <em>websites</em> and <em>digital content</em> with measurable results.",
-    "hero.lead": "Senior visual designer with 8+ years of experience, specialised in digital design, web development with WordPress, Elementor and WooCommerce, and AI-assisted creative production. I combine visual judgement, technology and automation to build high-quality solutions faster and more efficiently.",
+    "hero.title": "I design and build <em>websites</em>, <em>brand systems</em> and <em>tools</em> that solve a concrete problem.",
+    "hero.lead": "Visual and web designer with more than 8 years of experience. I take a project from the concept and the visual system through to the interface, the build and the documentation: identity, UX/UI, WordPress development and custom tools with applied AI.",
     "hero.role": "Visual & Web Designer",
     "tag.ai": "Artificial Intelligence",
     "tag.auto": "Automation",
     "hero.kicker.role": "Visual & Web Designer",
-    "hero.kicker.stack": "WordPress · Artificial Intelligence · Social Media",
+    "hero.kicker.stack": "Digital product · UX/UI · Applied AI",
 
     "metric.views": "Total views generated on YouTube",
     "metric.followers": "Instagram followers managed",
@@ -3609,8 +3612,8 @@ window.I18N = {
 
     "sec.about.kicker": "01 — About me",
     "sec.about.title": "I design with intent and check it against the numbers.",
-    "about.p1": "I'm Francisco Sarria, a Colombian visual designer based in Porto, Portugal. I started out in brand identity and print, and today I work where design meets digital product: WordPress sites, social content, and digital apps and tools that automate repetitive tasks and make the work more efficient.",
-    "about.p2": "I care about what can be measured. Reorganising content management for an NGO cut update time by roughly 50%. Launching a YouTube channel from scratch took it past 3.6 million views, and it is now monetised. I always work the same way: understand the goal, design for that goal, then check the results.",
+    "about.p1": "I am Francisco Sarria, a Colombian visual and web designer based in Porto, Portugal. I started in brand identity and print, and today I work where design meets digital product: I design the brand, design the interface, build it and document it. WordPress sites, content systems and custom tools that automate tasks, generate proposals and help research opportunities.",
+    "about.p2": "I care about what can be checked. After reorganising the content management of an NGO, the team started publishing news and projects without technical help, and the relationship is still running three years later. A YouTube channel launched from nothing passed 3.6 million views and is monetised. I always work the same way: I understand the goal, design for that goal and review the results.",
     "about.p3": "The projects below are a selection: I have many other similar pieces of work, and some are still ongoing. I move comfortably between art direction and technical execution, so I can take a project from concept to delivery without middlemen.",
 
     "facts.location": "Location",
@@ -3640,12 +3643,12 @@ window.I18N = {
     "exp.1.b2": "I develop content and community strategy for a wellness-sector client with an Instagram account of more than 30,000 followers.",
     "exp.1.b3": "I turn audience into real clients by combining branding, SEO, content and community management across YouTube, Instagram and WhatsApp.",
     "exp.1.b4": "I automated creative processes with AI tools for image, video, music and editing, cutting production time significantly.",
-    "exp.1.b5": "I build custom digital apps and tools that automate repetitive tasks and add efficiency to day-to-day work.",
+    "exp.1.b5": "I build custom tools: prompt and content generators for specific Instagram niches, Prospecta to find websites with redesign opportunities, and research apps for Etsy and YouTube.",
 
-    "exp.2.role": "Web Designer & WordPress Specialist",
+    "exp.2.role": "Web & Digital Product Designer",
     "exp.2.org": "Proclade Colven NGO · Medellín, Colombia",
-    "exp.2.b1": "I built the institutional sites on WordPress with Elementor, improving the user experience with modern, responsive layouts.",
-    "exp.2.b2": "I handled ongoing maintenance and optimisation, cutting content update and management time by around 50%.",
+    "exp.2.b1": "I designed and built both institutional sites, improving the user experience with modern responsive layouts, on WordPress and Elementor.",
+    "exp.2.b2": "I created a template system that left the team publishing news and projects without technical help, and handled ongoing maintenance and optimisation.",
     "exp.2.b3": "I produced graphics, photography and video for digital campaigns, widening the organisation's online reach.",
 
     "exp.3.role": "Creative Designer (Freelance)",
@@ -3704,8 +3707,8 @@ window.I18N = {
     "contact.city": "Location",
 
     /* --- portafolio.html y paginas de caso --- */
-    "meta.work.title": "Portfolio — Francisco Sarria",
-    "meta.work.desc": "Visual design, web and digital content cases by Francisco Sarria, a designer based in Porto.",
+    "meta.work.title": "Portfolio — Francisco Sarria, digital product and web designer",
+    "meta.work.desc": "Complete case studies in identity, digital product, websites and content: Elum Tarot, El Fisio Chavarría, Kiara & Dorian, El Jardín de las Diosas and Proclade + CMF.",
     "work.kicker": "Portfolio",
     "work.title": "Selected cases.",
     "work.lead": "Each case walks through a full project: the problem, what I designed, and what changed. I am publishing them one by one.",

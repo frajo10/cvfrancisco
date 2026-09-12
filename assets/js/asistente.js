@@ -189,9 +189,9 @@
         en: 'who is francisco introduce introduction profile designer bio background person'
       },
       r: {
-        es: 'Francisco Sarria es diseñador visual y web, colombiano, afincado en Oporto. Más de ocho años de oficio: empezó en identidad de marca e impresos y hoy trabaja donde el diseño se cruza con el producto digital — sitios en WordPress, contenido para redes y producción asistida por IA.',
-        pt: 'Francisco Sarria é designer visual e web, colombiano, radicado no Porto. Mais de oito anos de ofício: começou em identidade de marca e impressos e hoje trabalha onde o design se cruza com o produto digital — sites em WordPress, conteúdo para redes e produção assistida por IA.',
-        en: 'Francisco Sarria is a visual and web designer, Colombian, based in Porto. Over eight years in the trade: he started in brand identity and print and today works where design meets digital product — WordPress sites, social content and AI-assisted production.'
+        es: 'Francisco Sarria es diseñador de producto digital y web, colombiano, afincado en Oporto. Más de ocho años de oficio: empezó en identidad de marca e impresos y hoy lleva un proyecto entero, del concepto y el sistema visual a la interfaz, la implementación y la documentación. Identidad, UX/UI, desarrollo en WordPress y herramientas a medida con IA aplicada.',
+        pt: 'Francisco Sarria é designer de produto digital e web, colombiano, radicado no Porto. Mais de oito anos de ofício: começou em identidade de marca e impressos e hoje leva um projeto inteiro, do conceito e do sistema visual à interface, à implementação e à documentação. Identidade, UX/UI, desenvolvimento em WordPress e ferramentas à medida com IA aplicada.',
+        en: 'Francisco Sarria is a digital product and web designer, Colombian, based in Porto. Over eight years in the trade: he started in brand identity and print and today takes a whole project from the concept and the visual system through to the interface, the build and the documentation. Identity, UX/UI, WordPress development and custom tools with applied AI.'
       },
       a: ['port', 'cv']
     },
