@@ -2302,7 +2302,7 @@ window.I18N = {
 
     "sec.about.kicker": "01 — Sobre mí",
     "sec.about.title": "Diseño con criterio y lo compruebo con números.",
-    "about.p1": "Soy Francisco Sarria, diseñador visual colombiano radicado en Oporto, Portugal. Empecé en identidad de marca e impresos y hoy trabajo donde el diseño se cruza con el producto digital: sitios en WordPress, contenido para redes, y aplicaciones y herramientas digitales que automatizan tareas repetitivas y mejoran la eficiencia del trabajo.",
+    "about.p1": "Soy Francisco Sarria, diseñador visual colombiano radicado en Oporto, Portugal. Empecé en identidad de marca e impresos y hoy trabajo donde el diseño se cruza con el producto digital: sitios en WordPress, contenido para redes y herramientas personalizadas que automatizan tareas, generan propuestas y ayudan a investigar oportunidades.",
     "about.p2": "Me interesa lo que se puede medir. Al reorganizar la gestión de contenidos de una ONGD, el tiempo de actualización bajó cerca de un 50%. Al lanzar un canal de YouTube desde cero, superó los 3,6 millones de reproducciones y hoy está monetizado. Trabajo siempre igual: entiendo el objetivo, diseño para ese objetivo y reviso los resultados.",
     "about.p3": "Los proyectos que muestro más abajo son una selección: tengo muchos otros trabajos parecidos y algunos siguen en curso. Me muevo con soltura entre la dirección de arte y la ejecución técnica, así que puedo llevar un proyecto del concepto a la entrega sin intermediarios.",
 
@@ -2333,7 +2333,7 @@ window.I18N = {
     "exp.1.b2": "Desarrollo la estrategia de contenido y comunidad de un cliente del sector bienestar, con una cuenta de Instagram de más de 30.000 seguidores.",
     "exp.1.b3": "Convierto audiencia en clientes reales combinando branding, SEO, contenido y gestión de comunidad en YouTube, Instagram y WhatsApp.",
     "exp.1.b4": "Automaticé procesos creativos con herramientas de IA para imagen, vídeo, música y edición, reduciendo de forma significativa los tiempos de producción.",
-    "exp.1.b5": "Desarrollo aplicaciones y herramientas digitales a medida para automatizar tareas repetitivas y ganar eficiencia en el trabajo diario.",
+    "exp.1.b5": "Desarrollo herramientas a medida: generadores de prompts y contenido para nichos de Instagram, Prospecta para localizar webs con oportunidades de rediseño, y aplicaciones de research para Etsy y YouTube.",
 
     "exp.2.role": "Web Designer & WordPress Specialist",
     "exp.2.org": "ONGD Proclade Colven · Medellín, Colombia",
