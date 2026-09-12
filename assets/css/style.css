@@ -2396,3 +2396,172 @@ button.as-btn{font-family:var(--font-body)}
 .copiar svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.9}
 .copiar.copiado{background:#3f8f5b;border-color:#3f8f5b;color:#fff}
 .copiar.copiado svg{stroke-dasharray:0}
+
+/* =========================================================
+   CASO · EL FISIO CHAVARRÍA
+   ========================================================= */
+
+/* el monograma, leído por partes */
+.fc-mono{
+  display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);
+  gap:28px;align-items:center;margin-top:22px;
+}
+.fc-mono-fig{
+  background:#F7F8F9;border:1px solid var(--line);border-radius:var(--radius);
+  padding:34px;display:grid;place-items:center;
+  transition:transform .35s var(--ease);transform-style:preserve-3d;
+}
+.fc-mono-fig img{width:100%;max-width:240px;height:auto;display:block}
+.fc-mono-lee{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+.fc-mono-lee li{
+  display:grid;gap:4px;padding-left:16px;border-left:2px solid #5F7F72;
+}
+.fc-mono-lee b{font-size:15px;color:var(--on)}
+.fc-mono-lee span{font-size:14px;line-height:1.6;color:var(--muted)}
+
+/* versiones autorizadas del logotipo */
+.fc-versiones{
+  list-style:none;margin:22px 0 0;padding:0;display:grid;gap:14px;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+}
+.fc-ver{
+  display:grid;gap:6px;padding:16px;border:1px solid var(--line);
+  border-radius:var(--radius);background:var(--surface);
+  transition:transform .35s var(--ease),border-color .3s var(--ease);
+  transform-style:preserve-3d;min-width:0;
+}
+.fc-ver:hover{border-color:var(--line-strong)}
+.fc-ver-c{
+  background:#F7F8F9;border-radius:var(--radius-sm);
+  padding:20px;min-height:116px;display:grid;place-items:center;margin-bottom:8px;
+}
+.fc-ver-c img{max-width:100%;max-height:76px;width:auto;height:auto;display:block}
+.fc-ver--neg .fc-ver-c{background:#0F2D4A}
+.fc-ver b{font-size:14px;color:var(--on)}
+.fc-ver span{font-size:13px;line-height:1.55;color:var(--muted-dim)}
+
+/* capturas en paralelo: siempre dos por fila, nunca una suelta */
+.fc-par{
+  display:grid;gap:22px;margin-top:18px;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+}
+.fc-par > figure{min-width:0;margin:0}
+
+/* decisiones de seguridad */
+.fc-seg{
+  list-style:none;margin:22px 0 0;padding:0;display:grid;gap:12px;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+}
+.fc-seg li{
+  display:grid;gap:5px;padding:16px 18px;min-width:0;
+  border:1px solid var(--line);border-radius:var(--radius);
+  background:var(--surface-2);
+  transition:transform .35s var(--ease),border-color .3s var(--ease);
+  transform-style:preserve-3d;
+}
+.fc-seg li:hover{border-color:var(--line-strong)}
+.fc-seg b{font-size:14.5px;color:var(--on)}
+.fc-seg span{font-size:13.5px;line-height:1.6;color:var(--muted)}
+
+/* aviso de datos inventados */
+.fc-aviso{
+  margin:14px 0 0;padding:11px 16px;font-size:13.5px;line-height:1.6;
+  color:var(--muted);background:var(--surface-2);
+  border:1px dashed var(--line-strong);border-radius:var(--radius-sm);
+}
+
+
+/* botón de ampliar que envuelve un marco de navegador */
+.lb-open-btn--plena{cursor:zoom-in}
+.lb-open-btn--plena .browser{margin:0}
+.lb-open-btn--plena .browser img{border:0;border-radius:0}
+
+@media (max-width:760px){
+  .fc-mono{grid-template-columns:1fr}
+  .fc-mono-fig{padding:24px}
+}
+
+/* casillas de texto del bloque «lo que había antes» */
+.fc-cero{
+  display:grid;gap:6px;align-content:start;min-width:0;
+  padding:18px;border:1px solid var(--line);border-radius:var(--radius);
+  background:var(--surface-2);
+  transition:transform .35s var(--ease),border-color .3s var(--ease);
+  transform-style:preserve-3d;
+}
+.fc-cero:hover{border-color:var(--line-strong)}
+.fc-cero b{display:block;font-size:15px;color:var(--on)}
+.fc-cero span{display:block;font-size:13.5px;line-height:1.6;color:var(--muted)}
+
+/* paleta de cinco tonos: que quepan en una fila y no quede uno huérfano */
+.paleta--5{grid-template-columns:repeat(5,minmax(0,1fr))}
+@media (max-width:1020px){ .paleta--5{grid-template-columns:repeat(3,minmax(0,1fr))} }
+@media (max-width:620px){ .paleta--5{grid-template-columns:repeat(2,minmax(0,1fr))} }
+
+/* =========================================================
+   VISTA PREVIA DE LA PORTADA · dos destacados en pareja
+   Seis columnas: los destacados ocupan media fila (3) y los
+   demas un tercio (2). Al ser mas estrechos, el destacado
+   pasa de horizontal a vertical.
+   ========================================================= */
+.vista{grid-template-columns:repeat(6,1fr)}
+.vista-card{grid-column:span 2}
+.vista-card--dest{grid-column:span 3;display:block}
+.vista-card--dest > a{flex-direction:column}
+.vista-card--dest .ph{
+  flex:none;min-height:0;aspect-ratio:16/9;
+  border-right:0;border-bottom:1px solid var(--line);
+}
+.vista-card--dest .vista-body{flex:none;justify-content:flex-start}
+.vista-card--dest .vista-body h3{font-size:clamp(1.3rem,2.1vw,1.7rem)}
+.vista-card--dest .vista-body > p{font-size:15px;max-width:none}
+
+@media (max-width:1020px){
+  .vista{grid-template-columns:repeat(2,1fr)}
+  .vista-card{grid-column:span 1}
+  .vista-card--dest{grid-column:span 1}
+}
+@media (max-width:640px){
+  .vista{grid-template-columns:1fr}
+  .vista-card,.vista-card--dest{grid-column:span 1}
+  .vista-card--dest .ph{aspect-ratio:16/9}
+}
+
+
+/* =========================================================
+   RITMO VERTICAL DE LOS BLOQUES DE TEXTO
+   .prose.stack es una rejilla con su propia separacion, y ademas
+   cada parrafo llevaba margen: los dos se sumaban y quedaban 55 px
+   entre parrafos, mas que entre el titular y su propio texto.
+   ========================================================= */
+.prose.stack > p + p{margin-top:0}
+
+/* un panel o una figura pegados al ultimo parrafo no respiraban */
+.prose + .pan,
+.prose + .fig,
+.prose + figure{margin-top:clamp(26px,3.4vw,40px)}
+
+
+/* =========================================================
+   REPARTO DE LAS DOS REJILLAS DEL CASO DEL FISIO
+   ========================================================= */
+
+/* las cuatro capturas del panel, todas del mismo alto */
+.fc-par .lb-open-btn img{
+  height:clamp(200px,22vw,320px);max-height:none;
+  object-fit:cover;object-position:top center;
+}
+
+/* la fila de teléfonos reparte el ancho completo, así los bordes de la fila
+   coinciden con los del texto a un lado y al otro */
+.gal-moviles--4{grid-template-columns:repeat(4,minmax(0,1fr))}
+
+@media (max-width:1020px){
+  .gal-moviles--4{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:760px){
+  .fc-par{grid-template-columns:1fr}
+}
+@media (max-width:520px){
+  .gal-moviles--4{grid-template-columns:1fr}
+}
