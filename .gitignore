@@ -3,3 +3,8 @@ Thumbs.db
 desktop.ini
 *.log
 .vscode/
+
+# Archivos temporales y de trabajo local
+.tmp_cv/
+__pycache__/
+curriculum_optimizado_francisco_sarria.pdf
