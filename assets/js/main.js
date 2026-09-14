@@ -51,6 +51,10 @@
       });
     });
 
+    document.querySelectorAll('[data-cv]').forEach(function (el) {
+      el.setAttribute('href', 'assets/docs/CV-Francisco-Sarria-' + lang.toUpperCase() + '.pdf');
+    });
+
     document.querySelectorAll('.lang button').forEach(function (b) {
       var on = b.getAttribute('data-lang') === lang;
       b.classList.toggle('active', on);

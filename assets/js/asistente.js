@@ -484,7 +484,7 @@
     return {
       mail: { t: UI[l].correo, tarjeta: 1, p: 1 },
       wsp: { t: UI[l].wsp, h: WHATSAPP, ext: 1, p: 1 },
-      cv: { t: UI[l].cv, h: 'assets/docs/CV-Francisco-Sarria-2026.pdf', dl: 1 },
+      cv: { t: UI[l].cv, h: 'assets/docs/CV-Francisco-Sarria-' + l.toUpperCase() + '.pdf', dl: 1 },
       port: { t: UI[l].verPort, h: 'portafolio.html' },
       linkedin: { t: UI[l].linkedin, h: 'https://www.linkedin.com/in/francisco-sarria-528048232/', ext: 1 },
       elum: { t: 'Elum Tarot', h: 'elum.html' },
