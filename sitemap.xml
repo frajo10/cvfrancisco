@@ -36,4 +36,8 @@
     <loc>https://frajo10.github.io/cvfrancisco/proclade-cmf.html</loc>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://frajo10.github.io/cvfrancisco/exhanto.html</loc>
+    <priority>0.6</priority>
+  </url>
 </urlset>

@@ -2816,6 +2816,18 @@ button.as-btn{font-family:var(--font-body)}
 @media (max-width:520px){ .fig--wide2{grid-column:span 1} }
 
 .split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(18px,3vw,36px);align-items:start}
+.tile--sq .tile-media img{aspect-ratio:1/1;object-position:center}
+
+/* caso Exhanto: los tonos de la marca y los textos de interfaz en monoespaciada */
+.ex-sig{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center}
+.ex-sig span{
+  font:600 11px/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;letter-spacing:.14em;text-transform:uppercase;
+  padding:9px 12px;border:1px solid var(--line-strong);color:var(--text);
+}
+.ex-sig span.r{border-color:#c81e1e;color:#e04444}
+.ex-sig span.a{background:#a9fe92;border-color:#a9fe92;color:#0a0a0a}
+.ex-sig span.k{background:#c81e1e;border-color:#c81e1e;color:#f3f2ec}
+
 .split.gal-esc{margin-top:clamp(44px,6vw,72px)}
 .split h3{color:var(--text)}
 @media (max-width:900px){ .split{grid-template-columns:1fr} }
