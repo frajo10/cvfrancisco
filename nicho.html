@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-i18n="ni.meta.title">Nicho — herramienta de investigación de mercado con IA | Francisco Sarria</title>
+<meta name="description" data-i18n-attr="content:ni.meta.desc" content="Una aplicación web a medida que integra Etsy, eRank, EverBee, Google Trends, Gemini y Amazon para decidir qué producto crear con datos trazables.">
+<meta name="author" content="Francisco Sarria">
+<meta name="theme-color" content="#0B0C0E">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Nicho — Francisco Sarria">
+<meta property="og:description" content="Una herramienta a medida que integra Etsy, eRank, Google Trends, Gemini y Amazon para investigar oportunidades de producto con datos trazables.">
+<meta property="og:image" content="https://frajo10.github.io/cvfrancisco/assets/img/nicho/nicho-portada.webp">
+<meta property="og:url" content="https://frajo10.github.io/cvfrancisco/nicho.html">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nicho — Francisco Sarria">
+<meta name="twitter:description" content="Una herramienta a medida que integra Etsy, eRank, Google Trends, Gemini y Amazon para investigar oportunidades de producto con datos trazables.">
+<meta name="twitter:image" content="https://frajo10.github.io/cvfrancisco/assets/img/nicho/nicho-portada.webp">
+<link rel="canonical" href="https://frajo10.github.io/cvfrancisco/nicho.html">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css?v=60">
+<script>document.documentElement.classList.add('js');</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Nicho",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "url": "https://frajo10.github.io/cvfrancisco/nicho.html",
+  "description": "Aplicación web a medida de investigación de mercado para Etsy que integra Etsy Open API, eRank, EverBee, Google Trends, Gemini y Amazon Creators API.",
+  "image": "https://frajo10.github.io/cvfrancisco/assets/img/nicho/nicho-portada.webp",
+  "inLanguage": "es",
+  "author": { "@type": "Person", "name": "Francisco Sarria", "url": "https://frajo10.github.io/cvfrancisco/" },
+  "isPartOf": { "@type": "CollectionPage", "name": "Portafolio", "url": "https://frajo10.github.io/cvfrancisco/portafolio.html" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://frajo10.github.io/cvfrancisco/" },
+    { "@type": "ListItem", "position": 2, "name": "Portafolio", "item": "https://frajo10.github.io/cvfrancisco/portafolio.html" },
+    { "@type": "ListItem", "position": 3, "name": "Nicho", "item": "https://frajo10.github.io/cvfrancisco/nicho.html" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#contenido" data-i18n="a11y.skip">Ir al contenido</a>
+<div class="progress" id="progress" aria-hidden="true"><span></span></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="brand" aria-label="Francisco Sarria">
+      <span class="brand-mark">FS</span>
+      <span class="brand-name">Francisco Sarria</span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="index.html#sobre-mi"    data-i18n="nav.about">Sobre mí</a>
+      <a href="index.html#experiencia" data-i18n="nav.experience">Experiencia</a>
+      <a href="portafolio.html" class="active" data-i18n="nav.work">Portafolio</a>
+      <a href="index.html#habilidades" data-i18n="nav.skills">Habilidades</a>
+      <a href="index.html#contacto"    data-i18n="nav.contact">Contacto</a>
+
+      <div class="nav-tools">
+        <div class="lang" role="group" aria-label="Idioma">
+          <button type="button" data-lang="pt">PT</button>
+          <button type="button" data-lang="es">ES</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+        <a href="index.html#contacto" class="btn btn-primary btn-sm nav-cta" data-i18n="cta.write">Escríbeme</a>
+      </div>
+    </nav>
+
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Menú">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <template data-lb-set="ni">
+    <i data-src="assets/img/nicho/nicho-mercado.webp" data-alt="ani.mercado"></i>
+    <i data-src="assets/img/nicho/nicho-fuentes.webp" data-alt="ani.fuentes"></i>
+  </template>
+
+  <!-- ============ CABECERA DEL CASO ============ -->
+  <section class="page-head case-hero">
+    <div class="wrap">
+      <a href="portafolio.html" class="back-link reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+        <span data-i18n="work.back">Volver al portafolio</span>
+      </a>
+      <p class="kicker reveal"><span data-i18n="ni.cat">Herramienta a medida · IA aplicada · Investigación de mercado</span></p>
+      <h1 class="reveal" data-d="1">Nicho</h1>
+      <p class="lead reveal" data-d="2" data-i18n="ni.lead">Una aplicación web que diseñé y construí para decidir qué producto crear en Etsy antes de gastar un euro en fabricarlo. Conecta seis fuentes de datos y una capa de IA, conserva el origen de cada cifra y convierte la investigación en un informe que justifica la decisión.</p>
+      <dl class="case-meta reveal" data-d="3">
+        <div><dt data-i18n="fc.year.l">Año</dt><dd>2026</dd></div>
+        <div><dt data-i18n="fc.role.l">Mi papel</dt><dd data-i18n="ni.role.v">Concepto, diseño de producto, desarrollo e integraciones</dd></div>
+        <div><dt data-i18n="fc.state.l">Estado</dt><dd data-i18n="ni.state.v">Publicada y en uso</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <div class="case-kpis">
+    <div class="case-kpi reveal" data-d="0" data-tilt="5"><b>8</b><span data-i18n="ni.kpi1">fuentes y servicios integrados en una sola interfaz</span></div>
+    <div class="case-kpi reveal" data-d="1" data-tilt="5"><b>12</b><span data-i18n="ni.kpi2">módulos, del mercado al informe final</span></div>
+    <div class="case-kpi reveal" data-d="2" data-tilt="5"><b>4</b><span data-i18n="ni.kpi3">tipos de dato etiquetados para no mezclar medición e IA</span></div>
+    <div class="case-kpi reveal" data-d="3" data-tilt="5"><b>16</b><span data-i18n="ni.kpi4">informes PDF en su primera investigación real</span></div>
+  </div>
+
+  <!-- ============ 1 · EL PROBLEMA ============ -->
+  <section class="case-sec">
+    <div class="wrap">
+      <h2 class="reveal" data-i18n="ni.s1.h">El problema: decidir a ciegas</h2>
+      <div class="prose stack reveal">
+        <p data-i18n="ni.s1.p1">Antes de crear un producto para Etsy hay que saber si alguien lo busca, cuánta competencia tiene, a qué precio se vende y si deja margen. Esa respuesta estaba repartida entre la API de Etsy, eRank, EverBee, Google Trends y una hoja de cálculo, y cada herramienta mide cosas distintas con nombres parecidos.</p>
+        <p data-i18n="ni.s1.p2">El riesgo no era tardar: era comparar un volumen de búsquedas con un recuento de anuncios y tomarlo como demanda. Por eso el encargo que me hice no fue «un dashboard», sino una herramienta que junte las fuentes sin mezclarlas.</p>
+      </div>
+
+      <div class="pan pe reveal">
+        <div class="pe-head">
+          <p class="pe-eyebrow"><i></i><span data-i18n="ni.s1.eye">Antes de Nicho</span></p>
+          <h3 class="pe-title" data-i18n="ni.s1.pan.h">Cuatro fricciones del proceso manual</h3>
+        </div>
+        <ul class="pan-tiles pan-tiles--4">
+          <li class="fc-cero" data-tilt="6"><b data-i18n="ni.f1">Cinco pestañas</b><span data-i18n="ni.f1d">Cada consulta obligaba a saltar entre herramientas y copiar cifras a mano.</span></li>
+          <li class="fc-cero" data-tilt="6"><b data-i18n="ni.f2">Datos sin origen</b><span data-i18n="ni.f2d">Una cifra copiada pierde de dónde salió, de qué fecha es y qué mide.</span></li>
+          <li class="fc-cero" data-tilt="6"><b data-i18n="ni.f3">Oferta confundida con demanda</b><span data-i18n="ni.f3d">Muchos anuncios no significan muchas búsquedas. El error más caro del nicho.</span></li>
+          <li class="fc-cero" data-tilt="6"><b data-i18n="ni.f4">Decisiones sin rastro</b><span data-i18n="ni.f4d">Semanas después nadie recordaba por qué se eligió un producto y no otro.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2 · ARQUITECTURA ============ -->
+  <section class="case-sec section-alt">
+    <div class="wrap">
+      <h2 class="reveal" data-i18n="ni.s2.h">Qué conecté y cómo</h2>
+      <div class="case-copy case-lead reveal"><p data-i18n="ni.s2.lead">Cada integración tiene un trabajo y un nivel de confianza distinto. La arquitectura se diseñó alrededor de esa diferencia: el servidor protege las claves y hace las llamadas, y la interfaz nunca presenta una estimación como si fuera una medición.</p></div>
+
+      <div class="pan reveal">
+        <div class="imap">
+          <div class="imap-col imap-col--src">
+            <p class="pan-label" data-i18n="ni.map.in">Fuentes</p>
+            <div class="imap-src"><span class="imap-ico">API</span><b>Etsy Open API <em class="st st--on" data-i18n="st.on">Activa</em></b><span data-i18n="ni.src.etsy">Anuncios, tiendas, precios, favoritos, fechas e imágenes reales.</span></div>
+            <div class="imap-src"><span class="imap-ico">CSV</span><b>eRank · EverBee <em class="st st--csv" data-i18n="st.csv">Importación</em></b><span data-i18n="ni.src.erank">Búsquedas, clics, CTR y competencia, validados y con su proveedor.</span></div>
+            <div class="imap-src"><span class="imap-ico">PY</span><b>Google Trends <em class="st st--prep" data-i18n="st.local">Microservicio</em></b><span data-i18n="ni.src.trends">Interés relativo, picos y estacionalidad desde un servicio Python aparte.</span></div>
+            <div class="imap-src"><span class="imap-ico">G</span><b>Google Suggest <em class="st st--on" data-i18n="st.on">Activa</em></b><span data-i18n="ni.src.suggest">Variantes reales de búsqueda para el generador de ideas.</span></div>
+            <div class="imap-src imap-src--ai"><span class="imap-ico">IA</span><b>Gemini <em class="st st--ai" data-i18n="st.ai">Capa de IA</em></b><span data-i18n="ni.src.gemini">Intención de búsqueda, etiquetas SEO y ángulos de diferenciación.</span></div>
+            <div class="imap-src"><span class="imap-ico">AMZ</span><b>Amazon Creators API <em class="st st--prep" data-i18n="st.prep">Preparada</em></b><span data-i18n="ni.src.amazon">Catálogo, precio y Sales Rank, listo para activar con credenciales.</span></div>
+          </div>
+
+          <div class="imap-core">
+            <span class="pulse" aria-hidden="true"></span>
+            <p class="pan-label" data-i18n="ni.map.core">Núcleo</p>
+            <h4>Nicho</h4>
+            <p data-i18n="ni.core.p">Recoge, normaliza y etiqueta cada dato antes de calcular nada.</p>
+            <ul>
+              <li data-i18n="ni.core.1">Next.js y TypeScript, interfaz modular</li>
+              <li data-i18n="ni.core.2">Rutas de servidor: las claves nunca llegan al navegador</li>
+              <li data-i18n="ni.core.3">Cloudflare Workers con caché persistente en D1</li>
+              <li data-i18n="ni.core.4">Importador CSV tolerante a formatos europeos</li>
+            </ul>
+          </div>
+
+          <div class="imap-col">
+            <p class="pan-label" data-i18n="ni.map.out">Resultado</p>
+            <div class="imap-out"><span class="imap-ico">01</span><b data-i18n="ni.out.1">Ficha de evidencia</b><span data-i18n="ni.out.1d">Oferta, precio, concentración y actividad de la muestra.</span></div>
+            <div class="imap-out"><span class="imap-ico">02</span><b data-i18n="ni.out.2">Comparador de oportunidades</b><span data-i18n="ni.out.2d">Palabras clave frente a frente con criterios equivalentes.</span></div>
+            <div class="imap-out"><span class="imap-ico">03</span><b data-i18n="ni.out.3">Rentabilidad y embudo</b><span data-i18n="ni.out.3d">Margen real con costes propios y tasas por etapa.</span></div>
+            <div class="imap-out"><span class="imap-ico">04</span><b data-i18n="ni.out.4">Veredicto e informe PDF</b><span data-i18n="ni.out.4d">Gráficos, fuentes, fechas y límites de la evidencia.</span></div>
+          </div>
+        </div>
+        <p class="pan-rule"><span data-i18n="ni.map.rule">Cada cifra viaja con su fuente, su fecha y su naturaleza</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3 · LA IA ============ -->
+  <section class="case-sec">
+    <div class="wrap">
+      <h2 class="reveal" data-i18n="ni.s3.h">La IA propone. Los datos deciden.</h2>
+      <div class="prose stack reveal">
+        <p data-i18n="ni.s3.p1">Gemini hace lo que un modelo de lenguaje hace bien: interpretar la intención de una búsqueda, clasificar el tipo de producto, proponer etiquetas SEO y sugerir cómo diferenciar la oferta. Lo que no hace es inventar cifras. Si una fuente no publica un dato, Nicho escribe «No disponible» en lugar de rellenarlo.</p>
+        <p data-i18n="ni.s3.p2">Para que eso se vea en la interfaz, cada valor pertenece a una de cuatro categorías, y cada categoría tiene su propio tratamiento visual. Al modelo solo le llega la palabra clave y sus métricas principales, nunca el archivo completo del usuario.</p>
+      </div>
+
+      <div class="pan pe reveal">
+        <div class="pe-head">
+          <p class="pe-eyebrow"><i></i><span data-i18n="ni.dt.eye">Trazabilidad</span></p>
+          <h3 class="pe-title" data-i18n="ni.dt.h">Cuatro naturalezas del dato</h3>
+          <p class="pe-sub" data-i18n="ni.dt.p">La regla que ordena toda la aplicación.</p>
+        </div>
+        <div class="dtypes">
+          <div class="dtype dtype--obs" data-tilt="5"><em data-i18n="ni.dt.1e">Observado</em><b data-i18n="ni.dt.1">Medición directa</b><span data-i18n="ni.dt.1d">Lo entrega Etsy, Google Trends o Amazon tal cual.</span></div>
+          <div class="dtype dtype--prov" data-tilt="5"><em data-i18n="ni.dt.2e">Proveedor</em><b data-i18n="ni.dt.2">Referencia externa</b><span data-i18n="ni.dt.2d">Importado de eRank o EverBee, con su nombre y fecha.</span></div>
+          <div class="dtype dtype--calc" data-tilt="5"><em data-i18n="ni.dt.3e">Cálculo propio</em><b data-i18n="ni.dt.3">Derivado por Nicho</b><span data-i18n="ni.dt.3d">Medianas, dispersión, concentración, márgenes.</span></div>
+          <div class="dtype dtype--ia" data-tilt="5"><em data-i18n="ni.dt.4e">Generado por IA</em><b data-i18n="ni.dt.4">Interpretación</b><span data-i18n="ni.dt.4d">Etiquetas, ideas y lectura de Gemini, siempre marcadas.</span></div>
+        </div>
+        <p class="pan-rule"><span data-i18n="ni.dt.rule">Un campo desconocido nunca se convierte en cero</span></p>
+      </div>
+
+      <figure class="fig gal-esc reveal">
+        <div class="browser browser--scroll">
+          <div class="browser-bar">
+            <span class="tl"></span><span class="tl"></span><span class="tl"></span>
+            <span class="url" data-i18n="ni.url.motor">Nicho · Motor de palabras clave con Gemini</span>
+          </div>
+          <div class="browser-scroll">
+            <img src="assets/img/nicho/nicho-motor-ia.webp" data-i18n-attr="alt:ani.motor" alt="" loading="lazy" width="1359" height="2511">
+          </div>
+        </div>
+        <figcaption data-i18n="ni.cap.motor">Análisis real con Gemini sobre «custom moon phase print»: intención de compra, etiquetas SEO y formas de diferenciarse. Encima, cada métrica indica si es dato de Etsy o estimación del modelo.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ 4 · LA HERRAMIENTA ============ -->
+  <section class="case-sec section-alt">
+    <div class="wrap">
+      <h2 class="reveal" data-i18n="ni.s4.h">La herramienta por dentro</h2>
+      <div class="case-copy case-lead reveal"><p data-i18n="ni.s4.lead">Capturas de la aplicación publicada con una consulta real: «custom moon phase print». Desliza dentro de cada ventana para recorrer la pantalla completa.</p></div>
+
+      <div class="stack-lg">
+        <figure class="fig reveal">
+          <button class="lb-open-btn lb-open-btn--plena" type="button" data-lb="ni" data-lb-i="0">
+            <div class="browser">
+              <div class="browser-bar">
+                <span class="tl"></span><span class="tl"></span><span class="tl"></span>
+                <span class="url" data-i18n="ni.url.mercado">Nicho · Investigar mercado</span>
+              </div>
+              <img src="assets/img/nicho/nicho-mercado.webp" data-i18n-attr="alt:ani.mercado" alt="" loading="lazy" width="1600" height="1000">
+            </div>
+          </button>
+          <figcaption data-i18n="ni.cap.mercado">Explorar mercado: estado de la conexión, fecha de la consulta y métricas que se quedan vacías hasta tener una fuente autorizada.</figcaption>
+        </figure>
+
+        <div class="fc-par reveal">
+          <figure class="fig">
+            <div class="browser browser--scroll">
+              <div class="browser-bar">
+                <span class="tl"></span><span class="tl"></span><span class="tl"></span>
+                <span class="url" data-i18n="ni.url.evid">Ficha de evidencia</span>
+              </div>
+              <div class="browser-scroll">
+                <img src="assets/img/nicho/nicho-evidencia.webp" data-i18n-attr="alt:ani.evid" alt="" loading="lazy" width="1359" height="1860">
+              </div>
+            </div>
+            <figcaption data-i18n="ni.cap.evid">1.636 anuncios coincidentes, muestra de 100: precio mediano, dispersión, concentración y tiendas dominantes.</figcaption>
+          </figure>
+          <figure class="fig">
+            <div class="browser browser--scroll">
+              <div class="browser-bar">
+                <span class="tl"></span><span class="tl"></span><span class="tl"></span>
+                <span class="url" data-i18n="ni.url.ver">Decidir oportunidad</span>
+              </div>
+              <div class="browser-scroll">
+                <img src="assets/img/nicho/nicho-veredicto.webp" data-i18n-attr="alt:ani.ver" alt="" loading="lazy" width="1359" height="2540">
+              </div>
+            </div>
+            <figcaption data-i18n="ni.cap.ver">El veredicto separa puntuación y confianza. Sin búsquedas verificadas, el mercado queda como «candidato para investigar», no como ganador.</figcaption>
+          </figure>
+          <figure class="fig">
+            <div class="browser browser--scroll">
+              <div class="browser-bar">
+                <span class="tl"></span><span class="tl"></span><span class="tl"></span>
+                <span class="url" data-i18n="ni.url.desc">Descubrir variantes</span>
+              </div>
+              <div class="browser-scroll">
+                <img src="assets/img/nicho/nicho-descubrir.webp" data-i18n-attr="alt:ani.desc" alt="" loading="lazy" width="1359" height="1447">
+              </div>
+            </div>
+            <figcaption data-i18n="ni.cap.desc">Rutas de investigación por destinatario, ocasión, estilo y formato, construidas con etiquetas reales de la muestra.</figcaption>
+          </figure>
+          <figure class="fig">
+            <button class="lb-open-btn lb-open-btn--plena" type="button" data-lb="ni" data-lb-i="1">
+              <img src="assets/img/nicho/nicho-fuentes.webp" data-i18n-attr="alt:ani.fuentes" alt="" loading="lazy" width="1600" height="1735">
+            </button>
+            <figcaption data-i18n="ni.cap.fuentes">Datos y conexiones: qué aporta cada fuente, qué no se puede obtener y copia privada del espacio que nunca sale del navegador.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5 · FLUJO ============ -->
+  <section class="case-sec">
+    <div class="wrap">
+      <h2 class="reveal" data-i18n="ni.s5.h">De una idea a una decisión documentada</h2>
+      <div class="case-copy case-lead reveal"><p data-i18n="ni.s5.lead">Doce pasos en la aplicación, agrupados en cinco momentos. Cada uno deja rastro, así que la decisión final se puede defender semanas después.</p></div>
+      <ol class="flow reveal">
+        <li data-tilt="4"><b data-i18n="ni.fl.1">Hipótesis</b><span data-i18n="ni.fl.1d">Una idea, una palabra clave y un mercado.</span></li>
+        <li data-tilt="4"><b data-i18n="ni.fl.2">Mercado</b><span data-i18n="ni.fl.2d">Anuncios reales de Etsy, oferta y competencia.</span></li>
+        <li data-tilt="4"><b data-i18n="ni.fl.3">Demanda</b><span data-i18n="ni.fl.3d">CSV de eRank o EverBee y tendencia en Google.</span></li>
+        <li data-tilt="4"><b data-i18n="ni.fl.4">Análisis</b><span data-i18n="ni.fl.4d">Gemini propone etiquetas y diferenciación; se compara.</span></li>
+        <li data-tilt="4"><b data-i18n="ni.fl.5">Decisión</b><span data-i18n="ni.fl.5d">Margen, embudo, veredicto e informe PDF.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ 6 · DECISIONES ============ -->
+  <section class="case-sec section-alt">
+    <div class="wrap">
+      <h2 class="reveal" data-i18n="ni.s6.h">Decisiones de ingeniería que no se ven</h2>
+      <div class="prose stack reveal">
+        <p data-i18n="ni.s6.p1">Una herramienta de datos se gana la confianza en los detalles. Estas son las reglas que fijé antes de programar las pantallas.</p>
+      </div>
+      <ul class="fc-seg reveal">
+        <li data-tilt="4"><b data-i18n="ni.seg.1">Claves solo en el servidor</b><span data-i18n="ni.seg.1d">La credencial de Etsy vive en variables privadas y no aparece en el código descargable.</span></li>
+        <li data-tilt="4"><b data-i18n="ni.seg.2">Sin robar accesos</b><span data-i18n="ni.seg.2d">eRank y EverBee entran por CSV exportado: Nicho no inicia sesión ni guarda contraseñas.</span></li>
+        <li data-tilt="4"><b data-i18n="ni.seg.3">Nada se inventa</b><span data-i18n="ni.seg.3d">El Sales Rank de Amazon no se traduce en ventas; un campo vacío se muestra como vacío.</span></li>
+        <li data-tilt="4"><b data-i18n="ni.seg.4">La IA ve lo mínimo</b><span data-i18n="ni.seg.4d">A Gemini llega la palabra clave y sus métricas, no el archivo completo.</span></li>
+        <li data-tilt="4"><b data-i18n="ni.seg.5">Caché persistente</b><span data-i18n="ni.seg.5d">Cloudflare D1 guarda resultados y evita repetir llamadas a las APIs.</span></li>
+        <li data-tilt="4"><b data-i18n="ni.seg.6">Datos del usuario en local</b><span data-i18n="ni.seg.6d">El espacio de trabajo se exporta e importa como JSON sin pasar por el servidor.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ 7 · EN USO ============ -->
+  <section class="case-sec">
+    <div class="wrap">
+      <h2 class="reveal" data-i18n="ni.s7.h">En uso, y automatizada con agentes</h2>
+      <div class="prose stack reveal">
+        <p data-i18n="ni.s7.p1">La primera investigación completa fue un nicho esotérico digital: palabras clave de eRank importadas, dieciséis informes PDF generados y un informe maestro con los productos priorizados y un complemento para impresión bajo demanda en Europa.</p>
+        <p data-i18n="ni.s7.p2">Después di un paso más: un flujo de agente con Claude que busca las palabras en eRank desde el navegador, construye el CSV, lo importa en Nicho, descarga los informes y redacta la síntesis. Nicho pasó de ser una aplicación a ser una pieza dentro de un sistema.</p>
+      </div>
+
+      <div class="proof reveal">
+        <div><b data-i18n="ni.pr.1">Integro varias IAs y APIs</b><p data-i18n="ni.pr.1d">Etsy, eRank, Google Trends, Gemini, Amazon y Cloudflare, cada una en su sitio.</p></div>
+        <div><b data-i18n="ni.pr.2">Diseño herramientas para una necesidad concreta</b><p data-i18n="ni.pr.2d">No es un SaaS genérico: responde a una pregunta de negocio precisa.</p></div>
+        <div><b data-i18n="ni.pr.3">Trato la IA con criterio</b><p data-i18n="ni.pr.3d">La uso donde aporta y la etiqueta donde podría confundir.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACCIONES ============ -->
+  <section class="case-sec section-alt">
+    <div class="wrap">
+      <div class="case-actions reveal">
+        <a href="portafolio.html" class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+          <span data-i18n="work.back">Volver al portafolio</span>
+        </a>
+        <a href="prospecta.html" class="btn btn-ghost">
+          <span data-i18n="ni.next">Siguiente herramienta: Prospecta</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+        </a>
+        <a href="index.html#contacto" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5h18v11H8l-5 3.5z"/></svg>
+          <span data-i18n="tools.cta">Quiero una herramienta así</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>© <span id="year">2026</span> Francisco Sarria</p>
+    <p data-i18n="footer.note">Diseñado y desarrollado por mí.</p>
+
+    <ul class="foot-social">
+        <li><a href="https://www.linkedin.com/in/francisco-sarria-528048232/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg class="ico-brand" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.86-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a></li>
+    </ul>
+    <a href="#contenido" class="to-top" data-i18n="footer.top">Volver arriba ↑</a>
+  </div>
+</footer>
+
+<script src="assets/js/i18n.js?v=60"></script>
+<script src="assets/js/main.js?v=60"></script>
+<script src="assets/js/motion.js?v=60" defer></script>
+<script src="assets/js/asistente.js?v=60" defer></script>
+</body>
+</html>

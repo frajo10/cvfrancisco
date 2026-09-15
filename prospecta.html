@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-i18n="pr.meta.title">Prospecta — prospección comercial automatizada con IA | Francisco Sarria</title>
+<meta name="description" data-i18n-attr="content:pr.meta.desc" content="Una aplicación a medida que encuentra negocios locales, audita sus webs y prepara propuestas con Claude, Gemini y Magnific, con aprobación humana entre cada fase.">
+<meta name="author" content="Francisco Sarria">
+<meta name="theme-color" content="#0B0C0E">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Prospecta — Francisco Sarria">
+<meta property="og:description" content="Encuentra negocios, audita sus webs y prepara propuestas web personalizadas orquestando Claude, Gemini y Magnific.">
+<meta property="og:image" content="https://frajo10.github.io/cvfrancisco/assets/img/prospecta/prospecta-portada.webp">
+<meta property="og:url" content="https://frajo10.github.io/cvfrancisco/prospecta.html">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Prospecta — Francisco Sarria">
+<meta name="twitter:description" content="Encuentra negocios, audita sus webs y prepara propuestas web personalizadas orquestando Claude, Gemini y Magnific.">
+<meta name="twitter:image" content="https://frajo10.github.io/cvfrancisco/assets/img/prospecta/prospecta-portada.webp">
+<link rel="canonical" href="https://frajo10.github.io/cvfrancisco/prospecta.html">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css?v=60">
+<script>document.documentElement.classList.add('js');</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Prospecta",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Windows",
+  "url": "https://frajo10.github.io/cvfrancisco/prospecta.html",
+  "description": "Aplicación local de prospección comercial que integra Google Places, Playwright, Claude, Magnific, Netlify, Gemini y Gmail en cinco fases con aprobación manual.",
+  "image": "https://frajo10.github.io/cvfrancisco/assets/img/prospecta/prospecta-portada.webp",
+  "inLanguage": "es",
+  "author": { "@type": "Person", "name": "Francisco Sarria", "url": "https://frajo10.github.io/cvfrancisco/" },
+  "isPartOf": { "@type": "CollectionPage", "name": "Portafolio", "url": "https://frajo10.github.io/cvfrancisco/portafolio.html" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://frajo10.github.io/cvfrancisco/" },
+    { "@type": "ListItem", "position": 2, "name": "Portafolio", "item": "https://frajo10.github.io/cvfrancisco/portafolio.html" },
+    { "@type": "ListItem", "position": 3, "name": "Prospecta", "item": "https://frajo10.github.io/cvfrancisco/prospecta.html" }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#contenido" data-i18n="a11y.skip">Ir al contenido</a>
+<div class="progress" id="progress" aria-hidden="true"><span></span></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="brand" aria-label="Francisco Sarria">
+      <span class="brand-mark">FS</span>
+      <span class="brand-name">Francisco Sarria</span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="index.html#sobre-mi"    data-i18n="nav.about">Sobre mí</a>
+      <a href="index.html#experiencia" data-i18n="nav.experience">Experiencia</a>
+      <a href="portafolio.html" class="active" data-i18n="nav.work">Portafolio</a>
+      <a href="index.html#habilidades" data-i18n="nav.skills">Habilidades</a>
+      <a href="index.html#contacto"    data-i18n="nav.contact">Contacto</a>
+
+      <div class="nav-tools">
+        <div class="lang" role="group" aria-label="Idioma">
+          <button type="button" data-lang="pt">PT</button>
+          <button type="button" data-lang="es">ES</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+        <a href="index.html#contacto" class="btn btn-primary btn-sm nav-cta" data-i18n="cta.write">Escríbeme</a>
+      </div>
+    </nav>
+
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Menú">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <template data-lb-set="app">
+    <i data-src="assets/img/prospecta/prospecta-panel.webp" data-alt="apr.panel"></i>
+    <i data-src="assets/img/prospecta/prospecta-fase-1.webp" data-alt="apr.f1"></i>
+    <i data-src="assets/img/prospecta/prospecta-fase-3.webp" data-alt="apr.f3"></i>
+    <i data-src="assets/img/prospecta/prospecta-config.webp" data-alt="apr.config"></i>
+  </template>
+
+  <!-- ============ CABECERA DEL CASO ============ -->
+  <section class="page-head case-hero">
+    <div class="wrap">
+      <a href="portafolio.html" class="back-link reveal">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+        <span data-i18n="work.back">Volver al portafolio</span>
+      </a>
+      <p class="kicker reveal"><span data-i18n="pr.cat">Herramienta a medida · Automatización · Varias IAs orquestadas</span></p>
+      <h1 class="reveal" data-d="1">Prospecta</h1>
+      <p class="lead reveal" data-d="2" data-i18n="pr.lead">Construí mi propio sistema para conseguir clientes: encuentra negocios locales, audita sus webs, prepara una propuesta de rediseño con Claude, la publica, redacta el correo con Gemini y sigue las respuestas. Automatiza lo repetitivo y deja cada decisión importante en manos humanas.</p>
+      <dl class="case-meta reveal" data-d="3">
+        <div><dt data-i18n="fc.year.l">Año</dt><dd>2026</dd></div>
+        <div><dt data-i18n="fc.role.l">Mi papel</dt><dd data-i18n="pr.role.v">Concepto, diseño de interfaz, desarrollo en Python e integraciones</dd></div>
+        <div><dt data-i18n="fc.state.l">Estado</dt><dd data-i18n="pr.state.v">En uso para prospectar en Oporto</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <div class="case-kpis">
+    <div class="case-kpi reveal" data-d="0" data-tilt="5"><b>9</b><span data-i18n="pr.kpi1">integraciones: APIs, navegador automatizado, IA y correo</span></div>
+    <div class="case-kpi reveal" data-d="1" data-tilt="5"><b>3</b><span data-i18n="pr.kpi2">modelos de IA, cada uno con un solo trabajo</span></div>
+    <div class="case-kpi reveal" data-d="2" data-tilt="5"><b>5</b><span data-i18n="pr.kpi3">fases independientes con aprobación entre ellas</span></div>
+    <div class="case-kpi reveal" data-d="3" data-tilt="5"><b>0</b><span data-i18n="pr.kpi4">correos enviados sin revisión y confirmación escrita</span></div>
+  </div>
+
+  <!-- ============ 1 · EL PROBLEMA ============ -->
+  <section class="case-sec">
+    <div class="wrap">
+      <h2 class="reveal" data-i18n="pr.s1.h">El problema: vender webs cuesta horas por cliente</h2>
+      <div class="prose stack reveal">
+        <p data-i18n="pr.s1.p1">Conseguir un cliente de diseño web en frío tiene un proceso conocido: localizar negocios con una web mejorable, revisarla, preparar algo que enseñar, escribir un correo que no parezca plantilla y acordarse de quién respondió. Hecho a mano, cada negocio se lleva una tarde.</p>
+        <p data-i18n="pr.s1.p2">El mercado ya ofrece piezas sueltas: buscadores de leads, generadores de webs, herramientas de envío masivo. Ninguna encadena el trabajo completo, y la mayoría empuja a enviar sin mirar. Yo quería lo contrario: velocidad en lo mecánico y control total en lo que llega al cliente.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2 · PIPELINE ============ -->
+  <section class="case-sec section-alt">
+    <div class="wrap">
+      <h2 class="reveal" data-i18n="pr.s2.h">Cinco fases, nueve integraciones, una persona al mando</h2>
+      <div class="case-copy case-lead reveal"><p data-i18n="pr.s2.lead">Cada fase es un script independiente con su propia salida. Ninguna lanza la siguiente: entre una y otra reviso los resultados y apruebo qué filas continúan.</p></div>
+
+      <div class="pan reveal">
+        <div class="pipe">
+          <div class="pipe-step">
+            <span class="pipe-n">FASE 01</span>
+            <h4 data-i18n="pr.p1">Buscar negocios</h4>
+            <p data-i18n="pr.p1d">Por zona, categoría y radio, sin duplicados y con topes de gasto.</p>
+            <ul class="pipe-tools"><li>Google Places</li><li>Geocoding</li></ul>
+            <span class="pipe-out">leads_fase1.csv</span>
+          </div>
+          <div class="pipe-step">
+            <span class="pipe-n">FASE 02</span>
+            <h4 data-i18n="pr.p2">Auditar webs</h4>
+            <p data-i18n="pr.p2d">HTTPS, móvil, copyright, email público, contenido real, logo y colores.</p>
+            <ul class="pipe-tools"><li>Playwright</li><li>ColorThief</li></ul>
+            <span class="pipe-out">auditorias/&lt;negocio&gt;/</span>
+          </div>
+          <div class="pipe-step">
+            <span class="pipe-n">FASE 03</span>
+            <h4 data-i18n="pr.p3">Crear la propuesta</h4>
+            <p data-i18n="pr.p3d">Kit con datos reales y prompt de agencia, web a medida y vista previa publicada.</p>
+            <ul class="pipe-tools"><li class="is-ai">Claude</li><li class="is-ai">Magnific</li><li>Netlify</li></ul>
+            <span class="pipe-out">staging/&lt;negocio&gt;/</span>
+          </div>
+          <div class="pipe-step">
+            <span class="pipe-n">FASE 04</span>
+            <h4 data-i18n="pr.p4">Redactar el correo</h4>
+            <p data-i18n="pr.p4d">Comprueba que el enlace abre y es del negocio correcto antes de escribir.</p>
+            <ul class="pipe-tools"><li class="is-ai">Gemini</li><li data-i18n="pr.tpl">Plantillas</li></ul>
+            <span class="pipe-out">borradores_fase4.csv</span>
+          </div>
+          <div class="pipe-step">
+            <span class="pipe-n">FASE 05</span>
+            <h4 data-i18n="pr.p5">Enviar y seguir</h4>
+            <p data-i18n="pr.p5d">Envío pausado, registro de cada resultado y bandeja de respuestas.</p>
+            <ul class="pipe-tools"><li>Gmail SMTP</li><li>Gmail IMAP</li></ul>
+            <span class="pipe-out">enviados_log.csv</span>
+          </div>
+        </div>
+        <div class="pipe-legend">
+          <span><i>✓</i><span data-i18n="pr.leg1">Revisión y aprobación manual</span></span>
+          <span><i class="sq"></i><span data-i18n="pr.leg2">Paso con inteligencia artificial</span></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3 · VARIAS IAS ============ -->
+  <section class="case-sec">
+    <div class="wrap">
+      <h2 class="reveal" data-i18n="pr.s3.h">Cada IA en su sitio, y ninguna donde no hace falta</h2>
+      <div class="case-copy case-lead reveal"><p data-i18n="pr.s3.lead">Integrar IA no es ponerla en todas partes. La auditoría es determinista y no usa ningún modelo. Donde sí aporta, elegí el modelo por la tarea y le di siempre una salida de emergencia.</p></div>
+
+      <div class="ai-roles ai-roles--4 reveal">
+        <div class="ai-role" data-tilt="4">
+          <div class="ai-role-top"><h4>Claude</h4><em class="st st--ai" data-i18n="pr.ai.web">Web</em></div>
+          <p class="ai-task" data-i18n="pr.ai.1t">Construye una web a medida para cada negocio.</p>
+          <p data-i18n="pr.ai.1d">Recibe un brief con público, dirección creativa, estructura, datos reales, fotos, logo y paleta extraída de su marca.</p>
+          <p class="ai-guard" data-i18n="pr.ai.1g">Su versión nunca se sobrescribe al regenerar la fase.</p>
+        </div>
+        <div class="ai-role" data-tilt="4">
+          <div class="ai-role-top"><h4>Magnific</h4><em class="st st--ai" data-i18n="pr.ai.img">Imagen</em></div>
+          <p class="ai-task" data-i18n="pr.ai.2t">Genera cabeceras e identidad provisional.</p>
+          <p data-i18n="pr.ai.2d">Solo para negocios sin material suficiente, y solo si activo la opción, porque consume créditos.</p>
+          <p class="ai-guard" data-i18n="pr.ai.2g">Las imágenes generadas se guardan aparte de las fotos reales.</p>
+        </div>
+        <div class="ai-role" data-tilt="4">
+          <div class="ai-role-top"><h4>Gemini</h4><em class="st st--ai" data-i18n="pr.ai.txt">Texto</em></div>
+          <p class="ai-task" data-i18n="pr.ai.3t">Convierte la plantilla en un correo natural.</p>
+          <p data-i18n="pr.ai.3d">En portugués o español, con datos públicos del negocio y en el nivel gratuito de la API.</p>
+          <p class="ai-guard" data-i18n="pr.ai.3g">Sin clave, sin cupo o con respuesta inválida, usa la plantilla local.</p>
+        </div>
+        <div class="ai-role" data-tilt="4">
+          <div class="ai-role-top"><h4 data-i18n="pr.ai.4h">Sin IA</h4><em class="st st--prep">Playwright</em></div>
+          <p class="ai-task" data-i18n="pr.ai.4t">Audita cada web con un navegador automatizado.</p>
+          <p data-i18n="pr.ai.4d">Lo verificable se verifica con código: HTTPS, adaptación a móvil, emails, textos, precios, logo y colores.</p>
+          <p class="ai-guard" data-i18n="pr.ai.4g">Resultados repetibles y coste cero.</p>
+        </div>
+      </div>
+
+      <div class="split gal-esc reveal">
+        <div class="case-copy">
+          <h3 data-i18n="pr.kit.h">El kit: diseñar el contexto, no solo el prompt</h3>
+          <p data-i18n="pr.kit.p1">La calidad de lo que produce un modelo depende de lo que sabe al empezar. Por eso la fase 3 no genera un prompt suelto: prepara una carpeta con los datos reales del negocio, sus fotos, su logo, su paleta y las instrucciones exactas de entrega.</p>
+          <p data-i18n-html="pr.kit.p2">El prompt fija lo que el modelo no debe decidir solo: usar los datos tal cual, marcar los testimonios de ejemplo, separar las imágenes generadas, añadir <code>noindex</code> y dejar la web en la carpeta que Prospecta publica.</p>
+        </div>
+        <div class="console">
+          <div class="console-bar"><span class="tl"></span><span class="tl"></span><span class="tl"></span><em>kits/majestic-cafe/PROMPT.md</em></div>
+<pre><span class="c"># extracto del prompt generado</span>
+Quiero crear una web premium para <mark>Majestic Café</mark>,
+una cafetería en Porto. Es una propuesta de rediseño
+para enseñársela al negocio.
+
+<mark>Datos reales del negocio</mark> (úsalos tal cual,
+no inventes otros):
+- Dirección: R. de Santa Catarina 112, Porto
+- Horario: Segunda a Sábado, 9:00 às 23:00
+
+Paleta extraída de sus fotos reales:
+principal <mark>#56493a</mark> · acento <mark>#afa997</mark>
+
+Imágenes: usa primero sus <mark>10 fotos reales</mark>.
+Guarda las generadas en assets/ia/ para
+distinguirlas de las reales.
+
+Entrega: sitio estático en staging/majestic-cafe
+con &lt;meta name="robots" content="noindex"&gt;.</pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4 · INTERFAZ ============ -->
+  <section class="case-sec section-alt">
+    <div class="wrap">
+      <h2 class="reveal" data-i18n="pr.s4.h">Una interfaz para un proceso con riesgo</h2>
+      <div class="case-copy case-lead reveal"><p data-i18n="pr.s4.lead">Por debajo son scripts de Python; por encima, una aplicación local que se abre en el navegador. La diseñé para que en cada pantalla se vea qué va a pasar, cuánto cuesta y qué falta por aprobar.</p></div>
+
+      <div class="stack-lg">
+        <figure class="fig reveal">
+          <button class="lb-open-btn lb-open-btn--plena" type="button" data-lb="app" data-lb-i="0">
+            <div class="browser">
+              <div class="browser-bar">
+                <span class="tl"></span><span class="tl"></span><span class="tl"></span>
+                <span class="url">127.0.0.1:8600 · Prospecta</span>
+              </div>
+              <img src="assets/img/prospecta/prospecta-panel.webp" data-i18n-attr="alt:apr.panel" alt="" loading="lazy" width="1600" height="1000">
+            </div>
+          </button>
+          <figcaption data-i18n="pr.cap.panel">El panel: siguiente paso, embudo por etapas, gasto en Google frente al cupo gratuito y estado de cada credencial.</figcaption>
+        </figure>
+
+        <div class="fc-par reveal">
+          <figure class="fig">
+            <button class="lb-open-btn lb-open-btn--plena" type="button" data-lb="app" data-lb-i="1">
+              <img src="assets/img/prospecta/prospecta-fase-1.webp" data-i18n-attr="alt:apr.f1" alt="" loading="lazy" width="1600" height="1000">
+            </button>
+            <figcaption data-i18n="pr.cap.f1">Fase 1: zona, categorías y radio, con el máximo de consultas calculado antes de ejecutar.</figcaption>
+          </figure>
+          <figure class="fig">
+            <button class="lb-open-btn lb-open-btn--plena" type="button" data-lb="app" data-lb-i="2">
+              <img src="assets/img/prospecta/prospecta-fase-3.webp" data-i18n-attr="alt:apr.f3" alt="" loading="lazy" width="1600" height="1000">
+            </button>
+            <figcaption data-i18n="pr.cap.f3">Fase 3: el kit para Claude, la plantilla rápida y las opciones que consumen cupo, marcadas como tales.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5 · RESULTADO ============ -->
+  <section class="case-sec">
+    <div class="wrap">
+      <h2 class="reveal" data-i18n="pr.s5.h">Lo que sale al final del proceso</h2>
+      <div class="case-copy case-lead reveal"><p data-i18n="pr.s5.lead">Dos propuestas generadas con el flujo completo para negocios reales de Oporto. Cada una parte de la auditoría de su web actual y respeta sus datos, sus fotos y sus colores.</p></div>
+      <p class="fc-aviso reveal" data-i18n="pr.aviso">Son propuestas de rediseño preparadas por iniciativa propia, no webs oficiales de estos negocios. Se publican como vista previa con noindex y las imágenes generadas con IA están separadas de las fotos reales.</p>
+
+      <div class="stack-lg gal-esc">
+        <div class="fc-par reveal">
+          <figure class="fig">
+            <div class="browser browser--scroll">
+              <div class="browser-bar">
+                <span class="tl"></span><span class="tl"></span><span class="tl"></span>
+                <span class="url" data-i18n="pr.url.maj">Propuesta · Majestic Café</span>
+              </div>
+              <div class="browser-scroll">
+                <img src="assets/img/prospecta/prospecta-majestic-cafe-desk.webp" data-i18n-attr="alt:apr.maj" alt="" loading="lazy" width="1440" height="9237">
+              </div>
+            </div>
+            <figcaption data-i18n="pr.cap.maj">Majestic Café: carta, ambiente y visita, con la paleta extraída de sus fotos.</figcaption>
+          </figure>
+          <figure class="fig">
+            <div class="browser browser--scroll">
+              <div class="browser-bar">
+                <span class="tl"></span><span class="tl"></span><span class="tl"></span>
+                <span class="url" data-i18n="pr.url.bra">Propuesta · Brasão Aliados</span>
+              </div>
+              <div class="browser-scroll">
+                <img src="assets/img/prospecta/prospecta-brasao-aliados-desk.webp" data-i18n-attr="alt:apr.bra" alt="" loading="lazy" width="1440" height="7683">
+              </div>
+            </div>
+            <figcaption data-i18n="pr.cap.bra">Brasão Aliados: cervecería portuguesa, con su escudo real y platos generados para la propuesta.</figcaption>
+          </figure>
+        </div>
+
+        <div class="gal-moviles gal-moviles--4 reveal">
+          <figure class="phone-fig">
+            <div class="phone phone--scroll"><img src="assets/img/prospecta/prospecta-majestic-cafe-mob.webp" data-i18n-attr="alt:apr.majm" alt="" loading="lazy" width="390" height="12533"></div>
+            <figcaption data-i18n="pr.cap.majm">Majestic Café en móvil.</figcaption>
+          </figure>
+          <figure class="phone-fig">
+            <div class="phone phone--scroll"><img src="assets/img/prospecta/prospecta-brasao-aliados-mob.webp" data-i18n-attr="alt:apr.bram" alt="" loading="lazy" width="390" height="10043"></div>
+            <figcaption data-i18n="pr.cap.bram">Brasão Aliados en móvil.</figcaption>
+          </figure>
+          <figure class="phone-fig fig--wide2">
+            <button class="lb-open-btn lb-open-btn--plena" type="button" data-lb="app" data-lb-i="3">
+              <img src="assets/img/prospecta/prospecta-config.webp" data-i18n-attr="alt:apr.config" alt="" loading="lazy" width="1600" height="1000">
+            </button>
+            <figcaption data-i18n="pr.cap.config">Configuración: cada clave con su fase y su estado, sin mostrar nunca su valor, y un plan de protección de gasto.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6 · CONTROLES ============ -->
+  <section class="case-sec section-alt">
+    <div class="wrap">
+      <h2 class="reveal" data-i18n="pr.s6.h">Automatizar sin perder el control</h2>
+      <div class="prose stack reveal">
+        <p data-i18n="pr.s6.p1">Una herramienta que escribe a negocios en tu nombre puede hacer mucho daño en un minuto. Las decisiones de seguridad fueron parte del diseño desde el principio, no un añadido.</p>
+      </div>
+      <ul class="fc-seg reveal">
+        <li data-tilt="4"><b data-i18n="pr.seg.1">Solo en el ordenador local</b><span data-i18n="pr.seg.1d">El servidor escucha en 127.0.0.1 y las claves viven en un .env que nunca se sube.</span></li>
+        <li data-tilt="4"><b data-i18n="pr.seg.2">Una fase, un botón</b><span data-i18n="pr.seg.2d">Nada se encadena solo: cada fase se ejecuta cuando la lanzo.</span></li>
+        <li data-tilt="4"><b data-i18n="pr.seg.3">Confirmación escrita</b><span data-i18n="pr.seg.3d">El envío real exige escribir ENVIAR, con 30 segundos entre correos.</span></li>
+        <li data-tilt="4"><b data-i18n="pr.seg.4">Enlaces verificados dos veces</b><span data-i18n="pr.seg.4d">Antes de redactar y antes de enviar se comprueba que la vista previa abre y es del negocio correcto.</span></li>
+        <li data-tilt="4"><b data-i18n="pr.seg.5">Gmail en solo lectura</b><span data-i18n="pr.seg.5d">La bandeja no borra, no mueve y no marca nada; solo detecta respuestas y bajas.</span></li>
+        <li data-tilt="4"><b data-i18n="pr.seg.6">Gasto con tope</b><span data-i18n="pr.seg.6d">Contadores locales detienen Google Places antes de salir del cupo gratuito.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ 7 · QUÉ DEMUESTRA ============ -->
+  <section class="case-sec">
+    <div class="wrap">
+      <h2 class="reveal" data-i18n="pr.s7.h">Lo que este proyecto dice de cómo trabajo</h2>
+      <div class="proof reveal">
+        <div><b data-i18n="pr.pr.1">Orquesto varias IAs en un mismo flujo</b><p data-i18n="pr.pr.1d">Claude, Gemini y Magnific, cada una elegida por su tarea y con alternativa si falla.</p></div>
+        <div><b data-i18n="pr.pr.2">Convierto un proceso de negocio en software</b><p data-i18n="pr.pr.2d">Del problema real a una herramienta que uso cada semana.</p></div>
+        <div><b data-i18n="pr.pr.3">Diseño la automatización con responsabilidad</b><p data-i18n="pr.pr.3d">Velocidad donde es mecánico, revisión humana donde hay riesgo.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACCIONES ============ -->
+  <section class="case-sec section-alt">
+    <div class="wrap">
+      <div class="case-actions reveal">
+        <a href="portafolio.html" class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+          <span data-i18n="work.back">Volver al portafolio</span>
+        </a>
+        <a href="nicho.html" class="btn btn-ghost">
+          <span data-i18n="pr.next">Ver también: Nicho</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+        </a>
+        <a href="index.html#contacto" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5h18v11H8l-5 3.5z"/></svg>
+          <span data-i18n="tools.cta">Quiero una herramienta así</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>© <span id="year">2026</span> Francisco Sarria</p>
+    <p data-i18n="footer.note">Diseñado y desarrollado por mí.</p>
+
+    <ul class="foot-social">
+        <li><a href="https://www.linkedin.com/in/francisco-sarria-528048232/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg class="ico-brand" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.86-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a></li>
+    </ul>
+    <a href="#contenido" class="to-top" data-i18n="footer.top">Volver arriba ↑</a>
+  </div>
+</footer>
+
+<script src="assets/js/i18n.js?v=60"></script>
+<script src="assets/js/main.js?v=60"></script>
+<script src="assets/js/motion.js?v=60" defer></script>
+<script src="assets/js/asistente.js?v=60" defer></script>
+</body>
+</html>
