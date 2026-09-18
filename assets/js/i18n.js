@@ -977,6 +977,7 @@ window.I18N = {
 
     "cta.write": "Fale comigo",
     "cta.cv": "Descarregar CV",
+    "cta.port": "Portefólio web",
     "cta.ats": "Versão ATS (.docx)",
     "cta.email": "Enviar um email",
 
@@ -1018,7 +1019,7 @@ window.I18N = {
     "level.advanced": "Avançado",
     "level.intermediate": "Intermédio",
 
-    "sec.exp.kicker": "02 — Experiência",
+    "sec.exp.kicker": "03 — Experiência",
     "sec.exp.title": "O que fiz e o que mudou por causa disso.",
 
     "exp.1.role": "Digital Content & AI Strategist",
@@ -1052,7 +1053,7 @@ window.I18N = {
     "chip.branding": "Identidade de marca",
     "chip.editorial": "Editorial e impressos",
 
-    "sec.proj.kicker": "03 — Projetos",
+    "sec.proj.kicker": "02 — Projetos",
     "sec.proj.title": "Trabalho selecionado.",
 
 
@@ -2619,6 +2620,7 @@ window.I18N = {
 
     "cta.write": "Escríbeme",
     "cta.cv": "Descargar CV",
+    "cta.port": "Portafolio web",
     "cta.ats": "Versión ATS (.docx)",
     "cta.email": "Enviar un correo",
 
@@ -2660,7 +2662,7 @@ window.I18N = {
     "level.advanced": "Avanzado",
     "level.intermediate": "Intermedio",
 
-    "sec.exp.kicker": "02 — Experiencia",
+    "sec.exp.kicker": "03 — Experiencia",
     "sec.exp.title": "Qué hice y qué cambió por hacerlo.",
 
     "exp.1.role": "Digital Content & AI Strategist",
@@ -2694,7 +2696,7 @@ window.I18N = {
     "chip.branding": "Identidad de marca",
     "chip.editorial": "Editorial e impresos",
 
-    "sec.proj.kicker": "03 — Proyectos",
+    "sec.proj.kicker": "02 — Proyectos",
     "sec.proj.title": "Trabajo seleccionado.",
 
 
@@ -4261,6 +4263,7 @@ window.I18N = {
 
     "cta.write": "Get in touch",
     "cta.cv": "Download CV",
+    "cta.port": "Web portfolio",
     "cta.ats": "ATS version (.docx)",
     "cta.email": "Send an email",
 
@@ -4302,7 +4305,7 @@ window.I18N = {
     "level.advanced": "Advanced",
     "level.intermediate": "Intermediate",
 
-    "sec.exp.kicker": "02 — Experience",
+    "sec.exp.kicker": "03 — Experience",
     "sec.exp.title": "What I did, and what changed because of it.",
 
     "exp.1.role": "Digital Content & AI Strategist",
@@ -4336,7 +4339,7 @@ window.I18N = {
     "chip.branding": "Brand identity",
     "chip.editorial": "Editorial and print",
 
-    "sec.proj.kicker": "03 — Projects",
+    "sec.proj.kicker": "02 — Projects",
     "sec.proj.title": "Selected work.",
 
 
